@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+.bun/
+
+# Build artifacts
+dist/
+build/
+*.o
+*.so
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Playwright / Browser
+.gstack/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temp
+tmp/
+.tmp/
