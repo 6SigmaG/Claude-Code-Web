@@ -1,0 +1,13 @@
+agnix
+audit-project
+consult
+debate
+deslop
+drift-detect
+enhance
+learn
+next-task
+perf
+repo-map
+ship
+sync-docs
