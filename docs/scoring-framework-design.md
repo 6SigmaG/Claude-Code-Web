@@ -156,7 +156,7 @@ reference_file_count — 通过 references/ 渐进式信息披露
 | agentsys | — | 60/100 | **58** — 基础设施 > prompt 质量 |
 | antfu-skills | 5.8/10 | 45/100 | **50** — 知识库而非工作流 |
 | everything-claude-code | — | 40/100 | **42** — 广度优先，深度不足 |
-| compound-engineering | — | 35/100 | **35** — 是工具不是 skill 集合 |
+| compound-engineering | — | 35/100 | **~~35~~ → 60** — 校准验证后修正：实际有完整工作流 |
 
 ## 参考的行业最佳实践
 
@@ -178,8 +178,8 @@ reference_file_count — 通过 references/ 渐进式信息披露
 
 | 级别 | 分值 | 标准 | 示例 |
 |------|------|------|------|
-| **S** | 10 | 亲手创建了范式转换级别的 OSS，或创建了 AI 平台本身 | Anthropic、Anthony Fu、Jesse Vincent |
-| **S-** | 8.5 | 行业领袖但无个人重大 OSS，或重要工具的官方组织 | Garry Tan (YC CEO)、HashiCorp |
+| **S** | 10 | 亲手创建了范式转换级别的 OSS，或创建了 AI 平台本身 | Anthropic、Anthony Fu、Jesse Vincent、HashiCorp |
+| **S-** | 8.5 | 行业领袖但无个人重大 OSS，或重要工具的官方组织 | Garry Tan (YC CEO) |
 | **A** | 7 | 顶尖公司工程师、OSS 维护者、官方组织 | Every Inc、Avi Fenesh |
 | **B** | 5 | 有实际成果的活跃贡献者 | Affaan Mustafa |
 | **C** | 2 | 新人/未验证 | — |
