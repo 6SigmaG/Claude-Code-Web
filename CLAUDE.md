@@ -31,6 +31,12 @@
 ```
 .claude/
   skills/
+    scout/                   # Skill Scout — 自研的 skill 评估+发现工具集
+      score/                 #   /score — 评分任意 skill repo
+      discover/              #   /discover — 发现新 skill repo
+      health-check/          #   /health-check — 已安装 skill 健康检查
+      skill-conflicts/       #   /skill-conflicts — slash command 冲突检测
+      compare/               #   /compare — AEE 双角度 skill 对比
     gstack/                  # Garry Tan 的 gstack — 虚拟工程团队 skills
     superpowers/             # Jesse Vincent 的 superpowers — TDD/subagent 方法论
     antfu-skills/            # Anthony Fu 精选 agent skills
@@ -39,6 +45,20 @@
     agentsys/                # Avi Fenesh 的 agent 自动化系统
     everything-claude-code/  # Affaan Mustafa 的 harness 优化系统
     anthropic/               # Anthropic 官方 Claude Code plugins（46 个）
+src/
+  scoring/
+    calc.js                  # 3 层 12 维权重计算器（0-100 分制）
+    calc.test.js             # 23 个测试
+    creator-tier.js          # Creator S/S-/A/B/C 分级
+    creator-tier.test.js     # 17 个测试
+    flags.js                 # Green/Red flag 检测
+    flags.test.js            # 10 个测试
+    scorer.js                # 旧版 5 维评分器（已被新架构替代）
+    scorer.test.js           # 旧版测试
+    cli.js                   # 旧版 CLI
+  history/
+    tracker.js               # 评分历史追踪（JSON 持久化 + 趋势 diff）
+    tracker.test.js          # 8 个测试
 docs/
     aee-framework.md         # AEE 对抗性认知引擎框架
     deep-self-check.md       # 深度自检框架

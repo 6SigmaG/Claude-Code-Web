@@ -4,9 +4,9 @@
   "type": "module",
   "description": "Automated skills curation engine for Claude Code Web",
   "scripts": {
-    "test": "node --test src/**/*.test.js",
+    "test": "node --test src/scoring/*.test.js src/history/*.test.js",
     "test:scoring": "node --test src/scoring/*.test.js",
-    "test:discovery": "node --test src/discovery/*.test.js",
+    "test:history": "node --test src/history/*.test.js",
     "score": "node src/scoring/cli.js"
   },
   "keywords": ["claude-code", "skills", "automation"],
