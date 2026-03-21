@@ -47,9 +47,8 @@ describe('classifyCreatorTier', () => {
     }), 'S-');
   });
 
-  it('S- tier: HashiCorp has top-tier OSS but is official org, not individual', () => {
-    // HashiCorp created Terraform/Vault but the SKILL is from the org, not an individual
-    // The org gets S- because it's an official org of a major tool
+  it('S-tier: HashiCorp (created Terraform/Vault = top-tier OSS)', () => {
+    // HashiCorp created Terraform/Vault which are in TOP_TIER_OSS → S
     assert.equal(classifyCreatorTier({
       name: 'HashiCorp',
       company: 'HashiCorp',
@@ -57,7 +56,6 @@ describe('classifyCreatorTier', () => {
       isOfficialOrg: true,
       majorOssProjects: ['Terraform', 'Vault'],
     }), 'S');
-    // Note: HashiCorp with top-tier OSS still gets S because majorOssProjects match
   });
 
   it('S- tier: official org without top-tier OSS', () => {

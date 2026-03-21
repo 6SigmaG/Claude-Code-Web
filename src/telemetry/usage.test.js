@@ -2,7 +2,7 @@ import { describe, it, beforeEach, afterEach } from 'node:test';
 import assert from 'node:assert/strict';
 import { logUsage, getUsageStats, getUsagePath } from './usage.js';
 import { mkdirSync, rmSync, existsSync, readFileSync, appendFileSync } from 'node:fs';
-import { join, dirname } from 'node:path';
+import { join } from 'node:path';
 
 const TEST_DIR = join(process.env.HOME || '/tmp', '.claude-code-web', 'telemetry-test');
 

@@ -37,6 +37,8 @@
       health-check/          #   /health-check — 已安装 skill 健康检查
       skill-conflicts/       #   /skill-conflicts — slash command 冲突检测
       compare/               #   /compare — AEE 双角度 skill 对比
+      hooks/                 #   hooks.json — SessionStart + PostToolUse 遥测
+      hooks-handlers/        #   session-start.sh + log-skill-usage.sh
     gstack/                  # Garry Tan 的 gstack — 虚拟工程团队 skills
     superpowers/             # Jesse Vincent 的 superpowers — TDD/subagent 方法论
     antfu-skills/            # Anthony Fu 精选 agent skills
@@ -59,6 +61,9 @@ src/
   history/
     tracker.js               # 评分历史追踪（JSON 持久化 + 趋势 diff）
     tracker.test.js          # 8 个测试
+  telemetry/
+    usage.js                 # 运行时遥测（JSONL 持久化 + 使用统计）
+    usage.test.js            # 8 个测试
 docs/
     aee-framework.md         # AEE 对抗性认知引擎框架
     deep-self-check.md       # 深度自检框架
@@ -168,10 +173,10 @@ claude-md-management、hookify
 
 | 级别 | 定义 | 示例 |
 |------|------|------|
-| **S** | AI 公司创始人/高管、重大 OSS 创建者、行业领袖 | Anthropic、Anthony Fu、Jesse Vincent |
-| **S-** | 行业领袖（无个人重大 OSS）、重要工具官方组织 | Garry Tan (YC)、HashiCorp |
-| **A** | 顶尖公司工程师、OSS 维护者、hackathon 获奖者 | Avi Fenesh、Affaan Mustafa |
-| **B** | 有实际成果的活跃贡献者 | 1K+ stars 的社区开发者 |
+| **S** | AI 公司创始人/高管、重大 OSS 创建者、行业领袖 | Anthropic、Anthony Fu、Jesse Vincent、HashiCorp |
+| **S-** | 行业领袖（无个人重大 OSS）、重要工具官方组织 | Garry Tan (YC) |
+| **A** | 顶尖公司工程师、OSS 维护者、官方组织 | Avi Fenesh |
+| **B** | 有实际成果的活跃贡献者 | Affaan Mustafa、1K+ stars 的社区开发者 |
 | **C** | 新人/未验证 | 首个 repo，无记录 |
 
 ### 质量信号

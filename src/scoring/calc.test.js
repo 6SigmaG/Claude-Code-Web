@@ -5,6 +5,7 @@ import {
   calcEngineeringScore,
   calcEcosystemScore,
   calcTotalScore,
+  assignTier,
 } from './calc.js';
 
 // ============================================================
@@ -163,13 +164,35 @@ describe('calcTotalScore (max 100)', () => {
     assert.equal(calcTotalScore(50, 20, 40), 100);
   });
 
-  it('assigns tier S for score >= 80', () => {
-    // This tests the tier assignment
+  it('produces score 81 for high content+engineering+ecosystem', () => {
     assert.equal(calcTotalScore(42, 14, 25), 81);
   });
 
-  it('assigns tier A for score >= 60', () => {
+  it('produces score 60 for moderate inputs', () => {
     assert.equal(calcTotalScore(30, 10, 20), 60);
+  });
+});
+
+describe('assignTier', () => {
+  it('returns S for score >= 80', () => {
+    assert.equal(assignTier(80), 'S');
+    assert.equal(assignTier(100), 'S');
+    assert.equal(assignTier(95.5), 'S');
+  });
+
+  it('returns A for score >= 60 and < 80', () => {
+    assert.equal(assignTier(60), 'A');
+    assert.equal(assignTier(79.9), 'A');
+  });
+
+  it('returns B for score >= 40 and < 60', () => {
+    assert.equal(assignTier(40), 'B');
+    assert.equal(assignTier(59.9), 'B');
+  });
+
+  it('returns C for score < 40', () => {
+    assert.equal(assignTier(0), 'C');
+    assert.equal(assignTier(39.9), 'C');
   });
 });
 
