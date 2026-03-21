@@ -1,0 +1,27 @@
+{
+  "description": "Scout hooks: session-start health awareness + runtime telemetry",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks-handlers/session-start.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Skill",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks-handlers/log-skill-usage.sh",
+            "async": true
+          }
+        ]
+      }
+    ]
+  }
+}
