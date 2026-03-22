@@ -50,7 +50,7 @@
 src/
   scoring/
     calc.js                  # 3 层 12 维权重计算器（0-100 分制）
-    calc.test.js             # 23 个测试
+    calc.test.js             # 27 个测试
     creator-tier.js          # Creator S/S-/A/B/C 分级
     creator-tier.test.js     # 17 个测试
     flags.js                 # Green/Red flag 检测
@@ -68,6 +68,7 @@ docs/
     aee-framework.md         # AEE 对抗性认知引擎框架
     deep-self-check.md       # 深度自检框架
     scoring-framework-design.md  # 评分框架设计文档
+    calibration-report.md    # 校准验证报告
 ```
 
 ## 已安装 Skills
@@ -124,7 +125,7 @@ code-simplifier、typescript-lsp、pyright-lsp、rust-analyzer-lsp、gopls-lsp �
 **效率**：code-review、pr-review-toolkit、commit-commands、claude-code-setup、
 claude-md-management、hookify
 
-**集成**：github、gitlab、slack、discord、telegram、linear、asana、notion
+**集成**：github、gitlab、slack、discord、telegram、linear、asana
 
 **数据库**：firebase、supabase、stripe
 
