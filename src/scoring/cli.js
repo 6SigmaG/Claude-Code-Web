@@ -15,6 +15,7 @@ import { analyzeContent, normalizeIndicators } from './static-analyzer.js';
 import { calcContentScore, calcEngineeringScore, calcEcosystemScore, calcTotalScore, assignTier, fuseScores } from './calc.js';
 import { classifyCreatorTier, getCreatorScore } from './creator-tier.js';
 import { checkGreenFlags, checkRedFlags } from './flags.js';
+import { judgeAll } from './llm-judge.js';
 
 // Known repos with metadata
 const KNOWN_REPOS = [
@@ -152,48 +153,69 @@ function scoreEcosystem(repo) {
   };
 }
 
-// Score all repos
-const results = KNOWN_REPOS.map(repo => {
-  // Tier 1: Content — static analyzer pipeline
-  const { content, refCount } = findLargestSkillMd(repo.dir);
-  const raw = analyzeContent(content, { referenceFileCount: refCount });
-  const staticScores = normalizeIndicators(raw);
-  const fused = fuseScores(staticScores); // static-only for now (no LLM)
-  const contentScore = calcContentScore(fused);
+// Detect LLM mode: enabled when OPENROUTER_API_KEY is set or --llm flag passed
+const useLlm = process.env.OPENROUTER_API_KEY || process.argv.includes('--llm');
 
-  // Tier 2: Engineering
-  const engDims = scoreEngineering(repo);
-  const engineeringScore = calcEngineeringScore(engDims);
+async function main() {
+  // Phase 1: Static analysis for all repos
+  const repoData = KNOWN_REPOS.map(repo => {
+    const { content, refCount } = findLargestSkillMd(repo.dir);
+    const raw = analyzeContent(content, { referenceFileCount: refCount });
+    const staticScores = normalizeIndicators(raw);
+    return { repo, content, raw, staticScores };
+  });
 
-  // Tier 3: Ecosystem
-  const { creatorTier, ...ecoDims } = scoreEcosystem(repo);
-  const ecosystemScore = calcEcosystemScore(ecoDims);
+  // Phase 2: LLM-as-Judge (if enabled)
+  let llmMap = new Map();
+  if (useLlm) {
+    console.log('  LLM Judge: calling OpenRouter (minimax/minimax-m2.7)...\n');
+    const skills = repoData
+      .filter(d => d.content.length > 0)
+      .map(d => ({ name: d.repo.name, content: d.content }));
+    llmMap = await judgeAll(skills);
+  }
 
-  // Total
-  const total = calcTotalScore(contentScore, engineeringScore, ecosystemScore);
-  const tier = assignTier(total);
-  const greenFlags = checkGreenFlags({ ...repo, hasIronLaws: raw.error_token_count >= 5, hasCompletionProtocol: raw.has_completion_protocol, hasEscalation: raw.has_escalation, hasAntiPatterns: raw.anti_pattern_count >= 2, stepCount: raw.step_count, crossSkillRefs: raw.cross_skill_refs });
-  const redFlags = checkRedFlags(repo);
+  // Phase 3: Fuse scores and compute totals
+  const results = repoData.map(({ repo, raw, staticScores }) => {
+    const llmScores = llmMap.get(repo.name) || null;
+    const fused = fuseScores(staticScores, llmScores);
+    const contentScore = calcContentScore(fused);
 
-  return { name: repo.name, total, tier, creatorTier, contentScore, engineeringScore, ecosystemScore, fused, greenFlags, redFlags, wordCount: raw.total_word_count };
-}).sort((a, b) => b.total - a.total);
+    const engDims = scoreEngineering(repo);
+    const engineeringScore = calcEngineeringScore(engDims);
 
-// Output
-console.log('╔══════════════════════════════════════════════════════════════╗');
-console.log('║     Skill Scout — 3-Tier Content-First Scorecard           ║');
-console.log('╚══════════════════════════════════════════════════════════════╝\n');
+    const { creatorTier, ...ecoDims } = scoreEcosystem(repo);
+    const ecosystemScore = calcEcosystemScore(ecoDims);
 
-for (const r of results) {
-  const pct = Math.round(r.total);
-  const bar = '█'.repeat(Math.round(pct / 5)) + '░'.repeat(20 - Math.round(pct / 5));
-  console.log(`${r.tier} │ ${bar} ${r.total.toFixed(1)} │ ${r.name}`);
-  console.log(`  │ Content: ${r.contentScore.toFixed(1)}/50 │ Engineering: ${r.engineeringScore.toFixed(1)}/20 │ Ecosystem: ${r.ecosystemScore.toFixed(1)}/30 │ Creator: ${r.creatorTier}`);
-  console.log(`  │ WF:${r.fused.workflowStructure.toFixed(1)} BC:${r.fused.behavioralConstraints.toFixed(1)} ER:${r.fused.errorResilience.toFixed(1)} ToM:${r.fused.theoryOfMind.toFixed(1)} IC:${r.fused.instructionClarity.toFixed(1)} DD:${r.fused.domainDepth.toFixed(1)} │ ${r.wordCount} words`);
-  if (r.greenFlags.length) console.log(`  │ ✓ ${r.greenFlags.join(', ')}`);
-  if (r.redFlags.length) console.log(`  │ ✗ ${r.redFlags.join(', ')}`);
-  console.log('');
+    const total = calcTotalScore(contentScore, engineeringScore, ecosystemScore);
+    const tier = assignTier(total);
+    const greenFlags = checkGreenFlags({ ...repo, hasIronLaws: raw.error_token_count >= 5, hasCompletionProtocol: raw.has_completion_protocol, hasEscalation: raw.has_escalation, hasAntiPatterns: raw.anti_pattern_count >= 2, stepCount: raw.step_count, crossSkillRefs: raw.cross_skill_refs });
+    const redFlags = checkRedFlags(repo);
+
+    return { name: repo.name, total, tier, creatorTier, contentScore, engineeringScore, ecosystemScore, fused, greenFlags, redFlags, wordCount: raw.total_word_count, hasLlm: !!llmScores };
+  }).sort((a, b) => b.total - a.total);
+
+  // Output
+  const mode = useLlm ? 'Content-First + LLM Judge' : 'Content-First (static-only)';
+  console.log('╔══════════════════════════════════════════════════════════════╗');
+  console.log(`║     Skill Scout — 3-Tier ${mode.padEnd(35)}║`);
+  console.log('╚══════════════════════════════════════════════════════════════╝\n');
+
+  for (const r of results) {
+    const pct = Math.round(r.total);
+    const bar = '█'.repeat(Math.round(pct / 5)) + '░'.repeat(20 - Math.round(pct / 5));
+    const llmTag = r.hasLlm ? ' [LLM]' : '';
+    console.log(`${r.tier} │ ${bar} ${r.total.toFixed(1)} │ ${r.name}${llmTag}`);
+    console.log(`  │ Content: ${r.contentScore.toFixed(1)}/50 │ Engineering: ${r.engineeringScore.toFixed(1)}/20 │ Ecosystem: ${r.ecosystemScore.toFixed(1)}/30 │ Creator: ${r.creatorTier}`);
+    console.log(`  │ WF:${r.fused.workflowStructure.toFixed(1)} BC:${r.fused.behavioralConstraints.toFixed(1)} ER:${r.fused.errorResilience.toFixed(1)} ToM:${r.fused.theoryOfMind.toFixed(1)} IC:${r.fused.instructionClarity.toFixed(1)} DD:${r.fused.domainDepth.toFixed(1)} │ ${r.wordCount} words`);
+    if (r.greenFlags.length) console.log(`  │ ✓ ${r.greenFlags.join(', ')}`);
+    if (r.redFlags.length) console.log(`  │ ✗ ${r.redFlags.join(', ')}`);
+    console.log('');
+  }
+
+  const spread = results[0].total - results[results.length - 1].total;
+  console.log(`Total: ${results.length} repos scored │ Spread: ${spread.toFixed(1)} points │ Mode: ${useLlm ? 'LLM+Static' : 'Static-only'}`);
+  console.log(`Tier S (≥80): ${results.filter(r => r.tier === 'S').length} │ A (≥60): ${results.filter(r => r.tier === 'A').length} │ B (≥40): ${results.filter(r => r.tier === 'B').length} │ C (<40): ${results.filter(r => r.tier === 'C').length}`);
 }
 
-const spread = results[0].total - results[results.length - 1].total;
-console.log(`Total: ${results.length} repos scored │ Spread: ${spread.toFixed(1)} points`);
-console.log(`Tier S (≥80): ${results.filter(r => r.tier === 'S').length} │ A (≥60): ${results.filter(r => r.tier === 'A').length} │ B (≥40): ${results.filter(r => r.tier === 'B').length} │ C (<40): ${results.filter(r => r.tier === 'C').length}`);
+main().catch(err => { console.error(err); process.exit(1); });
