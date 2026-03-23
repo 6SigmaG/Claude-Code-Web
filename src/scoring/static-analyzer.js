@@ -41,8 +41,7 @@ export function analyzeContent(content, options = {}) {
     /\bBLOCKED\b/g,
     /\bescalate\b/gi,
     /\bnever\b/gi,
-    /\bdo\s+NOT\b/g,
-    /\bdo\s+not\b/g,
+    /\bdo\s+not\b/gi,
   ];
   let errorTokenCount = 0;
   for (const pat of errorPatterns) {
