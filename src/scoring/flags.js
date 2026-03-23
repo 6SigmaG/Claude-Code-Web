@@ -1,7 +1,7 @@
 /**
  * Quality Signal Detection — Green Flags + Red Flags
  *
- * Extended from original scorer.js with content-quality signals.
+ * Content-quality + engineering + ecosystem signal detection.
  */
 
 export function checkGreenFlags(repo) {

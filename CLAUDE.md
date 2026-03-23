@@ -49,15 +49,15 @@
     anthropic/               # Anthropic 官方 Claude Code plugins（46 个）
 src/
   scoring/
-    calc.js                  # 3 层 12 维权重计算器（0-100 分制）
-    calc.test.js             # 27 个测试
+    calc.js                  # 3 层 12 维权重计算器 + fuseScores（0-100 分制）
+    calc.test.js             # 32 个测试
+    static-analyzer.js       # SKILL.md 静态分析器（12 指标提取 + 归一化）
+    static-analyzer.test.js  # 24 个测试
     creator-tier.js          # Creator S/S-/A/B/C 分级
     creator-tier.test.js     # 17 个测试
     flags.js                 # Green/Red flag 检测
     flags.test.js            # 10 个测试
-    scorer.js                # 旧版 5 维评分器（已被新架构替代）
-    scorer.test.js           # 旧版测试
-    cli.js                   # 旧版 CLI
+    cli.js                   # 3 层内容优先评分 CLI
   history/
     tracker.js               # 评分历史追踪（JSON 持久化 + 趋势 diff）
     tracker.test.js          # 8 个测试
