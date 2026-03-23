@@ -72,6 +72,8 @@ docs/
     deep-self-check.md       # 深度自检框架
     scoring-framework-design.md  # 评分框架设计文档
     calibration-report.md    # 校准验证报告
+    skill-pool-discovery-report.md  # Skill 池发现报告（85+ 候选评估）
+    search-strategy.md       # 发现搜索策略（ROI 排序的 9 个聚集地）
 ```
 
 ## 已安装 Skills
