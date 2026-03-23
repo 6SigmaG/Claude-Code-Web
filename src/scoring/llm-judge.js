@@ -113,21 +113,34 @@ export function parseScores(raw) {
 }
 
 /**
- * Score multiple SKILL.md contents, returning null for failures (graceful degradation).
+ * Score multiple SKILL.md contents concurrently, returning null for failures (graceful degradation).
  * @param {Array<{name: string, content: string}>} skills
  * @param {object} [opts] - Same as judgeSkillMd opts
+ * @param {number} [opts.concurrency=4] - Max concurrent API calls
  * @returns {Promise<Map<string, object|null>>} Map of name → scores or null
  */
 export async function judgeAll(skills, opts = {}) {
+  const concurrency = opts.concurrency ?? 4;
   const results = new Map();
 
-  for (const { name, content } of skills) {
-    try {
-      const scores = await judgeSkillMd(content, opts);
-      results.set(name, scores);
-    } catch (err) {
-      console.error(`  ⚠ LLM judge failed for ${name}: ${err.message}`);
-      results.set(name, null);
+  // Process in batches of `concurrency`
+  for (let i = 0; i < skills.length; i += concurrency) {
+    const batch = skills.slice(i, i + concurrency);
+    const settled = await Promise.allSettled(
+      batch.map(({ name, content }) =>
+        judgeSkillMd(content, opts).then(scores => ({ name, scores }))
+      )
+    );
+    for (const result of settled) {
+      if (result.status === 'fulfilled') {
+        results.set(result.value.name, result.value.scores);
+      } else {
+        // Find which skill failed (match by batch index)
+        const idx = settled.indexOf(result);
+        const name = batch[idx].name;
+        console.error(`  ⚠ LLM judge failed for ${name}: ${result.reason?.message}`);
+        results.set(name, null);
+      }
     }
   }
 

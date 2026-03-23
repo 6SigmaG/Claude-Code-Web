@@ -11,6 +11,7 @@
 
 import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { analyzeContent, normalizeIndicators } from './static-analyzer.js';
 import { calcContentScore, calcEngineeringScore, calcEcosystemScore, calcTotalScore, assignTier, fuseScores } from './calc.js';
 import { classifyCreatorTier, getCreatorScore } from './creator-tier.js';
@@ -153,10 +154,9 @@ export function scoreEcosystem(repo) {
   };
 }
 
-// Detect LLM mode: enabled when OPENROUTER_API_KEY is set or --llm flag passed
-const useLlm = process.env.OPENROUTER_API_KEY || process.argv.includes('--llm');
-
 export async function main() {
+  // Detect LLM mode at runtime (not module-level) so tests can control it
+  const useLlm = process.env.OPENROUTER_API_KEY || process.argv.includes('--llm');
   // Phase 1: Static analysis for all repos
   const repoData = KNOWN_REPOS.map(repo => {
     const { content, refCount } = findLargestSkillMd(repo.dir);
@@ -219,7 +219,7 @@ export async function main() {
 }
 
 // Only auto-run when executed directly (not when imported for testing)
-const isDirectRun = process.argv[1] && import.meta.url.endsWith(process.argv[1].replace(/\\/g, '/'));
-if (isDirectRun) {
+const __filename = fileURLToPath(import.meta.url);
+if (process.argv[1] && resolve(process.argv[1]) === __filename) {
   main().catch(err => { console.error(err); process.exit(1); });
 }
