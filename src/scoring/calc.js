@@ -73,6 +73,42 @@ export function assignTier(score) {
   return 'C';
 }
 
+/**
+ * Fuse static analyzer + LLM judge scores into final content dimensions.
+ *
+ * Fusion weights (from CEO plan):
+ *   workflowStructure:     0.4×static + 0.6×LLM  (static primary)
+ *   behavioralConstraints: 0.4×static + 0.6×LLM  (static primary)
+ *   errorResilience:       0.3×static + 0.7×LLM  (LLM primary)
+ *   theoryOfMind:          pure LLM; default 5.0 if unavailable
+ *   instructionClarity:    pure LLM; default 5.0 if unavailable
+ *   domainDepth:           0.3×static + 0.7×LLM  (LLM primary)
+ */
+export function fuseScores(staticScores, llmScores = null) {
+  const round1 = v => Math.round(v * 10) / 10;
+
+  if (!llmScores) {
+    // Static-only mode: use static scores, default 5.0 for LLM-only dims
+    return {
+      workflowStructure: staticScores.workflowStructure,
+      behavioralConstraints: staticScores.behavioralConstraints,
+      errorResilience: staticScores.errorResilience,
+      theoryOfMind: 5,
+      instructionClarity: 5,
+      domainDepth: staticScores.domainDepth,
+    };
+  }
+
+  return {
+    workflowStructure: round1(staticScores.workflowStructure * 0.4 + llmScores.workflowStructure * 0.6),
+    behavioralConstraints: round1(staticScores.behavioralConstraints * 0.4 + llmScores.behavioralConstraints * 0.6),
+    errorResilience: round1(staticScores.errorResilience * 0.3 + llmScores.errorResilience * 0.7),
+    theoryOfMind: llmScores.theoryOfMind,
+    instructionClarity: llmScores.instructionClarity,
+    domainDepth: round1(staticScores.domainDepth * 0.3 + llmScores.domainDepth * 0.7),
+  };
+}
+
 // CLI mode: read JSON from stdin
 if (process.argv[1] && process.argv[1].endsWith('calc.js') && !process.argv[1].includes('test')) {
   let input = '';

@@ -6,6 +6,7 @@ import {
   calcEcosystemScore,
   calcTotalScore,
   assignTier,
+  fuseScores,
 } from './calc.js';
 
 // ============================================================
@@ -193,6 +194,95 @@ describe('assignTier', () => {
   it('returns C for score < 40', () => {
     assert.equal(assignTier(0), 'C');
     assert.equal(assignTier(39.9), 'C');
+  });
+});
+
+// ============================================================
+// fuseScores — merge static + LLM dimension scores
+// ============================================================
+describe('fuseScores', () => {
+  it('returns static-only scores when no LLM scores provided', () => {
+    const staticScores = {
+      workflowStructure: 7, behavioralConstraints: 6,
+      errorResilience: 5, theoryOfMind: null,
+      instructionClarity: null, domainDepth: 4,
+    };
+    const fused = fuseScores(staticScores);
+    assert.equal(fused.workflowStructure, 7);
+    assert.equal(fused.behavioralConstraints, 6);
+    assert.equal(fused.errorResilience, 5);
+    assert.equal(fused.theoryOfMind, 5); // default for LLM-only
+    assert.equal(fused.instructionClarity, 5); // default for LLM-only
+    assert.equal(fused.domainDepth, 4);
+  });
+
+  it('applies 0.4/0.6 weights for static-primary dimensions with LLM', () => {
+    const staticScores = {
+      workflowStructure: 8, behavioralConstraints: 6,
+      errorResilience: 4, theoryOfMind: null,
+      instructionClarity: null, domainDepth: 3,
+    };
+    const llmScores = {
+      workflowStructure: 6, behavioralConstraints: 8,
+      errorResilience: 8, theoryOfMind: 7,
+      instructionClarity: 9, domainDepth: 7,
+    };
+    const fused = fuseScores(staticScores, llmScores);
+    // workflowStructure: 0.4*8 + 0.6*6 = 3.2 + 3.6 = 6.8
+    assert.equal(fused.workflowStructure, 6.8);
+    // behavioralConstraints: 0.4*6 + 0.6*8 = 2.4 + 4.8 = 7.2
+    assert.equal(fused.behavioralConstraints, 7.2);
+  });
+
+  it('applies 0.3/0.7 weights for LLM-primary dimensions with LLM', () => {
+    const staticScores = {
+      workflowStructure: 5, behavioralConstraints: 5,
+      errorResilience: 4, theoryOfMind: null,
+      instructionClarity: null, domainDepth: 3,
+    };
+    const llmScores = {
+      workflowStructure: 5, behavioralConstraints: 5,
+      errorResilience: 8, theoryOfMind: 7,
+      instructionClarity: 9, domainDepth: 7,
+    };
+    const fused = fuseScores(staticScores, llmScores);
+    // errorResilience: 0.3*4 + 0.7*8 = 1.2 + 5.6 = 6.8
+    assert.equal(fused.errorResilience, 6.8);
+    // domainDepth: 0.3*3 + 0.7*7 = 0.9 + 4.9 = 5.8
+    assert.equal(fused.domainDepth, 5.8);
+  });
+
+  it('uses pure LLM for theoryOfMind and instructionClarity', () => {
+    const staticScores = {
+      workflowStructure: 5, behavioralConstraints: 5,
+      errorResilience: 5, theoryOfMind: null,
+      instructionClarity: null, domainDepth: 5,
+    };
+    const llmScores = {
+      workflowStructure: 5, behavioralConstraints: 5,
+      errorResilience: 5, theoryOfMind: 8,
+      instructionClarity: 3, domainDepth: 5,
+    };
+    const fused = fuseScores(staticScores, llmScores);
+    assert.equal(fused.theoryOfMind, 8);
+    assert.equal(fused.instructionClarity, 3);
+  });
+
+  it('all fused scores are in 0-10 range', () => {
+    const staticScores = {
+      workflowStructure: 10, behavioralConstraints: 10,
+      errorResilience: 10, theoryOfMind: null,
+      instructionClarity: null, domainDepth: 10,
+    };
+    const llmScores = {
+      workflowStructure: 10, behavioralConstraints: 10,
+      errorResilience: 10, theoryOfMind: 10,
+      instructionClarity: 10, domainDepth: 10,
+    };
+    const fused = fuseScores(staticScores, llmScores);
+    for (const [key, val] of Object.entries(fused)) {
+      assert.ok(val >= 0 && val <= 10, `${key}=${val} out of range`);
+    }
   });
 });
 
