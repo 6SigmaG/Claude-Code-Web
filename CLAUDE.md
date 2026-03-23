@@ -203,6 +203,34 @@ claude-md-management、hookify
 - 未标注出处的 fork
 - 无实际使用证据
 
+## 会话上下文管理（Compact 恢复指南）
+
+当上下文被 compact 后，新会话应参考以下文件快速恢复状态：
+
+### 关键状态文件
+
+| 文件 | 作用 | 何时读取 |
+|------|------|----------|
+| `TODOS.md` | 项目级任务追踪（P1/P2/P3） | **每次 compact 后必读** |
+| `docs/skill-pool-discovery-report.md` | Skill 池发现报告（录取标准 + 已评估 repos） | 继续发现任务时读 |
+| `docs/search-strategy.md` | 9 个搜索聚集地 ROI 排序 | 执行发现搜索时读 |
+| `docs/scoring-framework-design.md` | 评分框架设计（3 层 12 维） | 修改评分逻辑时读 |
+| `docs/calibration-report.md` | 校准验证报告 | 调整权重时读 |
+
+### 关键决策记录
+
+1. **录取门槛**（AEE 辩论结论）：1-6 月 >= 1K stars，> 6 月 >= 2K stars，S/S- creator >= 500
+2. **评分架构**：3 层权重（内容 50% / 工程 20% / 生态 30%），12 维指标
+3. **搜索策略**：9 个聚集地按 ROI 排序，每周/每月执行节奏
+4. **V2EX 用户反馈**：superpowers 小任务太啰嗦，质量 > 数量是社区共识
+
+### Compact 后恢复步骤
+
+1. 读 `TODOS.md` 获取当前任务状态
+2. 读 `CLAUDE.md` 获取项目全貌
+3. 根据用户请求读取对应的 `docs/` 文件
+4. **不要重复已完成的调研** — 检查发现报告中已有的 repos 列表
+
 ## 备注
 
 - gstack 的 `/browse` 和 `/qa` 需要 Playwright Chromium（云端可能不可用）
