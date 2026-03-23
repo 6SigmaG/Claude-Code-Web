@@ -66,7 +66,7 @@ src/
     tracker.test.js          # 8 个测试
   telemetry/
     usage.js                 # 运行时遥测（JSONL 持久化 + 使用统计）
-    usage.test.js            # 9 个测试
+    usage.test.js            # 8 个测试
 docs/
     aee-framework.md         # AEE 对抗性认知引擎框架
     deep-self-check.md       # 深度自检框架
@@ -85,7 +85,8 @@ Sprint 工作流：Think → Plan → Build → Review → Test → Ship → Ref
 
 常用命令：`/office-hours`、`/plan-ceo-review`、`/plan-eng-review`、`/plan-design-review`、
 `/design-consultation`、`/design-review`、`/review`、`/investigate`、`/qa`、`/ship`、
-`/browse`、`/careful`、`/freeze`、`/unfreeze`、`/guard`、`/retro`、`/document-release`
+`/browse`、`/careful`、`/freeze`、`/unfreeze`、`/guard`、`/retro`、`/document-release`、
+`/autoplan`、`/cso`、`/codex`
 
 #### superpowers（Jesse Vincent / obra）
 **创作者**：Perl 5 pumpking、Request Tracker 作者、Keyboardio 联合创始人

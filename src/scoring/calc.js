@@ -77,8 +77,8 @@ export function assignTier(score) {
  * Fuse static analyzer + LLM judge scores into final content dimensions.
  *
  * Fusion weights (from CEO plan):
- *   workflowStructure:     0.4×static + 0.6×LLM  (static primary)
- *   behavioralConstraints: 0.4×static + 0.6×LLM  (static primary)
+ *   workflowStructure:     0.4×static + 0.6×LLM  (LLM primary)
+ *   behavioralConstraints: 0.4×static + 0.6×LLM  (LLM primary)
  *   errorResilience:       0.3×static + 0.7×LLM  (LLM primary)
  *   theoryOfMind:          pure LLM; default 5.0 if unavailable
  *   instructionClarity:    pure LLM; default 5.0 if unavailable
