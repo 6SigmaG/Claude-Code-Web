@@ -140,6 +140,49 @@
 
 ---
 
+## 第二轮发现 — 高 ROI 来源挖掘（Anthropic 官方 + 博客 + HN/Reddit/V2EX）
+
+### 从 Anthropic 官方 Marketplace 发现
+
+| Repo | Stars | 说明 |
+|------|------:|------|
+| upstash/context7 | 50,300 | 实时文档 MCP server，解决训练数据过时问题。189K 安装量。官方收录 |
+| oraios/serena | 22,000 | 语义代码分析 MCP，40+ 语言 LSP 支持。官方收录 |
+
+**新增官方内部 plugins**（在 anthropics/claude-plugins-official 内）：
+- `ralph-loop` — 自循环执行 plugin（YC hackathon 用的，一晚生成 6 repos）
+- `math-olympiad` — 竞赛数学求解器（17/18 IMO+Putnam 2025）
+- `mcp-server-dev` — MCP server 开发 skill
+
+### 从技术博客/Newsletter 发现
+
+| Repo | Stars (est.) | 来源 | 说明 |
+|------|------:|------|------|
+| nextlevelbuilder/ui-ux-pro-max-skill | 16,900 | scriptbyai | UI/UX 专业 skill |
+| vercel-labs/agent-skills | 12,000 | scriptbyai | Vercel 官方 skills（React/Next.js） |
+| wshobson/agents | 25,000 | scriptbyai | 大型 plugin marketplace |
+| ruvnet/Claude-Flow | 11,400 | scriptbyai | 多 agent 编排框架 |
+| contains-studio/agents | 11,400 | scriptbyai | Agent 编排平台 |
+| ryanlewis/claude-format-hook | - | dev.to | 实测 "battle-tested" 格式化 hook |
+
+### 从 HN Show HN 发现（独特，不在 awesome list 中）
+
+| Repo | Stars (est.) | 说明 |
+|------|------:|------|
+| mvanhorn/last30days-skill | 4,700 | 跨平台情报聚合（Reddit/X/HN/Polymarket/Bluesky） |
+| assimovt/productskills | - | YC PM 总监出品，16 个精炼产品管理 skills |
+| jeffallan/claude-skills | - | 65 skills + `/common-ground` 假设暴露命令 |
+| MinBZK/overheid-claude-plugins | 3 | 荷兰政府合规 skills（6 plugins, 49 skills）完全不在主流列表 |
+| kasperjunge/agent-resources | - | `agr` skill 包管理器，类 npm 安装 |
+
+### V2EX 中文社区关键反馈
+
+- **superpowers 争议**：多位用户反映小任务太啰嗦、浪费 tokens，用一次后删除
+- **共识**：质量 > 数量，项目专属 skill 比通用预置包更有效
+- **实际在用**：ui-ux-pro-max、antfu/skills、自写项目 skills
+
+---
+
 ## 发现源（awesome 列表）— 用于持续挖矿
 
 | 来源 | Stars | 新候选数 |
@@ -147,31 +190,36 @@
 | hesreallyhim/awesome-claude-code | 30,738 | ~14 |
 | BehiSecc/awesome-claude-skills | 7,795 | ~54 |
 | quemsah/awesome-claude-plugins | 220 | 追踪 8,649 repos |
+| Anthropic 官方 marketplace | - | 47 plugins（32 内部 + 15 外部） |
+| 技术博客 (buildtolaunch, dev.to, scriptbyai) | - | ~6 独特 repos |
+| HN Show HN | - | ~5 独特 repos |
 
 ---
 
-## 待深度调研的高优先候选（下一轮）
+## 待深度调研的高优先候选（通过 Stars 门槛）
 
-从 awesome 列表和 quemsah 追踪中发现但未深度调研的高优先 repos：
+应用新门槛（1-6月 >= 1K，>6月 >= 2K，S/S- creator >= 500）：
 
-| Repo | Stars (est.) | 为什么值得关注 |
-|------|------:|----------|
-| kepano/obsidian-skills | 16,000+ | Obsidian 创始人，S-tier creator |
-| trailofbits/skills | 3,800+ | 顶级安全公司，35 个审计 skills，26 贡献者 |
-| K-Dense-AI/claude-scientific-skills | 15,900+ | 125+ 科研/工程 skills |
-| VoltAgent/awesome-claude-code-subagents | 14,800+ | 10 个 subagent plugins |
-| deanpeters/Product-Manager-Skills | 2,400+ | 46 个 PM skills，v0.75 活跃维护 |
-| Orchestra-Research/AI-Research-SKILLs | 5,400+ | 22 个 AI 研究 skills |
-| agamm/claude-code-owasp | - | OWASP Top 10:2025 安全参考 |
-| AlmogBaku/debug-skill | - | 真正的断点调试器 |
-| daxaur/openpaw | - | 38 skill 个人助理套件 |
-| pjt222/agent-almanac | - | 317 skills，50+ 领域 |
-| mattjoyce/kanban-skill | - | Markdown Kanban |
-| product-on-purpose/pm-skills | - | 24 个产品管理 skills |
-| robertguss/claude-skills | - | 出版流水线 "Book Factory" |
-| akin-ozer/cc-devops-skills | - | DevOps 工具箱 + IaC |
-| NeoLabHQ/context-engineering-kit | - | 高级 context 模式 |
-| glittercowboy/taches-cc-resources | - | 均衡 sub-agents + meta-skills |
+| Repo | Stars (est.) | 年龄 | 通过? | 为什么值得关注 |
+|------|------:|------|:---:|----------|
+| upstash/context7 | 50,300 | >6月 | ✅ | 官方收录 MCP，189K 安装量 |
+| wshobson/agents | 25,000 | >6月 | ✅ | 大型 plugin marketplace |
+| oraios/serena | 22,000 | >6月 | ✅ | 官方收录语义代码分析 MCP |
+| nextlevelbuilder/ui-ux-pro-max-skill | 16,900 | >6月 | ✅ | V2EX 用户实际在用 |
+| kepano/obsidian-skills | 16,000 | ~3月 | ✅ | Obsidian 创始人，S-tier creator |
+| K-Dense-AI/claude-scientific-skills | 15,900 | ~3月 | ✅ | 125+ 科研/工程 skills |
+| VoltAgent/awesome-claude-code-subagents | 14,800 | ~3月 | ✅ | 10 个 subagent plugins |
+| vercel-labs/agent-skills | 12,000 | ~3月 | ✅ | Vercel 官方 skills |
+| ruvnet/Claude-Flow | 11,400 | >6月 | ✅ | 多 agent 编排 |
+| contains-studio/agents | 11,400 | ~3月 | ✅ | Agent 编排平台 |
+| Orchestra-Research/AI-Research-SKILLs | 5,400 | ~3月 | ✅ | 22 个 AI 研究 skills |
+| mvanhorn/last30days-skill | 4,700 | ~3月 | ✅ | 跨平台情报聚合 |
+| trailofbits/skills | 3,800 | ~2月 | ✅ | 顶级安全公司，35 个审计 skills |
+| deanpeters/Product-Manager-Skills | 2,400 | ~3月 | ✅ | 46 个 PM skills |
+
+**未通过门槛但有独特价值（备注）**：
+- `MinBZK/overheid-claude-plugins` (3 stars) — 荷兰政府官方，独特性极高但 stars 不够
+- `assimovt/productskills` — YC PM 总监出品但 stars 未知
 
 ---
 
@@ -180,9 +228,11 @@
 | 指标 | 数量 |
 |------|------|
 | 搜索覆盖 repos | 8,649+（含 quemsah 追踪） |
-| 深度调研 repos | 17 |
-| 通过录取的 Skill 实体 repos | 12（Tier 1-3） |
-| 排除的红旗 repos | 4 |
-| 待下一轮调研的高优先候选 | 16+ |
+| 搜索来源 | 9 类（GitHub/Anthropic/博客/HN/Reddit/V2EX/X/YouTube/Discord） |
+| 第一轮深度调研 repos | 17 |
+| 第一轮通过录取 | 12（Tier 1-3） |
+| 第一轮红旗排除 | 4 |
+| 第二轮新发现 | 16 repos（Anthropic 2 + 博客 6 + HN/Reddit 5 + V2EX 3） |
+| 通过 Stars 门槛的高优先候选 | 14 |
 | 从 awesome 列表挖出的新候选 | 68+ |
-| 可安装的独立 skills 总量 | ~1,800+（去重后估计） |
+| 可安装的独立 skills 总量 | ~2,000+（去重后估计） |
