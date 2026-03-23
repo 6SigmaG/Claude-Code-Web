@@ -31,8 +31,10 @@ const TIER_SCORES = { S: 10, 'S-': 8.5, A: 7, B: 5, C: 2 };
 
 export function classifyCreatorTier(creator) {
   const companyLower = (creator.company || '').toLowerCase();
+  // Normalize dashes/underscores to spaces so "request-tracker" matches "request tracker"
+  const normalize = s => s.toLowerCase().replace(/[-_]/g, ' ');
   const hasTopOss = (creator.majorOssProjects || []).some(
-    p => TOP_TIER_OSS.includes(p.toLowerCase())
+    p => TOP_TIER_OSS.some(t => normalize(p) === normalize(t))
   );
 
   // S-tier: paradigm-shifting OSS creators, AI platform founders

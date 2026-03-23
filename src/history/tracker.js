@@ -9,11 +9,11 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { homedir } from 'node:os';
 
-const SCORES_DIR = join(homedir(), '.claude-code-web', 'scores');
+const DEFAULT_SCORES_DIR = join(homedir(), '.claude-code-web', 'scores');
 
-function ensureDir() {
-  if (!existsSync(SCORES_DIR)) {
-    mkdirSync(SCORES_DIR, { recursive: true });
+function ensureDir(dir) {
+  if (!existsSync(dir)) {
+    mkdirSync(dir, { recursive: true });
   }
 }
 
@@ -21,12 +21,13 @@ function slugify(name) {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
-function scorePath(name) {
-  return join(SCORES_DIR, `${slugify(name)}.json`);
+function scorePath(name, scoresDir) {
+  return join(scoresDir, `${slugify(name)}.json`);
 }
 
-export function loadHistory(name) {
-  const path = scorePath(name);
+export function loadHistory(name, scoresDir) {
+  const dir = scoresDir || DEFAULT_SCORES_DIR;
+  const path = scorePath(name, dir);
   if (!existsSync(path)) return [];
   try {
     const data = JSON.parse(readFileSync(path, 'utf8'));
@@ -37,22 +38,24 @@ export function loadHistory(name) {
   }
 }
 
-export function saveScore(name, scoreEntry) {
-  ensureDir();
-  const history = loadHistory(name);
+export function saveScore(name, scoreEntry, scoresDir) {
+  const dir = scoresDir || DEFAULT_SCORES_DIR;
+  ensureDir(dir);
+  const history = loadHistory(name, dir);
   history.push({
     ...scoreEntry,
     timestamp: new Date().toISOString(),
   });
   try {
-    writeFileSync(scorePath(name), JSON.stringify(history, null, 2));
+    writeFileSync(scorePath(name, dir), JSON.stringify(history, null, 2));
   } catch (e) {
     console.error(`[WARN] Failed to save score history for ${name}: ${e.message}`);
   }
 }
 
-export function diffScores(name) {
-  const history = loadHistory(name);
+export function diffScores(name, scoresDir) {
+  const dir = scoresDir || DEFAULT_SCORES_DIR;
+  const history = loadHistory(name, dir);
   if (history.length < 2) return null;
 
   const prev = history[history.length - 2];

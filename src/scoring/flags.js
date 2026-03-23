@@ -17,6 +17,7 @@ export function checkGreenFlags(repo) {
 
   // Engineering signals
   if ((repo.testCount || 0) >= 100) flags.push('comprehensive-tests');
+  // Default Infinity: if missing, assume NOT active (conservative — no false positive)
   if ((repo.lastCommitDaysAgo || Infinity) <= 30) flags.push('active-maintenance');
   if (repo.hasSkillMd && repo.hasProperFrontmatter) flags.push('proper-skill-format');
   if ((repo.supportedAgents || []).length >= 2) flags.push('cross-agent-support');
@@ -39,6 +40,7 @@ export function checkRedFlags(repo) {
   // Engineering red flags
   if ((repo.testCount || 0) === 0) flags.push('no-tests');
   if (repo.hasDocumentation === false) flags.push('no-documentation');
+  // Default 0: if missing, assume NOT abandoned (conservative — no false positive)
   if ((repo.lastCommitDaysAgo || 0) >= 120) flags.push('abandoned');
   if ((repo.commitCount || 0) <= 1) flags.push('single-commit');
   if (repo.isFork && !repo.hasAttribution) flags.push('unattributed-fork');

@@ -67,8 +67,8 @@ export function analyzeContent(content, options = {}) {
     }
   }
 
-  // 7. cross_skill_refs — /skillname references
-  const crossSkillRefs = (content.match(/\/[a-z][\w-]*/g) || []).length;
+  // 7. cross_skill_refs — /skillname references (exclude Unix paths like /usr/bin, URL paths like /api/v1)
+  const crossSkillRefs = (content.match(/(?:^|(?<=\s))\/[a-z][\w-]*(?=\s|$|[,.):])/gm) || []).length;
 
   // 8. has_frontmatter — starts with --- YAML block
   const hasFrontmatter = /^---\n[\s\S]*?\n---/.test(content);
