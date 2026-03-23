@@ -35,7 +35,7 @@ IMPORTANT: Respond with ONLY a valid JSON object, no markdown, no explanation:
  * @param {number} [opts.temperature] - LLM temperature (default 0)
  * @returns {Promise<{workflowStructure:number, behavioralConstraints:number, errorResilience:number, theoryOfMind:number, instructionClarity:number, domainDepth:number}>}
  */
-export async function judgeSkilllMd(content, opts = {}) {
+export async function judgeSkillMd(content, opts = {}) {
   const apiKey = opts.apiKey || process.env.OPENROUTER_API_KEY;
   if (!apiKey) {
     throw new Error('OPENROUTER_API_KEY not set. Export it or pass opts.apiKey.');
@@ -115,7 +115,7 @@ export function parseScores(raw) {
 /**
  * Score multiple SKILL.md contents, returning null for failures (graceful degradation).
  * @param {Array<{name: string, content: string}>} skills
- * @param {object} [opts] - Same as judgeSkilllMd opts
+ * @param {object} [opts] - Same as judgeSkillMd opts
  * @returns {Promise<Map<string, object|null>>} Map of name → scores or null
  */
 export async function judgeAll(skills, opts = {}) {
@@ -123,7 +123,7 @@ export async function judgeAll(skills, opts = {}) {
 
   for (const { name, content } of skills) {
     try {
-      const scores = await judgeSkilllMd(content, opts);
+      const scores = await judgeSkillMd(content, opts);
       results.set(name, scores);
     } catch (err) {
       console.error(`  ⚠ LLM judge failed for ${name}: ${err.message}`);

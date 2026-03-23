@@ -57,13 +57,15 @@ src/
     creator-tier.test.js     # 17 个测试
     flags.js                 # Green/Red flag 检测
     flags.test.js            # 10 个测试
-    cli.js                   # 3 层内容优先评分 CLI
+    llm-judge.js             # LLM-as-Judge（OpenRouter + MiniMax M2.7）
+    llm-judge.test.js        # 15 个测试
+    cli.js                   # 3 层内容优先评分 CLI（支持 --llm 模式）
   history/
     tracker.js               # 评分历史追踪（JSON 持久化 + 趋势 diff）
     tracker.test.js          # 8 个测试
   telemetry/
     usage.js                 # 运行时遥测（JSONL 持久化 + 使用统计）
-    usage.test.js            # 8 个测试
+    usage.test.js            # 9 个测试
 docs/
     aee-framework.md         # AEE 对抗性认知引擎框架
     deep-self-check.md       # 深度自检框架

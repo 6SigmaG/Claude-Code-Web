@@ -1,6 +1,6 @@
 import { describe, it, beforeEach, afterEach } from 'node:test';
 import assert from 'node:assert/strict';
-import { parseScores, judgeSkilllMd } from './llm-judge.js';
+import { parseScores, judgeSkillMd, judgeAll } from './llm-judge.js';
 
 describe('parseScores', () => {
   it('parses valid JSON with all 6 keys', () => {
@@ -70,7 +70,7 @@ describe('parseScores', () => {
   });
 });
 
-describe('judgeSkilllMd', () => {
+describe('judgeSkillMd', () => {
   const origEnv = process.env.OPENROUTER_API_KEY;
 
   afterEach(() => {
@@ -81,7 +81,7 @@ describe('judgeSkilllMd', () => {
   it('throws when no API key is set', async () => {
     delete process.env.OPENROUTER_API_KEY;
     await assert.rejects(
-      () => judgeSkilllMd('# My Skill', {}),
+      () => judgeSkillMd('# My Skill', {}),
       /OPENROUTER_API_KEY not set/
     );
   });
@@ -90,8 +90,45 @@ describe('judgeSkilllMd', () => {
     delete process.env.OPENROUTER_API_KEY;
     // Will fail on network, but should NOT throw "API key not set"
     await assert.rejects(
-      () => judgeSkilllMd('# My Skill', { apiKey: 'test-key-123' }),
+      () => judgeSkillMd('# My Skill', { apiKey: 'test-key-123' }),
       (err) => !err.message.includes('API_KEY not set')
     );
+  });
+});
+
+describe('judgeAll', () => {
+  const origEnv = process.env.OPENROUTER_API_KEY;
+
+  afterEach(() => {
+    if (origEnv) process.env.OPENROUTER_API_KEY = origEnv;
+    else delete process.env.OPENROUTER_API_KEY;
+  });
+
+  it('returns Map with null for failed calls (graceful degradation)', async () => {
+    // No API key → all calls fail, but judgeAll should NOT throw
+    delete process.env.OPENROUTER_API_KEY;
+    const skills = [
+      { name: 'skill-a', content: '# Skill A' },
+      { name: 'skill-b', content: '# Skill B' },
+    ];
+    const results = await judgeAll(skills, { apiKey: 'bad-key' });
+    assert.equal(results instanceof Map, true);
+    assert.equal(results.size, 2);
+    // Both should be null (network fails in sandbox)
+    assert.equal(results.has('skill-a'), true);
+    assert.equal(results.has('skill-b'), true);
+  });
+
+  it('returns empty Map for empty input', async () => {
+    const results = await judgeAll([], { apiKey: 'any-key' });
+    assert.equal(results instanceof Map, true);
+    assert.equal(results.size, 0);
+  });
+
+  it('preserves skill names as map keys', async () => {
+    delete process.env.OPENROUTER_API_KEY;
+    const skills = [{ name: 'my-special-skill', content: '# Hello' }];
+    const results = await judgeAll(skills, { apiKey: 'test' });
+    assert.equal(results.has('my-special-skill'), true);
   });
 });
