@@ -60,6 +60,7 @@ src/
     llm-judge.js             # LLM-as-Judge（OpenRouter + MiniMax M2.7）
     llm-judge.test.js        # 15 个测试
     cli.js                   # 3 层内容优先评分 CLI（支持 --llm 模式）
+    cli.test.js              # 22 个测试（helper 单元 + subprocess 集成）
   history/
     tracker.js               # 评分历史追踪（JSON 持久化 + 趋势 diff）
     tracker.test.js          # 8 个测试

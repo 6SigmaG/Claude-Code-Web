@@ -18,7 +18,7 @@ import { checkGreenFlags, checkRedFlags } from './flags.js';
 import { judgeAll } from './llm-judge.js';
 
 // Known repos with metadata
-const KNOWN_REPOS = [
+export const KNOWN_REPOS = [
   {
     name: 'gstack', dir: 'gstack',
     creator: { name: 'Garry Tan', role: 'CEO', company: 'Y Combinator', isFounder: true, majorOssProjects: [], isIndustryLeader: true },
@@ -102,7 +102,7 @@ const KNOWN_REPOS = [
 ];
 
 // Find and read the largest SKILL.md from a skill directory
-function findLargestSkillMd(skillDir) {
+export function findLargestSkillMd(skillDir) {
   const skillsBase = resolve('.claude/skills', skillDir);
   const files = [];
 
@@ -128,7 +128,7 @@ function findLargestSkillMd(skillDir) {
 }
 
 // Score engineering dimensions from metadata
-function scoreEngineering(repo) {
+export function scoreEngineering(repo) {
   const testCov = repo.testCount >= 100 ? 9 : repo.testCount >= 50 ? 7 : repo.testCount >= 10 ? 5 : repo.testCount >= 1 ? 3 : 0;
   const infra = (repo.hasDocumentation ? 3 : 0) + (repo.commitCount >= 200 ? 3 : repo.commitCount >= 50 ? 2 : 0) + (repo.contributors >= 5 ? 2 : 0);
   const crossSkill = (repo.skillCount || 0) >= 10 ? 8 : (repo.skillCount || 0) >= 5 ? 6 : (repo.skillCount || 0) >= 1 ? 3 : 0;
@@ -137,7 +137,7 @@ function scoreEngineering(repo) {
 }
 
 // Score ecosystem dimensions from metadata
-function scoreEcosystem(repo) {
+export function scoreEcosystem(repo) {
   const creatorTier = classifyCreatorTier(repo.creator);
   const creatorScore = getCreatorScore(creatorTier);
   const community = (repo.stars >= 10000 ? 4 : repo.stars >= 1000 ? 3 : repo.stars >= 100 ? 2 : 1) +
@@ -156,7 +156,7 @@ function scoreEcosystem(repo) {
 // Detect LLM mode: enabled when OPENROUTER_API_KEY is set or --llm flag passed
 const useLlm = process.env.OPENROUTER_API_KEY || process.argv.includes('--llm');
 
-async function main() {
+export async function main() {
   // Phase 1: Static analysis for all repos
   const repoData = KNOWN_REPOS.map(repo => {
     const { content, refCount } = findLargestSkillMd(repo.dir);
@@ -218,4 +218,8 @@ async function main() {
   console.log(`Tier S (≥80): ${results.filter(r => r.tier === 'S').length} │ A (≥60): ${results.filter(r => r.tier === 'A').length} │ B (≥40): ${results.filter(r => r.tier === 'B').length} │ C (<40): ${results.filter(r => r.tier === 'C').length}`);
 }
 
-main().catch(err => { console.error(err); process.exit(1); });
+// Only auto-run when executed directly (not when imported for testing)
+const isDirectRun = process.argv[1] && import.meta.url.endsWith(process.argv[1].replace(/\\/g, '/'));
+if (isDirectRun) {
+  main().catch(err => { console.error(err); process.exit(1); });
+}
