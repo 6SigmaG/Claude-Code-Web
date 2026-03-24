@@ -196,30 +196,134 @@
 
 ---
 
-## 待深度调研的高优先候选（通过 Stars 门槛）
+## 待深度调研的高优先候选（通过 Stars 门槛）— ✅ 全部完成
 
-应用新门槛（1-6月 >= 1K，>6月 >= 2K，S/S- creator >= 500）：
+> 第三轮深度调研已于 2026-03-24 完成，结果见上方"第三轮深度调研"章节。
 
-| Repo | Stars (est.) | 年龄 | 通过? | 为什么值得关注 |
-|------|------:|------|:---:|----------|
-| upstash/context7 | 50,300 | >6月 | ✅ | 官方收录 MCP，189K 安装量 |
-| wshobson/agents | 25,000 | >6月 | ✅ | 大型 plugin marketplace |
-| oraios/serena | 22,000 | >6月 | ✅ | 官方收录语义代码分析 MCP |
-| nextlevelbuilder/ui-ux-pro-max-skill | 16,900 | >6月 | ✅ | V2EX 用户实际在用 |
-| kepano/obsidian-skills | 16,000 | ~3月 | ✅ | Obsidian 创始人，S-tier creator |
-| K-Dense-AI/claude-scientific-skills | 15,900 | ~3月 | ✅ | 125+ 科研/工程 skills |
-| VoltAgent/awesome-claude-code-subagents | 14,800 | ~3月 | ✅ | 10 个 subagent plugins |
-| vercel-labs/agent-skills | 12,000 | ~3月 | ✅ | Vercel 官方 skills |
-| ruvnet/Claude-Flow | 11,400 | >6月 | ✅ | 多 agent 编排 |
-| contains-studio/agents | 11,400 | ~3月 | ✅ | Agent 编排平台 |
-| Orchestra-Research/AI-Research-SKILLs | 5,400 | ~3月 | ✅ | 22 个 AI 研究 skills |
-| mvanhorn/last30days-skill | 4,700 | ~3月 | ✅ | 跨平台情报聚合 |
-| trailofbits/skills | 3,800 | ~2月 | ✅ | 顶级安全公司，35 个审计 skills |
-| deanpeters/Product-Manager-Skills | 2,400 | ~3月 | ✅ | 46 个 PM skills |
+| Repo | Stars (实际) | 年龄 | 结论 |
+|------|------:|------|------|
+| upstash/context7 | 50,444 | 12月 | ✅ Tier 1 强烈推荐 |
+| vercel-labs/agent-skills | 23,800 | 3.5月 | ✅ Tier 1 强烈推荐 |
+| trailofbits/skills | 3,900 | 2月 | ✅ Tier 1 强烈推荐 |
+| oraios/serena | 22,021 | 12月 | ✅ Tier 2 推荐（MCP） |
+| kepano/obsidian-skills | 16,800 | 3月 | ✅ Tier 2 推荐 |
+| K-Dense-AI/claude-scientific-skills | 16,100 | 5月 | ✅ Tier 2 推荐 |
+| mvanhorn/last30days-skill | 5,300 | 2.5月 | ✅ Tier 2 推荐 |
+| Orchestra-Research/AI-Research-SKILLs | 5,549 | 4.5月 | ✅ Tier 2 推荐 |
+| deanpeters/Product-Manager-Skills | 2,400 | 7周 | ✅ Tier 2 推荐 |
+| wshobson/agents | 32,176 | 8月 | ⏸ 观望 |
+| VoltAgent/awesome-claude-code-subagents | 15,000 | 6周 | ⏸ 观望 |
+| nextlevelbuilder/ui-ux-pro-max-skill | ~49,700 | 4月 | ❌ Star inflation |
+| ruvnet/Claude-Flow | 24,900 | >6月 | ❌ Star 注水嫌疑 |
+| contains-studio/agents | 12,350 | 8月 | ❌ 弃置+无 license |
 
 **未通过门槛但有独特价值（备注）**：
 - `MinBZK/overheid-claude-plugins` (3 stars) — 荷兰政府官方，独特性极高但 stars 不够
 - `assimovt/productskills` — YC PM 总监出品但 stars 未知
+
+---
+
+## 第三轮深度调研（2026-03-24）
+
+对第二轮发现的 14 个高优先候选逐一深度调研（并行 agent 模式）。
+
+### Tier 1 — 强烈推荐安装
+
+#### 13. upstash/context7
+- **Stars**: 50,444 | **Creator**: S-（Upstash，a16z 投资的 serverless 基础设施公司）
+- **类型**: MCP server + Claude Code skill + plugin 三合一
+- **亮点**: 实时文档注入防止 LLM 幻觉过时 API。npm 周下载 496K。Anthropic 官方 marketplace 收录。TypeScript monorepo，6 个 CI workflow，changesets 发布管线。支持 Claude Code/Cursor/Gemini 等多平台。
+- **安装**: `claude mcp add context7 -- npx -y @upstash/context7-mcp` 或 plugin marketplace
+- **风险**: 依赖 context7.com 后端服务（有 rate limit），但公司有 a16z 融资可持续性高
+- **链接**: https://github.com/upstash/context7
+
+#### 14. vercel-labs/agent-skills
+- **Stars**: 23,800 | **Creator**: S（Vercel 官方，Next.js 创建者 Guillermo Rauch）
+- **类型**: 6 个 skill（react-best-practices, web-design-guidelines, react-native, composition-patterns, deploy-to-vercel, vercel-cli-with-tokens）
+- **亮点**: react-best-practices 64 条规则按优先级分类（CRITICAL/HIGH/MEDIUM/LOW）。613K 总安装量。构建系统（rules → AGENTS.md 编译管线）。`npx skills` 安装。支持 39+ agent 平台。
+- **安装**: `npx skills add vercel-labs/agent-skills`
+- **风险**: 无明显红旗
+- **链接**: https://github.com/vercel-labs/agent-skills
+
+#### 15. trailofbits/skills
+- **Stars**: 3,900 | **Creator**: S（Trail of Bits，顶级安全公司，DARPA AI Cyber Challenge 亚军 $3M）
+- **类型**: 30+ 安全审计 skill（11 个 plugin 类别）
+- **亮点**: 智能合约安全（6 个区块链平台）、代码审计（Semgrep/差异审查/供应链风险）、恶意软件分析（YARA）、形式化验证、逆向工程。constant-time-analysis skill **发现了 RustCrypto ML-DSA 签名的真实 timing 漏洞**。CI 验证 SKILL.md 结构。26 贡献者。
+- **安装**: `/plugin marketplace add trailofbits/skills`
+- **风险**: CC-BY-SA-4.0 copyleft 许可证（非 MIT）
+- **链接**: https://github.com/trailofbits/skills
+
+### Tier 2 — 推荐安装 / 选择性安装
+
+#### 16. oraios/serena
+- **Stars**: 22,021 | **Creator**: B+/A-（Oraios AI，德国 AI 公司，双 PhD 创始人）
+- **类型**: MCP server（非 skill/plugin）
+- **亮点**: 语义代码分析，40+ 语言 LSP 支持，符号级精确编辑（无需读全文件）。跨 3 OS 的 CI。Microsoft/VSCode 团队赞助。PyPI 27.4K 下载。
+- **安装**: `claude mcp add serena -- uvx --from git+https://github.com/oraios/serena serena start-mcp-server --context claude-code --project "$(pwd)"`
+- **风险**: 非 skill 类别（MCP server），需要 Python 3.11+ 和各语言 LSP server
+- **链接**: https://github.com/oraios/serena
+
+#### 17. kepano/obsidian-skills
+- **Stars**: 16,800 | **Creator**: S-（Steph Ango，Obsidian CEO）
+- **类型**: 5 个 skill（obsidian-markdown, obsidian-bases, json-canvas, obsidian-cli, defuddle）
+- **亮点**: 解决 Claude Code 不理解 Obsidian 专有语法（wikilinks, .base, .canvas）的问题。标准 SKILL.md + 参考文档。Anthropic marketplace 收录。
+- **安装**: `/plugin marketplace add kepano/obsidian-skills`
+- **风险**: 领域特定（仅 Obsidian 用户需要），无测试但文档类 repo 可接受
+- **链接**: https://github.com/kepano/obsidian-skills
+
+#### 18. K-Dense-AI/claude-scientific-skills
+- **Stars**: 16,100 | **Creator**: A（Timothy Kassis，MIT PhD Bioengineering，与 Regina Barzilay 合作）
+- **类型**: 178 个科研 SKILL.md（生物信息学/化学信息学/量子计算/药物发现/临床医学/金融等）
+- **亮点**: RDKit skill 展示真实化学信息学专业知识（API 演变、力场权衡、错误模式）。3 个 CI workflow（npm 发布 + Sigstore 签名 + CodeQL 安全扫描）。118 贡献者，61 个已合并外部 PR。
+- **安装**: `npx @orchestra-research/ai-research-skills` 或 plugin marketplace
+- **风险**: 内容可能部分 LLM 生成（但有专家审核），K-Dense Web 商业产品导流
+- **链接**: https://github.com/K-Dense-AI/claude-scientific-skills
+
+#### 19. mvanhorn/last30days-skill
+- **Stars**: 5,300 | **Creator**: S-（Matt Van Horn，Lyft 联合创始人，June/Weber 创始人）
+- **类型**: 1 个情报聚合 skill（10 平台：Reddit/X/Bluesky/YouTube/TikTok/Instagram/HN/Polymarket/Truth Social/Web）
+- **亮点**: 455+ 测试（32 个测试文件）。两阶段搜索架构 + 多信号相关性评分。v1→v2.9.5 快速迭代（2.5 个月）。跨 agent 支持。
+- **安装**: `/plugin install last30days@last30days-skill`
+- **风险**: 重度 API 依赖（ScrapeCreators, X auth cookies），无 CI/CD pipeline
+- **链接**: https://github.com/mvanhorn/last30days-skill
+
+#### 20. Orchestra-Research/AI-Research-SKILLs
+- **Stars**: 5,549 | **Creator**: A（Jiachen Liu, Meta Superintelligence Lab 研究员；Zechen Zhang, Harvard 物理）
+- **类型**: 86 个 AI 研究 skill（22 类别：模型架构/微调/推理/安全/分布式训练/MLOps 等）
+- **亮点**: Autoresearch 中央编排（双循环架构）。NVIDIA Inception + Vercel AI Accelerator 支持。npm 安装器。194 commits，24 PR（外部贡献者活跃）。
+- **安装**: `npx @orchestra-research/ai-research-skills`
+- **风险**: 零测试，社交媒体零讨论（与 5.5K stars 不匹配）
+- **链接**: https://github.com/Orchestra-Research/AI-Research-SKILLs
+
+#### 21. deanpeters/Product-Manager-Skills
+- **Stars**: 2,400 | **Creator**: B+（Dean Peters，20 年 PM 经验，Productside 首席顾问）
+- **类型**: 46 个 PM skill + 6 个工作流命令（用户故事/PRD/定位声明/JTBD/机会方案树等）
+- **亮点**: 覆盖 Teresa Torres、Amazon Working Backwards、Geoffrey Moore 等 PM 方法论。ABC（Always Be Coaching）教学理念。跨 14 个 agent 平台文档。验证脚本。
+- **安装**: `npx skills add deanpeters/Product-Manager-Skills`
+- **风险**: CC BY-NC-SA 非商用许可证。内容可能部分 AI 生成。单人项目。
+- **链接**: https://github.com/deanpeters/Product-Manager-Skills
+
+### Tier 3 — 观望 / 不推荐
+
+#### 22. wshobson/agents
+- **Stars**: 32,176 | **Creator**: B+（Seth Hobson，Senior AI Engineer）
+- **类型**: 72 个 plugin marketplace（112 agents, 146 skills, markdown-only）
+- **结论**: **观望**。零测试，用户反馈 agents "too broad, very generic"（Discussion #42）。8 个月 32K stars 但本质是 markdown prompt 集合。"79 tools" 实际只有 2 个文件。
+- **链接**: https://github.com/wshobson/agents
+
+#### 23. VoltAgent/awesome-claude-code-subagents
+- **Stars**: 15,000 | **Creator**: B（Necati Ozmen，Refine.dev 前 Growth Lead）
+- **类型**: 127 个 subagent markdown 定义
+- **结论**: **观望**。VoltAgent 是 "awesome-list 工厂"（6 个 awesome repos 共 73K stars），增长黑客模式。零测试零验证，6 周历史。用户反映 subagent "比单个 Claude 更蠢"。
+- **链接**: https://github.com/VoltAgent/awesome-claude-code-subagents
+
+### 红旗 — 已排除（第三轮）
+
+| Repo | Stars | 排除原因 |
+|------|------:|----------|
+| nextlevelbuilder/ui-ux-pro-max-skill | ~49,700 | **Star inflation 红旗**：4 个月从 0 到 50K，3 周内暴涨 20K。org 仅 404 followers。零测试。V2EX 用户负面评价（"死板缺设计感"）。Creator 运营 GoClaw/SkillX 自引流生态。实际有机 stars 估计 5K-8K。 |
+| ruvnet/Claude-Flow (ruflo) | 24,900 | **Star 注水嫌疑**：98.8% 单人 commit（5,875/5,947），另一个 repo RuView 41K stars 同样无外部贡献。"Unicorn Breeder" 营销导向。scope inflation（号称 1300+ 测试实际 8 个文件）。 |
+| contains-studio/agents | 12,350 | **弃置项目**：单日 10 commits 后 8 个月零更新。无 license。不符合 Claude Code 规范（自认 Issue #19）。纯 markdown prompt 模板。 |
 
 ---
 
@@ -233,6 +337,12 @@
 | 第一轮通过录取 | 12（Tier 1-3） |
 | 第一轮红旗排除 | 4 |
 | 第二轮新发现 | 16 repos（Anthropic 2 + 博客 6 + HN/Reddit 5 + V2EX 3） |
-| 通过 Stars 门槛的高优先候选 | 14 |
+| **第三轮深度调研** | **14 repos** |
+| **第三轮通过录取** | **9（Tier 1: 3, Tier 2: 6）** |
+| **第三轮观望** | **2（wshobson, VoltAgent）** |
+| **第三轮红旗排除** | **3（ui-ux-pro-max, Claude-Flow, contains-studio）** |
+| 通过 Stars 门槛的高优先候选 | 14 → 全部完成调研 |
 | 从 awesome 列表挖出的新候选 | 68+ |
-| 可安装的独立 skills 总量 | ~2,000+（去重后估计） |
+| 可安装的独立 skills 总量 | ~2,500+（去重后估计） |
+| **累计录取 repos** | **21（第一轮 12 + 第三轮 9）** |
+| **累计红旗排除** | **7（第一轮 4 + 第三轮 3）** |
