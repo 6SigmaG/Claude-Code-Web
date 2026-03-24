@@ -179,6 +179,11 @@ gh api repos/{owner}/{repo} --jq '{
 | **例外**: Creator S/S- tier | >= 500 | 大佬新项目可以放宽 |
 
 年龄计算：`created_at` 到今天的月数。
+当 `gh api` 不可用时（WebFetch fallback），GitHub 页面通常不直接显示 `created_at`。
+**Fallback 年龄推算方法**：
+1. 首选：WebFetch repo 页面，查找 "XX commits" 链接中最早的 commit 日期
+2. 次选：WebFetch `https://github.com/{owner}/{repo}/commits?after=` 页面底部的最早日期
+3. 兜底：根据 Stars / Forks 比例和 README 中提到的日期做粗估，标注 "~X月（估）"
 
 Creator Tier 判断：检查 repo owner 是否在以下列表中：
 - **S-tier**: anthropics, obra, antfu, hashicorp
