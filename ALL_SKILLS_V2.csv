@@ -1,0 +1,524 @@
+﻿序号,名称,仓库/链接,Stars,安装量(skills.sh),层级/Tier,来源文件,备注
+1,Superpowers,obra/superpowers-marketplace,48000+,无,Tier 1,Claude Code Skills 发现与验证.md,"TDD编排器,纯Markdown"
+2,Frontend Design,anthropics/skills (frontend-design),87000+(仓库整体),无,Tier 1,Claude Code Skills 发现与验证.md,官方视觉重构规范
+3,Vercel Web Design Guidelines,vercel-labs/agent-skills (web-design-guidelines),无,无,Tier 1,Claude Code Skills 发现与验证.md,前端工程底线审计
+4,Claude Office Skills,tfriedel/claude-office-skills,无,无,Tier 1,Claude Code Skills 发现与验证.md,本地化企业文档引擎DOCX/PPTX/PDF
+5,Trail of Bits: Insecure Defaults,trailofbits/skills-curated (insecure-defaults),无,无,Tier 1,Claude Code Skills 发现与验证.md,静默安全守护者
+6,Session Handoff Manager,mcpmarket.com/tools/skills/session-handoff-manager-3,85+,无,Tier 1,Claude Code Skills 发现与验证.md,上下文交接协议
+7,Cold Email Writer,mcpmarket.com/tools/skills/cold-email-writer,13892,无,Tier 2,Claude Code Skills 发现与验证.md,冷邮件写作
+8,OpenClaw Email Deliverability,faahim-openclaw-skills-email-deliverability (LobeHub),无,无,Tier 2,Claude Code Skills 发现与验证.md,邮件到达率技能
+9,Global Trade Data,dvorkinguy/claude-skills-agents-global-trade-data,无,无,Tier 2,Claude Code Skills 发现与验证.md,全球贸易数据
+10,CSV Data Analyst,mcpmarket.com/tools/skills/csv-data-analyst,无,无,Tier 2,Claude Code Skills 发现与验证.md,CSV数据分析
+11,Composio Apollo Automation,composiohq/awesome-claude-skills (apollo-automation),46956(composiohq),无,Tier 2,Claude Code Skills 发现与验证.md,Apollo CRM自动化
+12,DuckDB Skills,duckdb/duckdb-skills,无,无,Tier 4,Claude Code Skills 发现与验证.md,DuckDB数据分析
+13,Trade Law,juraxis/trade-law,无,无,Tier 4,Claude Code Skills 发现与验证.md,贸易法律
+14,Denser Retriever,denser-org/claude-skills,无,无,Tier 4,Claude Code Skills 发现与验证.md,密集检索
+15,ASO Automation Subagents,alirezarezvani/claude-code-aso-skill,无,无,Tier 4,Claude Code Skills 发现与验证.md,ASO自动化子代理
+16,Agentic Actions Auditor,trailofbits/skills (Agentic Actions Auditor),无,无,Tier 4,Claude Code Skills 发现与验证.md,代理行为审计
+17,gstack,garrytan/gstack,无,无,基线参考,Claude Code Skills 发现与验证.md,28个内置skills基线
+18,travisvn/awesome-claude-skills,travisvn/awesome-claude-skills,无,无,聚合列表,Claude Code Skills 发现与验证.md,
+19,hesreallyhim/awesome-claude-code,hesreallyhim/awesome-claude-code,无,无,聚合列表,Claude Code Skills 发现与验证.md,
+20,PipedreamHQ/awesome-mcp-servers,PipedreamHQ/awesome-mcp-servers,无,无,聚合列表,Claude Code Skills 发现与验证.md,
+21,awesome-claude-skills-gist,gist.github.com/karozi/902558b7952d9b0e14cd7d9326245624,无,无,聚合列表,Claude Code Skills 发现与验证.md,Gist聚合
+22,abubakarsiddik31/claude-skills-collection,abubakarsiddik31/claude-skills-collection,无,无,附录提及,Claude Code Skills 发现与验证.md,
+23,CosmoBlk/email-marketing-bible,CosmoBlk/email-marketing-bible,无,无,附录提及,Claude Code Skills 发现与验证.md,
+24,customs-trade-compliance,affaan-m-everything-claude-code-customs-trade-compliance (LobeHub),无,无,附录提及,Claude Code Skills 发现与验证.md,
+25,Handoff Document Generator (billbuchanan),billbuchanan-code-claude-code-power-setup-handoff (LobeHub),无,无,附录提及,Claude Code Skills 发现与验证.md,
+26,Claude Code handoff skill (edwilde),gist.github.com/edwilde/cb2bf5f8851ea1d79ddc19995eec8b5b,无,无,附录提及,Claude Code Skills 发现与验证.md,
+27,trailofbits/claude-code-config,trailofbits/claude-code-config,无,无,附录提及,Claude Code Skills 发现与验证.md,
+28,vercel-labs/vercel-skills,vercel-labs/vercel-skills,无,无,附录提及,Claude Code Skills 发现与验证.md,
+29,vercel-labs/web-interface-guidelines,vercel-labs/web-interface-guidelines,无,无,附录提及,Claude Code Skills 发现与验证.md,
+30,vercel-labs/skills (npx skills),vercel-labs/skills,无,无,附录提及,Claude Code Skills 发现与验证.md,skills.sh底层工具
+31,Trail of Bits Security Skills,https://github.com/trailofbits/skills,1800+,无,Tier 1,claude_code_skills_report.md,20+安全技能集
+32,Anthropic frontend-design,https://github.com/anthropics/skills/tree/main/skills/frontend-design,65000+,无,Tier 1,claude_code_skills_report.md,
+33,Anthropic Document Skills (docx/pdf/pptx/xlsx),https://github.com/anthropics/skills,65000+,无,Tier 1,claude_code_skills_report.md,
+34,obra/superpowers,https://github.com/obra/superpowers,50000+,无,Tier 1,claude_code_skills_report.md,
+35,hanfang/claude-memory-skill,https://github.com/hanfang/claude-memory-skill,500+,无,Tier 1,claude_code_skills_report.md,
+36,Web Scraper Data Processor,mcpmarket.com/tools/skills/web-scraper-data-processor,20,无,Tier 1,claude_code_skills_report.md,
+37,alirezarezvani/claude-skills,https://github.com/alirezarezvani/claude-skills,5200+,无,Tier 1,claude_code_skills_report.md,"192技能集,含security-auditor/self-improving-agent/cold-email/data-cleaning"
+38,Playwright Web Testing (anthropics/webapp-testing),https://github.com/anthropics/skills/tree/main/skills/webapp-testing,65000+,无,Tier 2,claude_code_skills_report.md,
+39,lackeyjb/playwright-skill,https://github.com/lackeyjb/playwright-skill,100+,无,Tier 2,claude_code_skills_report.md,
+40,TDD Skill (MCP Market),mcpmarket.com/tools/skills/test-driven-development-7,2,无,Tier 2,claude_code_skills_report.md,
+41,Email Systems Engineering,mcpmarket.com/tools/skills/email-systems-engineering-3,0,无,Tier 2,claude_code_skills_report.md,
+42,B2B Cold Email Prospecting,mcpmarket.com/tools/skills/b2b-cold-email-prospecting,1,无,Tier 2,claude_code_skills_report.md,
+43,yfe404/web-scraper,https://github.com/yfe404/web-scraper,50+,无,Tier 2,claude_code_skills_report.md,
+44,Firecrawl Claude Code Skill,https://github.com/bexgboost/firecrawl-claude-code-skill,200+,无,Tier 2,claude_code_skills_report.md,
+45,crawl4ai-skill,https://github.com/brettdavies/crawl4ai-skill,100+,无,Tier 2,claude_code_skills_report.md,
+46,coreyhaines31/marketingskills,https://github.com/coreyhaines31/marketingskills,300+,无,Tier 2,claude_code_skills_report.md,
+47,Leonxlnx/taste-skill,Leonxlnx/taste-skill,<50,无,Tier 4,claude_code_skills_report.md,
+48,alirezarezvani/skill-security-auditor,alirezarezvani/claude-skills子技能,5200+,无,Tier 4,claude_code_skills_report.md,
+49,alirezarezvani/self-improving-agent,alirezarezvani/claude-skills子技能,5200+,无,Tier 4,claude_code_skills_report.md,
+50,alirezarezvani/playwright-pro,alirezarezvani/claude-skills子技能,5200+,无,Tier 4,claude_code_skills_report.md,
+51,Sharan0516/claude-skill-web-scraper,Sharan0516/claude-skill-web-scraper,<50,无,Tier 4,claude_code_skills_report.md,
+52,kreuzberg-dev/kreuzberg,kreuzberg-dev/kreuzberg,200+,无,Tier 4,claude_code_skills_report.md,
+53,NeoLabHQ/write-concisely,NeoLabHQ/write-concisely,<50,无,Tier 4,claude_code_skills_report.md,
+54,PSPDFKit-labs/nutrient-agent-skill,PSPDFKit-labs/nutrient-agent-skill,100+,无,Tier 4,claude_code_skills_report.md,
+55,op7418/Youtube-clipper-skill,op7418/Youtube-clipper-skill,<50,无,Tier 4,claude_code_skills_report.md,
+56,EveryInc/charlie-cfo-skill,EveryInc/charlie-cfo-skill,<50,无,Tier 4,claude_code_skills_report.md,
+57,rameerez/claude-code-startup-skills,rameerez/claude-code-startup-skills,<50,无,Tier 4,claude_code_skills_report.md,
+58,zscole/model-hierarchy-skill,zscole/model-hierarchy-skill,<50,无,Tier 4,claude_code_skills_report.md,
+59,CloudAI-X/threejs-skills,CloudAI-X/threejs-skills,<50,无,Tier 4,claude_code_skills_report.md,
+60,ognjengt/founder-skills,ognjengt/founder-skills,<50,无,Tier 4,claude_code_skills_report.md,
+61,VoltAgent/awesome-agent-skills,https://github.com/VoltAgent/awesome-agent-skills,无,无,聚合列表,claude_code_skills_report.md,
+62,vercel-react-best-practices,https://github.com/vercel-labs/agent-skills,23.8K,周均244.6K,Tier 1,deep-research-report (1).md,skills.sh #2
+63,web-design-guidelines,https://github.com/vercel-labs/agent-skills,23.8K,周均196.0K,Tier 1,deep-research-report (1).md,Snyk Warn
+64,tailwind-design-system,https://github.com/wshobson/agents,32.2K,周均23.6K,Tier 1,deep-research-report (1).md,Tailwind v4 OKLCH tokens
+65,theme-factory,https://github.com/anthropics/skills,102.0K,周均18.6K,Tier 1,deep-research-report (1).md,
+66,brand-guidelines,https://github.com/anthropics/skills,102.0K,周均17.4K,Tier 1,deep-research-report (1).md,
+67,doc-coauthoring,https://github.com/anthropics/skills,102.0K,周均18.7K,Tier 1,deep-research-report (1).md,
+68,cold-email (coreyhaines31),https://github.com/coreyhaines31/marketingskills,15.9K,周均15.6K,Tier 2,deep-research-report (1).md,
+69,copywriting (coreyhaines31),https://github.com/coreyhaines31/marketingskills,~16K,周均46.4K,Tier 2,deep-research-report (1).md,
+70,data-analysis,https://github.com/supercent-io/skills-template,88,周均13.8K,Tier 2/4,deep-research-report (1).md,
+71,find-skills,https://github.com/vercel-labs/skills,11.6K,周均702.0K,Tier 2/4,deep-research-report (1).md,skills.sh底层
+72,skill-creator,https://github.com/anthropics/skills,102.0K,周均105.0K,Tier 2,deep-research-report (1).md,
+73,webhook-receiver-hardener,https://github.com/patricio0312rev/skills,20,周均38,Tier 4,deep-research-report (1).md,
+74,better-auth-best-practices,https://github.com/better-auth/skills,162,周均27.4K,Tier 4,deep-research-report (1).md,
+75,typeset (pbakaus/impeccable),https://github.com/pbakaus/impeccable,13.0K,周均12.0K,Tier 4,deep-research-report (1).md,
+76,Anthropic frontend-design,anthropics/skills → skills/frontend-design/,101K,193400,Tier 1,compass_artifact_wf-3abdf.md,skills.sh #4
+77,nextlevelbuilder/ui-ux-pro-max-skill,https://github.com/nextlevelbuilder/ui-ux-pro-max-skill,49700,78700,Tier 1,compass_artifact_wf-3abdf.md,
+78,shadcn/ui skills,https://ui.shadcn.com/docs/skills,无,39000,Tier 1,compass_artifact_wf-3abdf.md,
+79,Vercel react-best-practices,vercel-labs/agent-skills,19500,241900(#2),Tier 1,compass_artifact_wf-3abdf.md,
+80,Anthropic docx,anthropics/skills → skills/docx/,101K,38200,Tier 1,compass_artifact_wf-3abdf.md,
+81,Anthropic pdf,anthropics/skills → skills/pdf/,101K,48500,Tier 1,compass_artifact_wf-3abdf.md,
+82,Anthropic pptx,anthropics/skills → skills/pptx/,101K,44400,Tier 1,compass_artifact_wf-3abdf.md,
+83,Anthropic xlsx,anthropics/skills → skills/xlsx/,101K,无(未列入Top80),Tier 1,compass_artifact_wf-3abdf.md,
+84,BehiSecc/VibeSec-Skill,https://github.com/BehiSecc/VibeSec-Skill,716,无,Tier 1,compass_artifact_wf-3abdf.md,
+85,obra/superpowers（整体）,https://github.com/obra/superpowers,108000,无,Tier 1,compass_artifact_wf-3abdf.md,
+86,obra/superpowers — test-driven-development,obra/superpowers,108000,32400,Tier 1,compass_artifact_wf-3abdf.md,
+87,obra/superpowers — subagent-driven-development,obra/superpowers,108000,无,Tier 1,compass_artifact_wf-3abdf.md,
+88,obra/superpowers — using-git-worktrees,obra/superpowers,108000,无,Tier 1,compass_artifact_wf-3abdf.md,
+89,obra/superpowers — dispatching-parallel-agents,obra/superpowers,108000,无,Tier 1,compass_artifact_wf-3abdf.md,
+90,obra/superpowers — brainstorming,obra/superpowers,108000,无,Tier 1(与gstack重叠),compass_artifact_wf-3abdf.md,
+91,obra/superpowers — writing-plans,obra/superpowers,108000,无,Tier 1(与gstack重叠),compass_artifact_wf-3abdf.md,
+92,obra/superpowers — systematic-debugging,obra/superpowers,108000,无,Tier 1(与gstack重叠),compass_artifact_wf-3abdf.md,
+93,coreyhaines31/marketingskills（整体）,https://github.com/coreyhaines31/marketingskills,16100,SEO52800/copy45400,Tier 2,compass_artifact_wf-3abdf.md,
+94,coreyhaines31 — cold-email,coreyhaines31/marketingskills,16100,无,Tier 2,compass_artifact_wf-3abdf.md,
+95,coreyhaines31 — email-sequence,coreyhaines31/marketingskills,16100,无,Tier 2,compass_artifact_wf-3abdf.md,
+96,coreyhaines31 — copywriting,coreyhaines31/marketingskills,16100,45400,Tier 2,compass_artifact_wf-3abdf.md,
+97,coreyhaines31 — seo-audit,coreyhaines31/marketingskills,16100,52800,Tier 2,compass_artifact_wf-3abdf.md,
+98,coreyhaines31 — page-cro,coreyhaines31/marketingskills,16100,无,Tier 2,compass_artifact_wf-3abdf.md,
+99,coreyhaines31 — product-marketing-context,coreyhaines31/marketingskills,16100,无,Tier 2,compass_artifact_wf-3abdf.md,
+100,Vercel web-design-guidelines,vercel-labs/agent-skills,19500,194000(#3),Tier 2,compass_artifact_wf-3abdf.md,
+101,duckdb/duckdb-skills（官方）,https://github.com/duckdb/duckdb-skills,无,无,Tier 2,compass_artifact_wf-3abdf.md,
+102,duckdb/duckdb-skills — read-file,duckdb/duckdb-skills,无,无,Tier 2(子技能),compass_artifact_wf-3abdf.md,
+103,duckdb/duckdb-skills — query,duckdb/duckdb-skills,无,无,Tier 2(子技能),compass_artifact_wf-3abdf.md,
+104,CosmoBlk/email-marketing-bible,https://github.com/CosmoBlk/email-marketing-bible,无,无,Tier 2,compass_artifact_wf-3abdf.md,
+105,muratcankoylan/Agent-Skills-for-Context-Engineering,https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering,12900,无,Tier 2,compass_artifact_wf-3abdf.md,
+106,muratcankoylan — context-compression,muratcankoylan/Agent-Skills-for-Context-Engineering,12900,无,Tier 2(子技能),compass_artifact_wf-3abdf.md,
+107,muratcankoylan — context-optimization,muratcankoylan/Agent-Skills-for-Context-Engineering,12900,无,Tier 2(子技能),compass_artifact_wf-3abdf.md,
+108,muratcankoylan — memory-systems,muratcankoylan/Agent-Skills-for-Context-Engineering,12900,无,Tier 2(子技能),compass_artifact_wf-3abdf.md,
+109,muratcankoylan — context-degradation,muratcankoylan/Agent-Skills-for-Context-Engineering,12900,无,Tier 2(子技能),compass_artifact_wf-3abdf.md,
+110,agamm/claude-code-owasp,https://github.com/agamm/claude-code-owasp,无,无,Tier 2,compass_artifact_wf-3abdf.md,
+111,coffeefuelbump/csv-data-summarizer-claude-skill,https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill,229,无,Tier 2,compass_artifact_wf-3abdf.md,
+112,AgriciDaniel/claude-email,https://github.com/AgriciDaniel/claude-email,0,无,Tier 4,compass_artifact_wf-3abdf.md,
+113,ckelsoe/prompt-architect,https://github.com/ckelsoe/claude-skill-prompt-architect,无,无,Tier 4,compass_artifact_wf-3abdf.md,
+114,framix-team/skill-email-html-mjml,https://github.com/framix-team/skill-email-html-mjml,无,无,Tier 4,compass_artifact_wf-3abdf.md,
+115,hanfang/claude-memory-skill,VoltAgent列表引用,无,无,Tier 4,compass_artifact_wf-3abdf.md,
+116,superamped/ai-marketing-skills,https://github.com/superamped/ai-marketing-skills,无,无,Tier 4,compass_artifact_wf-3abdf.md,
+117,richard-gyiko/data-wrangler-plugin,https://github.com/richard-gyiko/data-wrangler-plugin,无,无,Tier 4,compass_artifact_wf-3abdf.md,
+118,tfriedel/claude-office-skills,https://github.com/tfriedel/claude-office-skills,无,无,Tier 4,compass_artifact_wf-3abdf.md,
+119,getsentry/skills,https://github.com/getsentry/skills,67,无,Tier 4,compass_artifact_wf-3abdf.md,
+120,pbakaus/impeccable,pbakaus/impeccable,无,181000(9个skill合计),Tier 4,compass_artifact_wf-3abdf.md,
+121,hesreallyhim/awesome-claude-code,hesreallyhim/awesome-claude-code,30900,无,聚合列表,compass_artifact_wf-3abdf.md,
+122,security-review (getsentry),getsentry/skills@security-review,441,无,Tier 1,compass_artifact_wf-f30d.md,AI语义级安全审查
+123,test-driven-development (anthropic),anthropics/skills,无,无,Tier 1,compass_artifact_wf-f30d.md,TDD红绿重构
+124,frontend-design (anthropic),anthropics/skills,无,193400+,Tier 1,compass_artifact_wf-f30d.md,#3 on skills.sh
+125,React Best Practices,无,无,无,Tier 1,compass_artifact_wf-f30d.md,Waterfall消除
+126,document-skills套件(docx/pdf/pptx/xlsx),anthropics/skills,无,38200-48500,Tier 1,compass_artifact_wf-f30d.md,
+127,claude-office-skills (CLI版),https://github.com/tfriedel/claude-office-skills,无,无,Tier 1,compass_artifact_wf-f30d.md,CI/CD集成
+128,duckdb-en,无,无,无,Tier 2,compass_artifact_wf-f30d.md,10-50倍性能vs Pandas
+129,csv-data-summarizer,无,无,无,Tier 2,compass_artifact_wf-f30d.md,列级统计+相关性
+130,systematic-debugging (superpowers),superpowers@superpowers-marketplace,无,无,Tier 2,compass_artifact_wf-f30d.md,科学调试法五阶段
+131,insight-extractor,无,无,无,Tier 2,compass_artifact_wf-f30d.md,Obsidian集成
+132,owasp-security,无,无,无,Tier 2,compass_artifact_wf-f30d.md,评分14/25低于准入线
+133,ui-ux-pro-max (重复),nextlevelbuilder/ui-ux-pro-max-skill,无,78700+,Tier 1,compass_artifact_wf-f30d.md,
+134,copywriting (重复),coreyhaines31/marketingskills,无,45400,Tier 1,compass_artifact_wf-f30d.md,
+135,seo-audit (重复),coreyhaines31/marketingskills,无,52800,Tier 1,compass_artifact_wf-f30d.md,
+136,content-strategy,coreyhaines31/marketingskills,无,29600,Tier 1,compass_artifact_wf-f30d.md,
+137,marketing-psychology,coreyhaines31/marketingskills,无,32800,Tier 1,compass_artifact_wf-f30d.md,
+138,Trail of Bits安全套件(22个),trailofbits/skills,无,无,Tier 2,compass_artifact_wf-f30d.md,含static-analysis/variant-analysis等
+139,claude-code-owasp,agamm/claude-code-owasp,无,无,Tier 2,compass_artifact_wf-f30d.md,
+140,claude-code-polished-documents-skills,promptadvisers/claude-code-polished-documents-skills,无,无,Tier 2,compass_artifact_wf-f30d.md,
+141,polish (impeccable),pbakaus/impeccable,无,26700,Tier 2,compass_artifact_wf-f30d.md,
+142,critique (impeccable),pbakaus/impeccable,无,26200,Tier 2,compass_artifact_wf-f30d.md,
+143,frontend-design (impeccable版),pbakaus/impeccable,无,27400,Tier 2,compass_artifact_wf-f30d.md,
+144,shadcn/ui官方skill,ui.shadcn.com/docs/skills,无,39000+,Tier 2,compass_artifact_wf-f30d.md,
+145,webapp-testing (anthropic),anthropics/skills,无,31600+,Tier 2,compass_artifact_wf-f30d.md,
+146,Email Marketing Bible,emailmarketingskill.com,无,无,Tier 4,compass_artifact_wf-f30d.md,
+147,Composio CRM自动化,Composio (Rube MCP),无,无,Tier 4,compass_artifact_wf-f30d.md,
+148,email-html-mjml,无,无,无,Tier 4,compass_artifact_wf-f30d.md,
+149,self-improving-agent (agent-playbook),charon-fan/agent-playbook,无,17100,Tier 4,compass_artifact_wf-f30d.md,
+150,web-artifacts-builder,anthropics/skills,无,18800,Tier 4,compass_artifact_wf-f30d.md,
+151,taste-skill,Leonxlnx/taste-skill,无,无,Tier 4,compass_artifact_wf-f30d.md,
+152,audit-website,squirrelscan/audit-website,无,38200,Tier 4,compass_artifact_wf-f30d.md,
+153,VoltAgent/awesome-agent-skills,VoltAgent/awesome-agent-skills,8200+,无,聚合列表,compass_artifact_wf-f30d.md,
+154,BehiSecc/awesome-claude-skills,BehiSecc/awesome-claude-skills,5600+,无,聚合列表,compass_artifact_wf-f30d.md,
+155,skill-creator (anthropic),anthropics/skills,无,无,附录,compass_artifact_wf-f30d.md,
+156,Trail of Bits Security,trailofbits/skills,无,无,Tier 1,kimi-1.txt,
+157,Anthropic frontend-design,anthropics/frontend-design,无,197200+,Tier 1,kimi-1.txt,skills.sh #3
+158,Document Processing (PDF),anthropics/skills --skill pdf,无,无,Tier 1,kimi-1.txt,
+159,vercel-react-best-practices,无,无,245200+,Tier 2,kimi-1.txt,skills.sh #2
+160,DuckDB Skills,duckdb/duckdb-skills,无,无,Tier 2,kimi-1.txt,Windows有限
+161,Apify Automation,无,无,无,Tier 2,kimi-1.txt,
+162,Context Management (mnemonic),无,无,无,Tier 2,kimi-1.txt,
+163,VibeSec,无,无,无,Tier 4,kimi-1.txt,
+164,Cybersecurity Skills,无,3700,无,Tier 4,kimi-1.txt,
+165,Data Wrangler,无,无,无,Tier 4,kimi-1.txt,
+166,Data Cleaner,无,无,无,Tier 4,kimi-1.txt,
+167,GTM Agents,无,无,无,Tier 4,kimi-1.txt,92 agents + 52 skills
+168,revops,无,无,无,Tier 4,kimi-1.txt,
+169,Claude Code Rules,无,无,无,Tier 4,kimi-1.txt,
+170,Session Management,无,无,无,Tier 4,kimi-1.txt,
+171,Debugging Workflow,无,无,无,Tier 4,kimi-1.txt,
+172,SyncGTM,无,无,无,Tier 3(B2B组件),kimi-1.txt,
+173,HS Code Classifier（自建规划）,无(自建),无,无,自建路线图,kimi-1.txt,
+174,Apify-Windows Bridge（自建规划）,无(自建),无,无,自建路线图,kimi-1.txt,
+175,B2B Compliance Guard（自建规划）,无(自建),无,无,自建路线图,kimi-1.txt,
+176,getsentry/skills@security-review,getsentry/skills,441,无,Tier 1,kimi-2.txt,评分18/25
+177,test-driven-development (anthropic),example-skills@anthropic-agent-skills,无,无,Tier 1,kimi-2.txt,评分17/25
+178,frontend-design (anthropic),anthropics/skills,无,无,Tier 1,kimi-2.txt,评分19/25
+179,React Best Practices,无,无,无,Tier 1,kimi-2.txt,评分16/25
+180,document-skills套件,document-skills@anthropic-agent-skills,无,无,Tier 1,kimi-2.txt,评分18/25
+181,claude-office-skills (tfriedel),https://github.com/tfriedel/claude-office-skills,无,无,Tier 1,kimi-2.txt,评分16/25
+182,duckdb-en,无,无,无,Tier 2,kimi-2.txt,评分17/25
+183,csv-data-summarizer,无,无,无,Tier 2,kimi-2.txt,评分15/25
+184,systematic-debugging (superpowers),superpowers@superpowers-marketplace,无,无,Tier 2,kimi-2.txt,评分16/25
+185,insight-extractor,无,无,无,Tier 2,kimi-2.txt,"评分15/25,Obsidian集成"
+186,owasp-security,无,无,无,Tier 2,kimi-2.txt,评分14/25低于准入线
+187,mcp-builder,无,<200,无,Tier 4,kimi-2.txt,MCP服务器开发
+188,feishu-card,无,无,无,Tier 4,kimi-2.txt,飞书卡片自动化
+189,ffmpeg-usage,无,无,无,Tier 4,kimi-2.txt,音视频处理
+190,Trail of Bits套件(详细),无,无,无,Tier 4,kimi-2.txt,"CodeQL/Semgrep集成,需外部API"
+191,VibeSec-Skill,无,无,无,Tier 4,kimi-2.txt,漏洞猎人视角
+192,linkedin,无,无,无,已排除,kimi-2.txt,"违反安全红线,依赖付费API"
+193,Mapping-Skill,无,无,无,参考,kimi-2.txt,AI/ML人才搜索
+194,webapp-testing,无,无,无,替代方案提及,kimi-2.txt,
+195,test-fixing,无,无,无,一笔带过,kimi-2.txt,与systematic-debugging联动
+196,travisvn/awesome-claude-skills,travisvn/awesome-claude-skills,7500+,无,聚合列表,kimi-2.txt,
+197,hesreallyhim/awesome-claude-code,hesreallyhim/awesome-claude-code,8900+,无,聚合列表,kimi-2.txt,
+198,ComposioHQ/awesome-claude-skills,ComposioHQ/awesome-claude-skills,无,无,聚合列表,kimi-2.txt,78个Skills
+199,HS Code智能分类助手（自建）,无(自建),无,无,自建路线图P2,kimi-2.txt,
+200,Cold Email Deliverability诊断仪（自建）,无(自建),无,无,自建路线图P1,kimi-2.txt,
+201,Apify→Claude数据流水线（自建）,无(自建),无,无,自建路线图P0,kimi-2.txt,
+202,security-review (getsentry),getsentry/skills@security-review,无,无,Tier 1,kimi-3.txt,
+203,frontend-design (anthropic),anthropics/frontend-design,65000+,无,Tier 1,kimi-3.txt,
+204,docx (anthropic),anthropics/docx,无,无,Tier 1,kimi-3.txt,
+205,pdf (anthropic),anthropics/pdf,无,无,Tier 1,kimi-3.txt,
+206,DuckDB数据处理,无,无,无,Tier 2,kimi-3.txt,
+207,Session与Context管理,无,无,无,Tier 2,kimi-3.txt,
+208,prompt-security/clawsec,prompt-security/clawsec,无,无,Tier 4,kimi-3.txt,
+209,BehiSecc/vibesec,BehiSecc/vibesec,无,无,Tier 4,kimi-3.txt,
+210,skill-security-auditor,无(仅提及),无,无,Tier 4,kimi-3.txt,
+211,env-secrets-manager,无(仅提及),无,无,Tier 4,kimi-3.txt,
+212,alirezarezvani/claude-skills,alirezarezvani/claude-skills,无,无,聚合列表,kimi-3.txt,
+213,B2B Cold Email Pipeline Orchestrator（自建）,无(自建),无,无,自建路线图,kimi-3.txt,
+214,Precious Metal Trade Data Analyzer（自建）,无(自建),无,无,自建路线图,kimi-3.txt,
+215,Deliverability Guardian（自建）,无(自建),无,无,自建路线图,kimi-3.txt,
+216,NeoLabHQ/code-review,NeoLabHQ/context-engineering-kit,800+,无,Tier 1,claude_code_skills_report.html,
+217,anthropics/skill-creator,anthropics/claude-code,无,105K+,Tier 1,claude_code_skills_report.html,skills.sh #38
+218,anthropics/pdf,anthropics/claude-code,无,49.7K+,Tier 2,claude_code_skills_report.html,skills.sh #68
+219,anthropics/xlsx,anthropics/claude-code,无,35.7K+,Tier 2,claude_code_skills_report.html,skills.sh #81
+220,anthropics/pptx,anthropics/claude-code,无,45.4K+,Tier 2,claude_code_skills_report.html,skills.sh #74
+221,trailofbits/skills,trailofbits/skills,1.8K,无,Tier 2,claude_code_skills_report.html,
+222,Leonxlnx/taste-skill,Leonxlnx/taste-skill,500+,无,Tier 2/4,claude_code_skills_report.html,
+223,AgriciDaniel/claude-email,AgriciDaniel/claude-email,300+,无,Tier 2,claude_code_skills_report.html,
+224,data-cleaning-pipeline,MCP Market,无,无,Tier 2,claude_code_skills_report.html,
+225,alirezarezvani/claude-skills (cold-email子技能),alirezarezvani/claude-skills,500+,无,Tier 2,claude_code_skills_report.html,
+226,trailofbits/static-analysis,trailofbits/skills,1.8K,无,Tier 3(方案C),claude_code_skills_report.html,
+227,trailofbits/sharp-edges,trailofbits/skills,1.8K,无,Tier 3(方案C),claude_code_skills_report.html,
+228,Shannon (unicodeveloper),unicodeveloper/shannon,500+,无,Tier 4,claude_code_skills_report.html,
+229,browser-use,无,55700,无,Tier 4,claude_code_skills_report.html,
+230,supermemoryai/supermemory,supermemoryai/supermemory,16700,无,Tier 4,claude_code_skills_report.html,
+231,testdino-hq/playwright-skill,testdino-hq/playwright-skill,300+,无,Tier 4,claude_code_skills_report.html,
+232,agentskill.sh /learn,https://agentskill.sh,无,无,Tier 4,claude_code_skills_report.html,100K+ skills目录平台
+233,travisvn/awesome-claude-skills,travisvn/awesome-claude-skills,9700,无,聚合列表,claude_code_skills_report.html,
+234,hesreallyhim/awesome-claude-code,hesreallyhim/awesome-claude-code,13200,无,聚合列表,claude_code_skills_report.html,
+235,VoltAgent/awesome-agent-skills,VoltAgent/awesome-agent-skills,700+,无,聚合列表,claude_code_skills_report.html,
+236,ComposioHQ/awesome-claude-skills,ComposioHQ/awesome-claude-skills,200+,无,聚合列表,claude_code_skills_report.html,
+237,anthropics/skills(官方),anthropics/skills,37500,无,官方渠道,claude_code_skills_report.html,
+238,scriptbyai.com/claude-code-resource-list,https://scriptbyai.com/claude-code-resource-list,无,无,聚合列表,claude_code_skills_report.html,
+239,affaan-m/everything-claude-code,https://github.com/affaan-m/everything-claude-code,105946,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"The agent harness performance optimization system. Skills, instincts, memory, se"
+240,nextlevelbuilder/ui-ux-pro-max-skill,https://github.com/nextlevelbuilder/ui-ux-pro-max-skill,50085,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,An AI SKILL that provide design intelligence for building professional UI/UX mul
+241,ComposioHQ/awesome-claude-skills,https://github.com/ComposioHQ/awesome-claude-skills,47693,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"A curated list of awesome Claude Skills, resources, and tools for customizing Cl"
+242,code-yeongyu/oh-my-openagent,https://github.com/code-yeongyu/oh-my-openagent,43290,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,omo; the best agent harness - previously oh-my-opencode
+243,CherryHQ/cherry-studio,https://github.com/CherryHQ/cherry-studio,42276,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"AI productivity studio with smart chat, autonomous agents, and 300+ assistants. "
+244,VoltAgent/awesome-openclaw-skills,https://github.com/VoltAgent/awesome-openclaw-skills,41756,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorize"
+245,gsd-build/get-shit-done,https://github.com/gsd-build/get-shit-done,41081,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"A light-weight and powerful meta-prompting, context engineering and spec-driven "
+246,thedotmack/claude-mem,https://github.com/thedotmack/claude-mem,40364,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,A Claude Code plugin that automatically captures everything Claude does during y
+247,shareAI-lab/learn-claude-code,https://github.com/shareAI-lab/learn-claude-code,38399,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to"
+248,farion1231/cc-switch,https://github.com/farion1231/cc-switch,33124,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"A cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenC"
+249,wshobson/agents,https://github.com/wshobson/agents,32212,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Intelligent automation and multi-agent orchestration for Claude Code
+250,hesreallyhim/awesome-claude-code,https://github.com/hesreallyhim/awesome-claude-code,32150,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"A curated list of awesome skills, hooks, slash-commands, agent orchestrators, ap"
+251,sickn33/antigravity-awesome-skills,https://github.com/sickn33/antigravity-awesome-skills,27212,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Installable GitHub library of 1,304+ agentic skills for Claude Code, Cursor, Cod"
+252,github/awesome-copilot,https://github.com/github/awesome-copilot,26922,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Community-contributed instructions, agents, skills, and configurations to help y"
+253,ruvnet/ruflo,https://github.com/ruvnet/ruflo,25422,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-
+254,qwibitai/nanoclaw,https://github.com/qwibitai/nanoclaw,25359,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,A lightweight alternative to OpenClaw that runs in containers for security. Conn
+255,vercel-labs/agent-skills,https://github.com/vercel-labs/agent-skills,23787,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Vercel's official collection of agent skills
+256,davila7/claude-code-templates,https://github.com/davila7/claude-code-templates,23534,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,CLI tool for configuring and monitoring Claude Code
+257,googleworkspace/cli,https://github.com/googleworkspace/cli,22451,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets,"
+258,oraios/serena,https://github.com/oraios/serena,22045,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,A powerful coding agent toolkit providing semantic retrieval and editing capabil
+259,shanraisshan/claude-code-best-practice,https://github.com/shanraisshan/claude-code-best-practice,21761,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,practice made claude perfect
+260,winfunc/opcode,https://github.com/winfunc/opcode,21091,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"A powerful GUI app and Toolkit for Claude Code - Create custom agents, manage in"
+261,iOfficeAI/AionUi,https://github.com/iOfficeAI/AionUi,20041,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Free, local, open-source 24/7 Cowork app and OpenClaw for Gemini CLI, Claude Cod"
+262,router-for-me/CLIProxyAPI,https://github.com/router-for-me/CLIProxyAPI,19948,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Wrap Gemini CLI, Antigravity, ChatGPT Codex, Claude Code, Qwen Code, iFlow as an"
+263,steveyegge/beads,https://github.com/steveyegge/beads,19663,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Beads - A memory upgrade for your coding agent
+264,OthmanAdi/planning-with-files,https://github.com/OthmanAdi/planning-with-files,17139,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Claude Code skill implementing Manus-style persistent markdown planning — the wo
+265,kepano/obsidian-skills,https://github.com/kepano/obsidian-skills,16908,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Agent skills for Obsidian. Teach your agent to use Markdown, Bases, JSON Canvas,"
+266,K-Dense-AI/claude-scientific-skills,https://github.com/K-Dense-AI/claude-scientific-skills,16148,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"A set of ready to use Agent Skills for research, science, engineering, analysis,"
+267,slopus/happy,https://github.com/slopus/happy,16148,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Mobile and Web client for Codex and Claude Code, with realtime voice, encryption"
+268,VoltAgent/awesome-claude-code-subagents,https://github.com/VoltAgent/awesome-claude-code-subagents,15088,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,A collection of 100+ specialized Claude Code subagents covering a wide range of 
+269,anthropics/claude-plugins-official,https://github.com/anthropics/claude-plugins-official,14561,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Official, Anthropic-managed directory of high quality Claude Code Plugins."
+270,muratcankoylan/Agent-Skills-for-Context-Engineering,https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering,14328,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"A comprehensive collection of Agent Skills for context engineering, multi-agent "
+271,agentskills/agentskills,https://github.com/agentskills/agentskills,14131,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Specification and documentation for Agent Skills
+272,wasp-lang/open-saas,https://github.com/wasp-lang/open-saas,13643,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"A 100% free modern JS SaaS boilerplate (React, NodeJS, Prisma). Full-featured: A"
+273,eigent-ai/eigent,https://github.com/eigent-ai/eigent,13199,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Eigent: The Open Source Cowork Desktop to Unlock Your Exceptional Productivity. 
+274,rtk-ai/rtk,https://github.com/rtk-ai/rtk,12974,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. S
+275,jarrodwatts/claude-hud,https://github.com/jarrodwatts/claude-hud,12915,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"A Claude Code plugin that shows what's happening - context usage, active tools, "
+276,NousResearch/hermes-agent,https://github.com/NousResearch/hermes-agent,12829,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,The agent that grows with you
+277,VoltAgent/awesome-agent-skills,https://github.com/VoltAgent/awesome-agent-skills,12744,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Claude Code Skills and 1000+ agent skills from official dev teams and the commun
+278,vercel-labs/skills,https://github.com/vercel-labs/skills,11658,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,The open agent skills tool - npx skills
+279,JimLiu/baoyu-skills,https://github.com/JimLiu/baoyu-skills,11462,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,
+280,Yeachan-Heo/oh-my-claudecode,https://github.com/Yeachan-Heo/oh-my-claudecode,11303,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Teams-first Multi-agent orchestration for Claude Code
+281,Panniantong/Agent-Reach,https://github.com/Panniantong/Agent-Reach,10705,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddi"
+282,liyupi/ai-guide,https://github.com/liyupi/ai-guide,10250,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,程序员鱼皮的 AI 资源大全 + Vibe Coding 零基础教程，分享 OpenClaw 保姆级教程、大模型玩法（DeepSeek / GPT / Gemi
+283,manaflow-ai/cmux,https://github.com/manaflow-ai/cmux,10231,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Ghostty-based macOS terminal with vertical tabs and notifications for AI coding 
+284,Wei-Shaw/claude-relay-service,https://github.com/Wei-Shaw/claude-relay-service,10064,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,CRS-自建Claude Code镜像，一站式开源中转服务，让 Claude、OpenAI、Gemini、Droid 订阅统一接入，支持拼车共享，更高效分摊成本
+285,humanlayer/humanlayer,https://github.com/humanlayer/humanlayer,10002,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,The best way to get AI coding agents to solve hard problems in complex codebases
+286,aden-hive/hive,https://github.com/aden-hive/hive,9809,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Outcome driven agent development framework that evolves
+287,travisvn/awesome-claude-skills,https://github.com/travisvn/awesome-claude-skills,9706,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"A curated list of awesome Claude Skills, resources, and tools for customizing Cl"
+288,mcp-use/mcp-use,https://github.com/mcp-use/mcp-use,9484,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Serve
+289,rowboatlabs/rowboat,https://github.com/rowboatlabs/rowboat,9326,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Open-source AI coworker, with memory"
+290,steipete/CodexBar,https://github.com/steipete/CodexBar,9287,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Show usage stats for OpenAI Codex and Claude Code, without having to login."
+291,xonsh/xonsh,https://github.com/xonsh/xonsh,9260,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"🐚 Python-powered shell. Full-featured, cross-platform and AI-friendly."
+292,siteboon/claudecodeui,https://github.com/siteboon/claudecodeui,8903,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Use Claude Code, Cursor CLI or Codex on mobile and web with CloudCLI (aka Claude"
+293,Wei-Shaw/sub2api,https://github.com/Wei-Shaw/sub2api,8339,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Sub2API-CRS2 一站式开源中转服务，让 Claude、Openai 、Gemini、Antigravity订阅统一接入，支持拼车共享，更高效分摊成本，
+294,frankbria/ralph-claude-code,https://github.com/frankbria/ralph-claude-code,8165,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Autonomous AI development loop for Claude Code with intelligent exit detection
+295,phuryn/pm-skills,https://github.com/phuryn/pm-skills,8123,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discove"
+296,superset-sh/superset,https://github.com/superset-sh/superset,7903,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"IDE for the AI Agents Era - Run an army of Claude Code, Codex, etc. on your mach"
+297,BehiSecc/awesome-claude-skills,https://github.com/BehiSecc/awesome-claude-skills,7856,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,A curated list of Claude Skills.
+298,xixu-me/xget,https://github.com/xixu-me/xget,7821,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Ultra-high-performance, secure, all-in-one acceleration engine for developer res"
+299,automazeio/ccpm,https://github.com/automazeio/ccpm,7778,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Project management skill system for Agents that uses GitHub Issues and Git workt
+300,teng-lin/notebooklm-py,https://github.com/teng-lin/notebooklm-py,7445,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Unofficial Python API and agentic skill for Google NotebookLM. Full programmatic
+301,Jeffallan/claude-skills,https://github.com/Jeffallan/claude-skills,7274,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,66 Specialized Skills for Full-Stack Developers. Transform Claude Code into your
+302,Maciek-roboblog/Claude-Code-Usage-Monitor,https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor,7123,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Real-time Claude Code usage monitor with predictions and warnings
+303,refly-ai/refly,https://github.com/refly-ai/refly,7069,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"The first open-source agent skills builder. Define skills by vibe workflow, run "
+304,nicobailon/visual-explainer,https://github.com/nicobailon/visual-explainer,6890,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Agent skill that generates rich HTML pages or slide decks for diagrams, diff rev"
+305,alirezarezvani/claude-skills,https://github.com/alirezarezvani/claude-skills,6812,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"+192 Claude Code skills & agent plugins for Claude Code, Codex, Gemini CLI, Curs"
+306,ykdojo/claude-code-tips,https://github.com/ykdojo/claude-code-tips,6694,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"45 tips for getting the most out of Claude Code, from basics to advanced - inclu"
+307,smtg-ai/claude-squad,https://github.com/smtg-ai/claude-squad,6606,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Manage multiple AI terminal agents like Claude Code, Codex, OpenCode, and Amp."
+308,Piebald-AI/claude-code-system-prompts,https://github.com/Piebald-AI/claude-code-system-prompts,6603,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"All parts of Claude Code's system prompt, 18 builtin tool descriptions, sub agen"
+309,olimorris/codecompanion.nvim,https://github.com/olimorris/codecompanion.nvim,6343,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"✨ AI Coding, Vim Style"
+310,htmlstreamofficial/preline,https://github.com/htmlstreamofficial/preline,6278,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Preline UI is an open-source set of prebuilt UI components based on the utility-
+311,Lum1104/Understand-Anything,https://github.com/Lum1104/Understand-Anything,6039,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Claude Code skills that turn any codebase into an interactive knowledge graph yo
+312,mvanhorn/last30days-skill,https://github.com/mvanhorn/last30days-skill,5996,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymark"
+313,sirmalloc/ccstatusline,https://github.com/sirmalloc/ccstatusline,5888,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,🚀 Beautiful highly customizable statusline for Claude Code CLI with powerline su
+314,mksglu/context-mode,https://github.com/mksglu/context-mode,5856,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Privacy-first. MCP is the protocol for tool access. We're the virtualization lay
+315,UfoMiao/zcf,https://github.com/UfoMiao/zcf,5798,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Zero-Config Code Flow for Claude code & Codex
+316,zilliztech/claude-context,https://github.com/zilliztech/claude-context,5760,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Code search MCP for Claude Code. Make entire codebase the context for any coding
+317,ikaijua/Awesome-AITools,https://github.com/ikaijua/Awesome-AITools,5716,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Collection of AI-related utilities. Welcome to submit pull requests /收藏AI相关的实用工具
+318,ThinkInAIXYZ/deepchat,https://github.com/ThinkInAIXYZ/deepchat,5621,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,🐬DeepChat - A smart assistant that connects powerful AI to your personal world
+319,Orchestra-Research/AI-Research-SKILLs,https://github.com/Orchestra-Research/AI-Research-SKILLs,5576,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Comprehensive open-source library of AI research and engineering skills for any 
+320,ComposioHQ/agent-orchestrator,https://github.com/ComposioHQ/agent-orchestrator,5385,无,JSON数据(未分tier),FINAL_HIGH_STARS.json," Agentic orchestrator for parallel coding agents — plans tasks, spawns agents, a"
+321,YishenTu/claudian,https://github.com/YishenTu/claudian,5059,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,An Obsidian plugin that embeds Claude Code as an AI collaborator in your vault
+322,ageerle/ruoyi-ai,https://github.com/ageerle/ruoyi-ai,4980,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,面向企业级市场的一站式AI应用开发框架，支持多厂商大模型统一接入与管理，具备安全可控的企业知识库与高精度检索优化能力，提供可视化流程编排、自主决策智能体与多智能
+323,langgptai/awesome-claude-prompts,https://github.com/langgptai/awesome-claude-prompts,4631,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,This repo includes Claude prompt curation to use Claude better.
+324,breaking-brake/cc-wf-studio,https://github.com/breaking-brake/cc-wf-studio,4593,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,CC Workflow Studio
+325,op7418/CodePilot,https://github.com/op7418/CodePilot,4531,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"A desktop GUI for Claude Code — chat, code, and manage projects visually. Built "
+326,fengshao1227/ccg-workflow,https://github.com/fengshao1227/ccg-workflow,4351,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,多模型协作开发系统 - Claude 编排 + Codex 后端 + Gemini 前端，28 个命令覆盖开发全流程，一键安装零配置
+327,su-kaka/gcli2api,https://github.com/su-kaka/gcli2api,4325,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,将 GeminiCLI 和 Antigravity 转换为 OpenAI 、GEMINI 和 Claude API 接口
+328,antfu/skills,https://github.com/antfu/skills,4301,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Anthony Fu's curated collection of agent skills.
+329,Donchitos/Claude-Code-Game-Studios,https://github.com/Donchitos/Claude-Code-Game-Studios,4244,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Turn Claude Code into a full game dev studio — 48 AI agents, 36 workflow skills,"
+330,github/gh-aw,https://github.com/github/gh-aw,4159,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,GitHub Agentic Workflows
+331,mindfold-ai/Trellis,https://github.com/mindfold-ai/Trellis,4145,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,The best agent harness.
+332,PeonPing/peon-ping,https://github.com/PeonPing/peon-ping,4127,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Warcraft III Peon voice notifications (+ more!) for Claude Code, Codex, IDEs, an"
+333,vijaythecoder/awesome-claude-agents,https://github.com/vijaythecoder/awesome-claude-agents,4088,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,An orchestrated sub agent dev team powered by claude code
+334,mnfst/manifest,https://github.com/mnfst/manifest,4083,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Smart LLM Routing for OpenClaw. Cut Costs up to 70% 🦞🦚
+335,SawyerHood/dev-browser,https://github.com/SawyerHood/dev-browser,3975,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,A Claude Skill to give your agent the ability to use a web browser
+336,wanshuiyin/Auto-claude-code-research-in-sleep,https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep,3928,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,ARIS ⚔️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomo
+337,trailofbits/skills,https://github.com/trailofbits/skills,3894,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Trail of Bits Claude Code skills for security research, vulnerability detection,"
+338,opactorai/Claudable,https://github.com/opactorai/Claudable,3832,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Claudable is an open-source web builder that leverages local CLI agents, such as"
+339,zgsm-ai/costrict,https://github.com/zgsm-ai/costrict,3802,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Costrict - strict AI coder for enterprises, quality first, including AI Agent, A"
+340,evalstate/fast-agent,https://github.com/evalstate/fast-agent,3724,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Code, Build and Evaluate agents - excellent Model and Skills/MCP/ACP Support"
+341,zebbern/claude-code-guide,https://github.com/zebbern/claude-code-guide,3718,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Claude Code Guide - Setup, Commands, workflows, agents, skills & tips-n-tricks g"
+342,mukul975/Anthropic-Cybersecurity-Skills,https://github.com/mukul975/Anthropic-Cybersecurity-Skills,3701,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,734+ structured cybersecurity skills for AI agents · MITRE ATT&CK mapped · agent
+343,max-sixty/worktrunk,https://github.com/max-sixty/worktrunk,3699,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Worktrunk is a CLI for Git worktree management, designed for parallel AI agent w"
+344,parcadei/Continuous-Claude-v3,https://github.com/parcadei/Continuous-Claude-v3,3623,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Context management for Claude Code. Hooks maintain state via ledgers and handoff
+345,backnotprop/plannotator,https://github.com/backnotprop/plannotator,3537,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Annotate and review coding agent plans and code diffs visually, share with your "
+346,tirth8205/code-review-graph,https://github.com/tirth8205/code-review-graph,3508,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Local knowledge graph for Claude Code. Builds a persistent map of your codebase 
+347,gosom/google-maps-scraper,https://github.com/gosom/google-maps-scraper,3481,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"scrape data  from Google Maps. Extracts data such as the name, address, phone nu"
+348,libukai/awesome-agent-skills,https://github.com/libukai/awesome-agent-skills,3479,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Agent Skills 终极指南：快速入门、资源推荐、精选技能与实用工具 ｜The Ultimate Guide to Agent Skills: Quick
+349,heilcheng/awesome-agent-skills,https://github.com/heilcheng/awesome-agent-skills,3384,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"A curated list of skills, tools, tutorials, and capabilities for AI coding agent"
+350,badrisnarayanan/antigravity-claude-proxy,https://github.com/badrisnarayanan/antigravity-claude-proxy,3263,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Proxy that exposes Antigravity provided claude / gemini models, so we can use th"
+351,ComposioHQ/open-claude-cowork,https://github.com/ComposioHQ/open-claude-cowork,3211,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Open Source version of Claude Cowork with 500+ SaaS app integrations
+352,memodb-io/Acontext,https://github.com/memodb-io/Acontext,3189,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Agent Skills as a Memory Layer
+353,AgriciDaniel/claude-seo,https://github.com/AgriciDaniel/claude-seo,3068,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Universal SEO skill for Claude Code. 13 sub-skills, 7 subagents, extensions syst"
+354,tiann/hapi,https://github.com/tiann/hapi,3060,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"App for Claude Code / Codex / Gemini / OpenCode, vibe coding anytime, anywhere"
+355,twostraws/SwiftUI-Agent-Skill,https://github.com/twostraws/SwiftUI-Agent-Skill,3044,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"SwiftUI agent skill for Claude Code, Codex, and other AI tools."
+356,stravu/crystal,https://github.com/stravu/crystal,2991,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,(Crystal is now Nimbalyst) Run multiple Codex and Claude Code AI sessions in par
+357,gotalab/cc-sdd,https://github.com/gotalab/cc-sdd,2961,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Spec-driven development (SDD) for your team's workflow. Kiro style commands that
+358,SamurAIGPT/Generative-Media-Skills,https://github.com/SamurAIGPT/Generative-Media-Skills,2960,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Multi-modal Generative Media Skills for AI Agents (Claude Code, Cursor, Gemini C"
+359,generalaction/emdash,https://github.com/generalaction/emdash,2868,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Emdash is the Open-Source Agentic Development Environment (🧡 YC W26). Run multip
+360,agenticnotetaking/arscontexta,https://github.com/agenticnotetaking/arscontexta,2847,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Claude Code plugin that generates individualized knowledge systems from conversa
+361,looplj/axonhub,https://github.com/looplj/axonhub,2714,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"⚡️ Open-source AI Gateway — Use any SDK to call 100+ LLMs. Built-in failover, lo"
+362,brennercruvinel/CCPlugins,https://github.com/brennercruvinel/CCPlugins,2698,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Best Claude Code framework that actually save time. Built by a dev tired of typi
+363,batrachianai/toad,https://github.com/batrachianai/toad,2681,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,A unified interface for AI in your terminal.
+364,michaelshimeles/ralphy,https://github.com/michaelshimeles/ralphy,2665,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"My Ralph Wiggum setup, an autonomous bash script that runs Claude Code, Codex, O"
+365,davepoon/buildwithclaude,https://github.com/davepoon/buildwithclaude,2633,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"A single hub to find Claude Skills, Agents, Commands, Hooks, Plugins, and Market"
+366,intellectronica/ruler,https://github.com/intellectronica/ruler,2591,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Ruler — apply the same rules to all coding agents
+367,matt1398/claude-devtools,https://github.com/matt1398/claude-devtools,2589,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"The missing DevTools for Claude Code — inspect every tool call, subagent, and to"
+368,RunMaestro/Maestro,https://github.com/RunMaestro/Maestro,2578,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Agent Orchestration Command Center
+369,jnMetaCode/agency-agents-zh,https://github.com/jnMetaCode/agency-agents-zh,2429,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,180 个即插即用的 AI 专家人设（中文版）— 覆盖 17 个部门，支持 Claude Code / OpenClaw / Cursor / Trae 等 1
+370,folke/sidekick.nvim,https://github.com/folke/sidekick.nvim,2423,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Your Neovim AI sidekick
+371,qixing-jk/all-api-hub,https://github.com/qixing-jk/all-api-hub,2415,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,一站式管理 New API 兼容中转站账号：余额/用量看板、自动签到、密钥一键导出到常用应用、网页内 API 可用性测试、渠道与模型同步/重定向 | New‑A
+372,FullAgent/fulling,https://github.com/FullAgent/fulling,2407,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Fulling is an AI-powered Full-stack Engineer Agent. Built with Next.js, Claude, "
+373,coder/claudecode.nvim,https://github.com/coder/claudecode.nvim,2377,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,🧩 Claude Code Neovim IDE Extension
+374,remotion-dev/skills,https://github.com/remotion-dev/skills,2365,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Agent Skills
+375,KimYx0207/Claude-Code-x-OpenClaw-Guide-Zh,https://github.com/KimYx0207/Claude-Code-x-OpenClaw-Guide-Zh,2333,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,从零到企业实战：Claude Code 官方编程神器 + OpenClaw 224K Stars 开源AI助手 | 双顶流中文教程 | 21篇教程 130000
+376,AvdLee/SwiftUI-Agent-Skill,https://github.com/AvdLee/SwiftUI-Agent-Skill,2316,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Add expert SwiftUI Best Practices guidance to your AI coding tool (Agent Skills 
+377,mikeyobrien/ralph-orchestrator,https://github.com/mikeyobrien/ralph-orchestrator,2286,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,An improved implementation of the Ralph Wiggum technique for autonomous AI agent
+378,Galaxy-Dawn/claude-scholar,https://github.com/Galaxy-Dawn/claude-scholar,2277,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Semi-automated research assistant for academic research and software development
+379,nidhinjs/prompt-master,https://github.com/nidhinjs/prompt-master,2250,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or 
+380,vitali87/code-graph-rag,https://github.com/vitali87/code-graph-rag,2241,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"The ultimate RAG for your monorepo. Query, understand, and edit multi-language c"
+381,FlorianBruniaux/claude-code-ultimate-guide,https://github.com/FlorianBruniaux/claude-code-ultimate-guide,2220,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"A tremendous feat of documentation, this guide covers Claude Code from beginner "
+382,uditgoenka/autoresearch,https://github.com/uditgoenka/autoresearch,2216,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Claude Autoresearch Skill — Autonomous goal-directed iteration for Claude Code. 
+383,wshobson/commands,https://github.com/wshobson/commands,2202,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,A collection of production-ready slash commands for Claude Code
+384,lackeyjb/playwright-skill,https://github.com/lackeyjb/playwright-skill,2138,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Claude Code Skill for browser automation with Playwright. Model-invoked - Claude
+385,centminmod/my-claude-code-setup,https://github.com/centminmod/my-claude-code-setup,2102,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Shared starter template configuration and CLAUDE.md memory bank system for Claud
+386,ding113/claude-code-hub,https://github.com/ding113/claude-code-hub,2091,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,一个现代化的 Claude Code & Codex API 代理服务，提供智能负载均衡、用户管理和使用统计功能。
+387,KhazP/vibe-coding-prompt-template,https://github.com/KhazP/vibe-coding-prompt-template,2065,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Templates and workflow for generating PRDs, Tech Designs, and MVP and more using"
+388,nyldn/claude-octopus,https://github.com/nyldn/claude-octopus,2057,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Multi-LLM orchestration plugin for Claude Code — 8 providers (Codex, Gemini, Cla"
+389,vuejs-ai/skills,https://github.com/vuejs-ai/skills,2051,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Agent skills for Vue 3 development
+390,htdt/godogen,https://github.com/htdt/godogen,2043,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Claude Code skills that build complete Godot 4 projects from a game description
+391,snyk/agent-scan,https://github.com/snyk/agent-scan,1971,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Security scanner for AI agents, MCP servers and agent skills."
+392,heshengtao/super-agent-party,https://github.com/heshengtao/super-agent-party,1963,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,⭐ All-in-one AI companion! Super Agent Party = Self hosted neuro sama + openclaw
+393,greggh/claude-code.nvim,https://github.com/greggh/claude-code.nvim,1952,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Seamless integration between Claude Code AI assistant and Neovim
+394,automazeio/vibeproxy,https://github.com/automazeio/vibeproxy,1943,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Native macOS menu bar app to use your Claude Code & ChatGPT subscriptions with A
+395,GuDaStudio/skills,https://github.com/GuDaStudio/skills,1942,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"This repository contains a collection of Agent Skills developed by GudaStudio, e"
+396,nizos/tdd-guard,https://github.com/nizos/tdd-guard,1924,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Automated TDD enforcement for Claude Code
+397,yomorun/yomo,https://github.com/yomorun/yomo,1894,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,🦖 Serverless AI Agent Framework with Geo-distributed Edge AI Infra.
+398,mrgoonie/claudekit-skills,https://github.com/mrgoonie/claudekit-skills,1887,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,All powerful skills of ClaudeKit.cc!
+399,bestruirui/octopus,https://github.com/bestruirui/octopus,1854,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,One Hub All LLMs For You | 为个人打造的 LLM API 聚合服务
+400,bfly123/claude_code_bridge,https://github.com/bfly123/claude_code_bridge,1848,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Real-time multi-AI collaboration: Claude, Codex & Gemini with persistent context"
+401,microsoft/skills,https://github.com/microsoft/skills,1843,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Skills, MCP servers, Custom Agents, Agents.md for SDKs to ground Coding Agents"
+402,Q00/ouroboros,https://github.com/Q00/ouroboros,1824,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Stop prompting. Start specifying.
+403,tech-leads-club/agent-skills,https://github.com/tech-leads-club/agent-skills,1802,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"The secure, validated skill registry for professional AI coding agents. Extend A"
+404,superagent-ai/vibekit,https://github.com/superagent-ai/vibekit,1751,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Run Claude Code, Gemini, Codex — or any coding agent — in a clean, isolated sand"
+405,hamed-elfayome/Claude-Usage-Tracker,https://github.com/hamed-elfayome/Claude-Usage-Tracker,1747,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Native macOS menu bar app for tracking Claude AI usage limits in real-time. Buil
+406,apify/agent-skills,https://github.com/apify/agent-skills,1734,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Collection of Apify Agent Skills
+407,asheshgoplani/agent-deck,https://github.com/asheshgoplani/agent-deck,1709,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Terminal session manager for AI coding agents. One TUI for Claude, Gemini, OpenC"
+408,jeremylongshore/claude-code-plugins-plus-skills,https://github.com/jeremylongshore/claude-code-plugins-plus-skills,1708,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,340 plugins + 1367 agent skills for Claude Code. Open-source marketplace with CC
+409,supabase/agent-skills,https://github.com/supabase/agent-skills,1701,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Agent Skills to help developers using AI agents with Supabase
+410,trailofbits/claude-code-config,https://github.com/trailofbits/claude-code-config,1668,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Opinionated defaults, documentation, and workflows for Claude Code at Trail of B"
+411,IvanMurzak/Unity-MCP,https://github.com/IvanMurzak/Unity-MCP,1653,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"AI Skills, MCP Tools, and CLI for Unity Engine. Full AI develop and test loop. U"
+412,FreedomIntelligence/OpenClaw-Medical-Skills,https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills,1617,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,The largest open-source medical AI skills library for OpenClaw🦞.
+413,pchalasani/claude-code-tools,https://github.com/pchalasani/claude-code-tools,1615,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Practical productivity tools for Claude Code, Codex-CLI, and similar CLI coding "
+414,ZSeven-W/openpencil,https://github.com/ZSeven-W/openpencil,1602,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,The world's first open-source AI-native vector design tool and the first to feat
+415,catlog22/Claude-Code-Workflow,https://github.com/catlog22/Claude-Code-Workflow,1580,无,JSON数据(未分tier),FINAL_HIGH_STARS.json, JSON-driven multi-agent  cadence-team development framework with   intelligent 
+416,maxritter/pilot-shell,https://github.com/maxritter/pilot-shell,1579,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,The professional development environment for Claude Code: From requirement to pr
+417,kaitranntt/ccs,https://github.com/kaitranntt/ccs,1569,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Switch between Claude accounts, Gemini, Copilot, OpenRouter (300+ models) via CL"
+418,op7418/Claude-to-IM-skill,https://github.com/op7418/Claude-to-IM-skill,1564,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Bridge Claude Code / Codex to IM platforms — chat with AI coding agents from Tel
+419,expo/skills,https://github.com/expo/skills,1540,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,A collection of AI agent skills for working with Expo projects and Expo Applicat
+420,cisco-ai-defense/skill-scanner,https://github.com/cisco-ai-defense/skill-scanner,1536,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Security Scanner for Agent Skills
+421,yoanbernabeu/grepai,https://github.com/yoanbernabeu/grepai,1516,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Semantic Search & Call Graphs for AI Agents (100% Local)
+422,gadievron/raptor,https://github.com/gadievron/raptor,1510,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Raptor turns Claude Code into a general-purpose AI offensive/defensive security 
+423,lst97/claude-code-sub-agents,https://github.com/lst97/claude-code-sub-agents,1489,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Collection of specialized AI subagents for Claude Code for personal use (full-st
+424,addyosmani/web-quality-skills,https://github.com/addyosmani/web-quality-skills,1485,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Agent Skills for optimizing web quality based on Lighthouse and Core Web Vitals.
+425,eugene1g/agent-safehouse,https://github.com/eugene1g/agent-safehouse,1483,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Sandbox your local AI agents so they can read/write only what they need
+426,Njengah/claude-code-cheat-sheet,https://github.com/Njengah/claude-code-cheat-sheet,1477,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Ultimate collection of Claude Code tips, tricks, hacks, and workflows that you c"
+427,rohitg00/pro-workflow,https://github.com/rohitg00/pro-workflow,1455,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Battle-tested AI workflows from power users. Self-correcting memory, parallel wo"
+428,0xCrunchyy/10x,https://github.com/0xCrunchyy/10x,1425,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,⚡️ 10x - Up to 20x faster AI coding with multi-step Superpowers. Open-source age
+429,Piebald-AI/tweakcc,https://github.com/Piebald-AI/tweakcc,1414,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Customize Claude Code's system prompts, create custom toolsets, input pattern hi"
+430,antonbabenko/terraform-skill,https://github.com/antonbabenko/terraform-skill,1379,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"The Claude Agent Skill for Terraform and OpenTofu - testing, modules, CI/CD, and"
+431,feiskyer/claude-code-settings,https://github.com/feiskyer/claude-code-settings,1363,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Claude Code settings, commands and agents for vibe coding"
+432,RAIT-09/obsidian-agent-client,https://github.com/RAIT-09/obsidian-agent-client,1348,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Bring AI agents into Obsidian via Agent Client Protocol (ACP), such as Claude Co"
+433,junhoyeo/tokscale,https://github.com/junhoyeo/tokscale,1333,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"🛰️ A CLI tool for tracking token usage from OpenCode, Claude Code, 🦞OpenClaw (Cl"
+434,Th0rgal/open-ralph-wiggum,https://github.com/Th0rgal/open-ralph-wiggum,1329,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Type `ralph ""prompt""` to start open code in a ralph loop. Also supports a prompt"
+435,njbrake/agent-of-empires,https://github.com/njbrake/agent-of-empires,1322,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Claude Code, OpenCode, Mistral Vibe, Codex CLI, Gemini CLI, Pi.dev, Copilot CLI "
+436,CloudAI-X/claude-workflow-v2,https://github.com/CloudAI-X/claude-workflow-v2,1302,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Universal Claude Code workflow plugin with agents, skills, hooks, and commands"
+437,AvdLee/Swift-Concurrency-Agent-Skill,https://github.com/AvdLee/Swift-Concurrency-Agent-Skill,1279,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Add expert Swift Concurrency guidance to your AI coding tool (Agent Skills open 
+438,AnandChowdhary/continuous-claude,https://github.com/AnandChowdhary/continuous-claude,1270,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"🔂 Ralph loop with PRs: Run Claude Code in a continuous loop, autonomously creati"
+439,ballred/obsidian-claude-pkm,https://github.com/ballred/obsidian-claude-pkm,1266,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,A complete starter kit for an Obsidian + Claude Code personal knowledge manageme
+440,jgravelle/jcodemunch-mcp,https://github.com/jgravelle/jcodemunch-mcp,1243,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"The leading, most token-efficient MCP server for GitHub source code exploration "
+441,webfuse-com/awesome-claude,https://github.com/webfuse-com/awesome-claude,1240,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,A curated list of awesome things related to Anthropic Claude
+442,m0n0x41d/quint-code,https://github.com/m0n0x41d/quint-code,1236,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Engineering decisions  engine that know when they're stale. Frame, compare, deci"
+443,decolua/9router,https://github.com/decolua/9router,1231,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Connect All AI Code Tools (Claude Code, Cursor, Antigravity, Copilot, Codex, Gem"
+444,open-gitagent/gitagent,https://github.com/open-gitagent/gitagent,1228,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"A framework-agnostic, git-native standard for defining AI agents"
+445,ghostwright/ghost-os,https://github.com/ghostwright/ghost-os,1218,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Full computer-use for AI agents. Self-learning workflows. Native macOS. No scree
+446,poco-ai/poco-claw,https://github.com/poco-ai/poco-claw,1215,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,A more beautiful and easier-to-use alternative to OpenClaw. It features a nicer 
+447,TanStack/cli,https://github.com/TanStack/cli,1214,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"The official TanStack CLI - Project Scaffolding, MCP Server, Agent Skills Instal"
+448,ComposioHQ/awesome-claude-plugins,https://github.com/ComposioHQ/awesome-claude-plugins,1212,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"A curated list of Plugins that let you extend Claude Code with custom commands, "
+449,softaworks/agent-toolkit,https://github.com/softaworks/agent-toolkit,1197,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,A curated collection of skills for AI coding agents. Skills are packaged instruc
+450,huangserva/skill-prompt-generator,https://github.com/huangserva/skill-prompt-generator,1193,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,这是一个基于Claude Skill的**AI人像Prompt生成系统**，能够从特征库中智能组合生成高质量的人像描述Prompt，并具备自动学习和库扩展能力。
+451,kenryu42/claude-code-safety-net,https://github.com/kenryu42/claude-code-safety-net,1186,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"A coding agent hook that acts as a safety net, catching destructive git and file"
+452,AgriciDaniel/claude-ads,https://github.com/AgriciDaniel/claude-ads,1184,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Comprehensive paid advertising audit & optimization skill for Claude Code. 186 c
+453,dtsola/xiaoyaosearch,https://github.com/dtsola/xiaoyaosearch,1182,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"小遥搜索，听懂你的话、看懂你的图，用AI找到本地任何文件。让搜索像聊天一样简单。XiaoyaoSearch: Understands your words, r"
+454,rivet-dev/sandbox-agent,https://github.com/rivet-dev/sandbox-agent,1179,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Run Coding Agents in Sandboxes. Control Them Over HTTP. Supports Claude Code, Co"
+455,kimsungwhee/apple-docs-mcp,https://github.com/kimsungwhee/apple-docs-mcp,1170,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,MCP server for Apple Developer Documentation - Search iOS/macOS/SwiftUI/UIKit do
+456,shuvonsec/claude-bug-bounty,https://github.com/shuvonsec/claude-bug-bounty,1162,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"Claude Code skill for AI-assisted bug bounty hunting - recon, IDOR, XSS, SSRF, O"
+457,browserwing/browserwing,https://github.com/browserwing/browserwing,1157,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"BrowserWing turns your browser actions into MCP commands Or Claude Skill, allowi"
+458,wbopan/cui,https://github.com/wbopan/cui,1152,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,A web UI for Claude Code agents
+459,specstoryai/getspecstory,https://github.com/specstoryai/getspecstory,1142,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Install our local first extensions for your favorite AI IDE or Terminal Agent. S
+460,udecode/dotai,https://github.com/udecode/dotai,1141,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Context manager for all agents
+461,luongnv89/claude-howto,https://github.com/luongnv89/claude-howto,1135,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"A visual, example-driven guide to Claude Code — from basic concepts to advanced "
+462,Ido-Levi/Hephaestus,https://github.com/Ido-Levi/Hephaestus,1122,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Semi-Structured Agentic Framework. Workflows build themselves as agents discover
+463,jayminwest/overstory,https://github.com/jayminwest/overstory,1121,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Multi-agent orchestration for AI coding agents — pluggable runtime adapters for 
+464,yohey-w/multi-agent-shogun,https://github.com/yohey-w/multi-agent-shogun,1119,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Samurai-inspired multi-agent system for Claude Code. Orchestrate parallel AI tas
+465,AIPexStudio/AIPex,https://github.com/AIPexStudio/AIPex,1113,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"AIPex: AI browser automation assistant, no migration and privacy first. Alternat"
+466,heyhuynhgiabuu/proxypal,https://github.com/heyhuynhgiabuu/proxypal,1083,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"A desktop app that lets you use your AI subscriptions (Claude, ChatGPT, Gemini, "
+467,qdhenry/Claude-Command-Suite,https://github.com/qdhenry/Claude-Command-Suite,1079,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Professional slash commands for Claude Code that provide   structured workflows 
+468,callstackincubator/agent-skills,https://github.com/callstackincubator/agent-skills,1061,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,A collection of agent-optimized React Native skills for AI coding assistants.
+469,vm0-ai/vm0,https://github.com/vm0-ai/vm0,1056,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,the easiest way to run natural language-described workflows automatically
+470,study8677/antigravity-workspace-template,https://github.com/study8677/antigravity-workspace-template,1054,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"🪐 The ultimate starter kit for AI IDEs, Claude code，codex, and other agentic cod"
+471,itsmostafa/aws-agent-skills,https://github.com/itsmostafa/aws-agent-skills,1048,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,AWS Skills for Agents
+472,wasabeef/claude-code-cookbook,https://github.com/wasabeef/claude-code-cookbook,1048,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,A collection of settings to make Claude Code more useful.
+473,Prat011/awesome-llm-skills,https://github.com/Prat011/awesome-llm-skills,1035,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,"A curated list of awesome LLM and AI Agent Skills, resources and tools for custo"
+474,DeepMyst/Mysti,https://github.com/DeepMyst/Mysti,1020,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,AI coding dream team of agents for VS Code. Claude Code + openai Codex collabora
+475,Imbad0202/academic-research-skills,https://github.com/Imbad0202/academic-research-skills,1017,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,Academic Research Skills for Claude Code: research → write → review → revise → f
+476,skills-directory/skill-codex,https://github.com/skills-directory/skill-codex,1007,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,A claude code skill to delegate prompts to codex
+477,d-kimuson/claude-code-viewer,https://github.com/d-kimuson/claude-code-viewer,1000,无,JSON数据(未分tier),FINAL_HIGH_STARS.json,A full-featured web-based Claude Code client that provides complete interactive 
+478,security-auditor-suite,anthropics/skills,87000+,无,Tier 1,# 任务：系统性发现并验证高质量 Claude Code A....docx,"官方内置,OWASP Top 10扫描,质量分25/25"
+479,vercel/frontend-design-best-practices,skills.sh/vercel-react-best-practices,无,51300+,Tier 1,# 任务：系统性发现并验证高质量 Claude Code A....docx,"React前端设计最佳实践,质量分23/25"
+480,official-docs-suite (@anthropic/docx/pdf/pptx),anthropics/skills/tree/main/document-processing,无,无,Tier 1,# 任务：系统性发现并验证高质量 Claude Code A....docx,"官方企业级文档套件,质量分24/25"
+481,code-reviewer-pro,community/awesome-claude-skills,数千+,无,Tier 1,# 任务：系统性发现并验证高质量 Claude Code A....docx,"全面代码质量审查,质量分22/25"
+482,duckdb-local-analytics,VoltAgent/awesome-agent-skills,无,无,Tier 1,# 任务：系统性发现并验证高质量 Claude Code A....docx,"本地SQL高效查询大型CSV/JSON,质量分21/25"
+483,claude-hud,manthinking/claude-hud,快速增长,无,Tier 2,# 任务：系统性发现并验证高质量 Claude Code A....docx,"实时展示上下文/token/Agent状态,质量分20/25"
+484,spreadsheet-normalizer,skills.sh / awesome-claude-skills,无,高,Tier 2,# 任务：系统性发现并验证高质量 Claude Code A....docx,"自动清洗验证格式化Excel/CSV,质量分19/25"
+485,tdd-scaffolder,awesome-claude-skills(社区),无,无,Tier 2,# 任务：系统性发现并验证高质量 Claude Code A....docx,"自动生成测试用例骨架,质量分18/25"
+486,dns-deliverability-check,ComposioHQ/awesome-claude-skills,无,无,Tier 2,# 任务：系统性发现并验证高质量 Claude Code A....docx,"检查SPF/DKIM/DMARC,质量分17/25"
+487,professional-copywriter,scriptbyai.com/社区推荐,无,大量用户,Tier 2,# 任务：系统性发现并验证高质量 Claude Code A....docx,"AIDA/PAS框架商业文案,质量分18/25"
+488,data-enricher,ComposioHQ/awesome-claude-skills,无,无,Tier 3,# 任务：系统性发现并验证高质量 Claude Code A....docx,Clearbit/Hunter.io API联系人丰富
+489,Superpowers(框架引用),obra/superpowers,极速增长,无,Tier 4,# 任务：系统性发现并验证高质量 Claude Code A....docx,复杂AI代理工程化框架
+490,OpenClaw,OpenClaw,无,无,Tier 4,# 任务：系统性发现并验证高质量 Claude Code A....docx,"开放AI Agent生态协议,内部技能排行榜"
+491,ComposioHQ SaaS集成Skills,ComposioHQ/awesome-claude-skills,无,无,Tier 4,# 任务：系统性发现并验证高质量 Claude Code A....docx,大量SaaS API集成(Slack/Notion/GitHub)
+492,AI-driven Refactoring Tools,无(新兴),无,无,Tier 4,# 任务：系统性发现并验证高质量 Claude Code A....docx,大型代码库重构专用Skill(新兴)
+493,Windows-Environment-Manager,无(新兴),无,无,Tier 4,# 任务：系统性发现并验证高质量 Claude Code A....docx,管理Windows开发环境WSL/依赖/端口
+494,snov-io-b2b-prospector,无(自建),无,无,自建路线图,# 任务：系统性发现并验证高质量 Claude Code A....docx,"Snov.io API集成,B2B潜在客户查找/验证"
+495,precious-metals-hs-code-classifier,无(自建),无,无,自建路线图,# 任务：系统性发现并验证高质量 Claude Code A....docx,贵金属HS code自动分类
+496,apify-cheerio-postprocessor,无(自建),无,无,自建路线图,# 任务：系统性发现并验证高质量 Claude Code A....docx,Apify CheerioCrawler后处理+DuckDB加载
+497,JayZeeDesign/awesome-claude-skills,JayZeeDesign/awesome-claude-skills,无,无,聚合列表,# 任务：系统性发现并验证高质量 Claude Code A....docx,社区精选仓库
+498,quemsah/awesome-claude-plugins,quemsah/awesome-claude-plugins,无,无,聚合列表,# 任务：系统性发现并验证高质量 Claude Code A....docx,"自动采集Claude Code plugin指标,n8n工作流"
+499,yizhiyanhua-ai/skills-updater,yizhiyanhua-ai/skills-updater,无,无,聚合列表,# 任务：系统性发现并验证高质量 Claude Code A....docx,管理更新发现Claude Code技能
+500,anthropics/life-sciences,anthropics/life-sciences,无,无,聚合列表,# 任务：系统性发现并验证高质量 Claude Code A....docx,生命科学Marketplace
+501,SuperClaude,SuperClaude,无,无,工具/框架,# 任务：系统性发现并验证高质量 Claude Code A....docx,综合增强框架
+502,ClaudeMod,ClaudeMod,无,无,工具,# 任务：系统性发现并验证高质量 Claude Code A....docx,Claude Code增强模组
+503,ClaudeUsageBar,ClaudeUsageBar,无,无,工具,# 任务：系统性发现并验证高质量 Claude Code A....docx,用量可视化工具
+504,github-trending-skill,github-trending-skill,无,无,Skill,# 任务：系统性发现并验证高质量 Claude Code A....docx,GitHub热榜追踪
+505,Remotion Skill,Remotion Skill,无,无,Skill,# 任务：系统性发现并验证高质量 Claude Code A....docx,视频制作Remotion技能
+506,Obsidian Skills(DOCX引用),Obsidian Skills,无,无,Skill,# 任务：系统性发现并验证高质量 Claude Code A....docx,Obsidian笔记操作技能
+507,Skill Seekers,Skill Seekers(Python项目),无,无,工具,# 任务：系统性发现并验证高质量 Claude Code A....docx,自动生成Claude AI技能
+508,OpenSkills,OpenSkills,无,无,工具/平台,# 任务：系统性发现并验证高质量 Claude Code A....docx,统一管理Agent Skills
+509,Skill Multi Publisher,Skill Multi Publisher,无,无,工具,# 任务：系统性发现并验证高质量 Claude Code A....docx,多平台Skill发布工具
+510,SkillDeck,SkillDeck(macOS),无,无,工具,# 任务：系统性发现并验证高质量 Claude Code A....docx,macOS原生Skills管理应用
+511,Claude Cowork,Claude Cowork,无,无,工具/平台,# 任务：系统性发现并验证高质量 Claude Code A....docx,协作工作框架
+512,Claude Code Security Review(GitHub Action),Claude Code Security Review,无,无,工具,# 任务：系统性发现并验证高质量 Claude Code A....docx,GitHub自动化安全扫描
+513,Claude Scientific Skills,Claude Scientific Skills,无,无,Skills集,# 任务：系统性发现并验证高质量 Claude Code A....docx,科学工具综合集合
+514,ML科研自定义Skills,无,无,无,Skill,# 任务：系统性发现并验证高质量 Claude Code A....docx,自主ML科研工作流
+515,reflexion,NeoLabHQ/context-engineering-kit,1200+,无,Tier 2,Claude_Code_Skills_Research_Report.docx,反思推理技能
+516,Excalidraw Diagram Generator,无,250+,无,Tier 4,Claude_Code_Skills_Research_Report.docx,Excalidraw图表生成
+517,Valyu Skill,无,无,无,Tier 4,Claude_Code_Skills_Research_Report.docx,
+518,C-Level Advisor,alirezarezvani/marketing-skills,1500+,无,Tier 4,Claude_Code_Skills_Research_Report.docx,高管级咨询技能
+519,AgentSys,无,800+,无,Tier 4,Claude_Code_Skills_Research_Report.docx,
+520,B2B Cold Email Generator,无,无,无,Tier 2,Claude_Code_Skills_Research_Report.docx,B2B冷邮件生成器
+521,trailofbits/skills-curated,trailofbits/skills-curated,无,无,聚合列表,Claude Code Skills 发现与验证.md(补漏),Trail of Bits审核的Claude Code插件市场
+522,vercel-labs/agent-skills(补漏),vercel-labs/agent-skills,无,无,聚合列表,Claude Code Skills 发现与验证.md(补漏),Vercel官方agent技能集合
+523,anthropics/skills(补漏),anthropics/skills,87000+,无,官方渠道,Claude Code Skills 发现与验证.md(补漏),Anthropic官方技能仓库
