@@ -1,0 +1,2018 @@
+[
+  {
+    "id": 1,
+    "name": "gstack/office-hours",
+    "source": "https://github.com/gstack/office-hours",
+    "one_line": "扮演 YC 合伙人，通过对抗性尖锐提问对产品想法进行高强度压力测试，快速识别致命缺陷并收敛想法",
+    "mechanism": "输入=用户自然语言描述的产品/创业想法 → 按优先级序列提问(问题&用户→解决方案&独特价值→市场&增长→团队&执行)，对每个回答进行对抗性追问，识别矛盾/模糊/回避 → 输出=诊断报告(核心想法+优势+Top3风险+下一步行动)",
+    "differentiator": "YC CEO Garry Tan 亲自推广；纯对抗性收敛，不提供解决方案只暴露问题；被多个报告列为 Tier 1 标杆",
+    "compatibility": "Claude Code, Cowork",
+    "activity": "被 YC CEO 推广，X 上高曝光",
+    "category": "需求发现",
+    "sources": [
+      "docx",
+      "compass1",
+      "compass2",
+      "deep-research",
+      "grok",
+      "早期调研"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "WesleyMFrederick/cc-workflows/brainstorming",
+    "source": "https://github.com/WesleyMFrederick/cc-workflows",
+    "one_line": "扮演耐心且充满好奇心的对话伙伴，通过苏格拉底式提问帮助用户将模糊灵感逐步澄清和具体化",
+    "mechanism": "输入=用户非常模糊的一句话 → 非评判性接受，开放式问题序列(挖掘动机→描绘现状→构想未来→聚焦用户→探索本质)，定期复述确认 → 输出=结构化的初步问题陈述或用户故事",
+    "differentiator": "与 office-hours 的对抗性形成极致对比，是协作性的；更适合构思最早期的模糊直觉阶段；无压力环境",
+    "compatibility": "Claude Code",
+    "activity": "标杆技能之一",
+    "category": "需求发现",
+    "sources": [
+      "docx",
+      "compass1",
+      "compass2",
+      "deep-research",
+      "grok",
+      "早期调研"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "nicknisi/claude-plugins — Ideation",
+    "source": "https://github.com/nicknisi/claude-plugins",
+    "one_line": "将极其混乱的思绪(含语音转录)转化为高置信度技术规范，使用 0-100% 置信度门控",
+    "mechanism": "输入=混乱的原始想法/语音转录 → 5维度置信度评分(问题清晰度/目标定义/成功标准/范围边界/一致性)，使用 AskUserQuestion 逼问直至≥95%置信度 → 输出=精简开发契约+阶段化PRD+实施规格到 ./docs/ideation/{project-name}/",
+    "differentiator": "唯一支持语音转录输入的 skill；数学化置信度门控(0-100%)防止过早生成文档；companion /execute-spec 技能",
+    "compatibility": "Claude Code (Delegate Mode)",
+    "activity": "父仓库 60 stars",
+    "category": "需求发现",
+    "sources": [
+      "compass1",
+      "compass2",
+      "deep-research",
+      "早期调研"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Agentic Product Discovery (johannwilfridcalixte)",
+    "source": "https://lobehub.com/skills/johannwilfridcalixte-agentic-product-discovery",
+    "one_line": "在设计前通过极端对抗性审问榨取最精确的产品需求",
+    "mechanism": "输入=模糊想法 → 严格每次一问，对模糊回答立即反驳，按问题验证/用户上下文/成功定义/约束条件4大类深入挖掘量化指标 → 输出=标准化 Markdown 发现报告(直接生成到 IDE 文件夹)",
+    "differentiator": "选项可枚举时强制使用选择题而非开放式问答；输出直接落盘到开发者 IDE 文件夹",
+    "compatibility": "LobeHub, 通用 CLI",
+    "activity": "LobeHub 平台标准技能",
+    "category": "需求发现",
+    "sources": [
+      "早期调研"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Project Brainstorming (micsapp/attune)",
+    "source": "https://skillsmp.com/skills/micsapp-micstec-skills-claude-code-claude-night-market-plugins-attune-skills-project-brainstorming-skill-md",
+    "one_line": "通过战情室多模型对抗测试项目可行性",
+    "mechanism": "输入=初期问题域 → 苏格拉底提问→约束发现→自动调用 attune:war-room 子智能体进行多 LLM 联合压测→矩阵评分 → 输出=project-brief.md 项目简报",
+    "differentiator": "独创自动调用 attune:war-room 子智能体进行中期多模型对抗测试；状态追踪保存在 .attune/brainstorm-session.json",
+    "compatibility": "Claude Code (优选 sonnet-4)",
+    "activity": "2026-03-20 更新",
+    "category": "需求发现",
+    "sources": [
+      "早期调研"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Creative Thought Partner (FastMCP)",
+    "source": "https://fastmcp.me/skills/details/2463/creative-thought-partner",
+    "one_line": "通过悖论狩猎(Paradox Hunting)揭示想法中隐藏的洞察",
+    "mechanism": "输入=原始概念 → 寻找想法中的内在矛盾与张力 → 输出=原创性框架(不急于收敛为 PRD)",
+    "differentiator": "不急于收敛为 PRD，通过放大矛盾来扩展思想的深度",
+    "compatibility": "FastMCP (Cursor, Claude)",
+    "activity": "FastMCP 活跃插件",
+    "category": "需求发现",
+    "sources": [
+      "早期调研"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "invest-interview (erikaflowers/investiture)",
+    "source": "https://skillsmp.com (GitHub: erikaflowers/investiture)",
+    "one_line": "将开放假设/问题转化为结构化用户访谈指南，含探测技巧和验证信号",
+    "mechanism": "输入=项目假设/问题(引用文件夹路径) → 选择最需测试的假设，生成问题集+探测技巧+'要注意什么'标准 → 输出=可复用的访谈指南",
+    "differentiator": "添加研究工具生成(访谈指南作为制品)，将假设直接映射到实地调研脚本",
+    "compatibility": "SKILL.md (npx skills add); Run in Manus",
+    "activity": "24 stars, 2026-03-17 更新",
+    "category": "需求发现",
+    "sources": [
+      "deep-research"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "discovery-interviews-surveys (lyndonkl/claude)",
+    "source": "https://skillsmp.com (GitHub: lyndonkl/claude)",
+    "one_line": "发现工作流：使用访谈、调查和 VOC 方法在构建前验证假设",
+    "mechanism": "输入=研究意图(未满足需求/工作流/定位/JTBD 等) → 引导研究方法选择和问题设计 → 输出=结构化访谈/调查计划制品",
+    "differentiator": "覆盖定位和雇佣触发器以及 JTBD；更接近端到端研究提示手册",
+    "compatibility": "SKILL.md (npx skills add); Manus",
+    "activity": "44 stars, 2025-11-03 更新",
+    "category": "需求发现",
+    "sources": [
+      "deep-research"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "requirements-analysis (jwynia/teach)",
+    "source": "https://skillsmp.com (GitHub: jwynia/teach)",
+    "one_line": "将需求视为假设，推动用户从陈述的需求到验证的需求和约束",
+    "mechanism": "输入=模糊意图或需求请求 → 诊断底层问题，发现约束，避免过早解决方案 → 输出=澄清的需求级理解+结构化后续问题",
+    "differentiator": "作为需求诊断状态机运行，帮助决定缺少什么以及在写规格前需要收集什么证据",
+    "compatibility": "SKILL.md (SkillsMP)",
+    "activity": "0 stars, 2026-01-06 更新",
+    "category": "需求发现",
+    "sources": [
+      "deep-research"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "openclaw/skills — Idea Explorer",
+    "source": "https://lobehub.com/skills/openclaw-skills-idea",
+    "one_line": "从单个触发短语启动后台 Claude 会话，自主执行市场规模、竞品分析、SWOT 和客户细分",
+    "mechanism": "输入='Idea: [描述]' → 后台 Claude 会话自主执行市场规模/竞品分析/SWOT/客户细分/收入模型分析 → 写入 research.md → 通知用户",
+    "differentiator": "非阻塞后台执行；无需用户交互的自主多维研究",
+    "compatibility": "Claude Code, LobeHub",
+    "activity": "",
+    "category": "需求发现",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "synthesize-research (anthropics/knowledge-work-plugins)",
+    "source": "https://github.com/anthropics/knowledge-work-plugins/tree/main/product-management/skills/synthesize-research",
+    "one_line": "将混乱的研究输入转化为排名发现、细分/画像、机会领域和建议",
+    "mechanism": "输入=粘贴的笔记/转录/调查/工单+可选连接源 → 提取观察/引用/行为/痛点/正面信号，按主题聚类，统计频率和估算影响 → 输出=结构化合成(概述→发现+证据+频率+影响+置信度→细分/画像→机会领域→建议→开放问题)",
+    "differentiator": "强制频率×影响优先级排序，明确置信水平，路径到下游制品(画像文档/机会地图/研究展示)",
+    "compatibility": "Cowork, Claude Code",
+    "activity": "Anthropic 官方维护",
+    "category": "需求发现",
+    "sources": [
+      "compass1",
+      "deep-research"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "user-research-synthesis (FastMCP)",
+    "source": "https://fastmcp.com (来源: anthropics/knowledge-work-plugins)",
+    "one_line": "使用主题分析方法论将混合研究输入转化为主题/画像/机会",
+    "mechanism": "输入=访谈笔记/调查/工单/行为数据 → 主题分析步骤(熟悉→编码→主题发展) → 输出=结构化洞察和机会领域",
+    "differentiator": "强制执行真正的合成方法论，降低 AI 无证据摘要的风险。[注: 与 ID 11 为同一上游工具(anthropics/knowledge-work-plugins)在 FastMCP 平台的重新分发版]",
+    "compatibility": "FastMCP (多运行时安装)",
+    "activity": "FastMCP 浏览计数",
+    "category": "需求发现",
+    "sources": [
+      "deep-research"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "competitive-landscape (FastMCP)",
+    "source": "https://fastmcp.com",
+    "one_line": "结构化竞争格局分析，含定位框架和差异化映射",
+    "mechanism": "输入=竞争对手集/定位问题 → 应用框架(波特五力/定位声明模板) → 输出=竞争简报和差异化选项",
+    "differentiator": "PRD 前研究模块，防止在真空中构思；提供明确的定位声明脚手架",
+    "compatibility": "FastMCP (多运行时)",
+    "activity": "FastMCP 浏览/安装计数",
+    "category": "需求发现",
+    "sources": [
+      "deep-research"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "rjs/shaping-skills — framing-doc",
+    "source": "https://github.com/rjs/shaping-skills/tree/main/framing-doc",
+    "one_line": "把散乱对话/会议记录转化为证据化 framing 文档('为什么选这个问题')",
+    "mechanism": "输入=对话 transcript(VTT/笔记)+主题 → 逐段提取原话引用+出处→汇总浮现选项及信号强度→证据化论证优先级 → 输出=标准 framing 文档(Source/Pre-work/Problem-Outcome/边界 guardrails)",
+    "differentiator": "专为异步/历史对话设计，能把模糊直觉讨论记录直接变成结构化 problem statement，证据可追溯",
+    "compatibility": "Claude Code",
+    "activity": "914 stars (主仓库), 2026-03-04 更新",
+    "category": "需求发现",
+    "sources": [
+      "grok"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "mohitagw15856/pm-claude-skills — Ambiguity Resolver",
+    "source": "https://github.com/mohitagw15856/pm-claude-skills",
+    "one_line": "专治'模糊 brief'，直接输出可行动的 problem statements",
+    "mechanism": "输入=模糊产品想法/brief → 结构化问题框架(MITRE 风格)+多维度拆解 → 输出=清晰问题陈述+用户画像雏形+下一步验证行动",
+    "differentiator": "针对单次输入的模糊 brief 一次性产出可行动的问题定义，适合快速 solo 构思",
+    "compatibility": "Claude Code",
+    "activity": "51 stars, 2026-03-23 更新",
+    "category": "需求发现",
+    "sources": [
+      "grok"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "mohitagw15856/pm-claude-skills — Discovery Interview Guide",
+    "source": "https://github.com/mohitagw15856/pm-claude-skills",
+    "one_line": "从模糊直觉生成完整用户访谈方案(screener+讨论指南+合成框架)",
+    "mechanism": "输入=产品模糊想法 → 自动生成 Mom Test 风格访谈提纲→筛选器+问题序列+合成模板 → 输出=可直接使用的访谈包+后续信号合成步骤",
+    "differentiator": "提供开箱即用的访谈执行层，直接把需求发现落地成可复制的访谈文档",
+    "compatibility": "Claude Code",
+    "activity": "51 stars (同仓库), 2026-03-23 更新",
+    "category": "需求发现",
+    "sources": [
+      "grok"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "bmad-discovery-research (bacoco/BMad-Skills)",
+    "source": "https://skillsmp.com (GitHub: bacoco/BMad-Skills)",
+    "one_line": "脑暴想法并研究项目，产出发现简报、研究笔记和问题陈述",
+    "mechanism": "输入=想法/研究/发现触发器 → 检查清单门控入口，带引用的桌面研究，框架化问题摘要/目标/画像/约束，记录开放问题/假设/风险 → 输出=使用模板的制品",
+    "differentiator": "检查清单门控工作流+带引用的模板化制品写作；更接近'交付发现简报'而非'开脑暴'",
+    "compatibility": "SKILL.md (Claude 技能目录布局)",
+    "activity": "66 stars, 2025-10-30 更新",
+    "category": "需求发现",
+    "sources": [
+      "deep-research"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "pratikshadake/claude-product-management-skills",
+    "source": "https://github.com/pratikshadake/claude-product-management-skills",
+    "one_line": "六个预 PRD 分析透镜：问题清晰度、结果定义、假设映射、JTBD 提取、实验设计、用户细分优先排序",
+    "mechanism": "输入=产品想法 → 6个离散技能各评估一个特定维度 → 输出=结构化分析(假设按 Desirability/Feasibility/Viability 轴排序)",
+    "differentiator": "唯一将 JTBD 提取与跨 D/F/V 轴排名假设映射结合的技能集；experiment-design 技能产出假设+方法+指标+决策规则",
+    "compatibility": "Claude Code, Cursor, Cline, 35+ agents",
+    "activity": "13 stars, 8 commits",
+    "category": "需求发现",
+    "sources": [
+      "compass1",
+      "compass2"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "aj-geddes/user-persona-creation",
+    "source": "GitHub (aj-geddes/user-persona-creation)",
+    "one_line": "将研究数据合成为结构化用户画像",
+    "mechanism": "输入=研究数据 → 合成 → 输出=结构化用户画像档案",
+    "differentiator": "专注于从研究数据合成画像",
+    "compatibility": "Claude Code",
+    "activity": "",
+    "category": "需求发现",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "ailabs-393/startup-validator",
+    "source": "https://lobehub.com/skills/ailabs-393-ai-labs-claude-skills-startup-validator",
+    "one_line": "数据驱动的创业想法验证：TAM/SAM/SOM 市场规模+波特五力+SWOT+竞品对标+投资人级输出",
+    "mechanism": "输入=创业想法 → TAM/SAM/SOM 市场规模+波特五力+SWOT+竞品对标+客户画像生成+风险/机会评分 → 输出=投资人级摘要+优先验证实验",
+    "differentiator": "结合市场规模(TAM/SAM/SOM)与波特五力，产出投资人级摘要+优先验证实验",
+    "compatibility": "LobeHub",
+    "activity": "17 installs",
+    "category": "概念验证",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "booklib-ai-skills/lean-startup",
+    "source": "LobeHub",
+    "one_line": "将 Eric Ries《精益创业》全部 14 章运营化为双模式策略应用和评审",
+    "mechanism": "输入=选择策略应用或策略评审模式 → 识别最高风险假设→选择适当实践(验证学习/MVP 测试/小批量实验/增长引擎) → 输出=策略文档",
+    "differentiator": "双模式(设计新策略+审计现有策略)；基于《精益创业》全部 14 章",
+    "compatibility": "Claude Code, LobeHub",
+    "activity": "",
+    "category": "概念验证",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "alirezarezvani/claude-skills — product-discovery (OST)",
+    "source": "https://github.com/alirezarezvani/claude-skills",
+    "one_line": "完整实现 Teresa Torres 机会解决方案树(OST)方法论，严格证据驱动的分支规则",
+    "mechanism": "输入=产品上下文 → 强制执行 OST：收敛前≥3个不同机会，每个顶级机会≥2个实验，高风险/低确定性假设优先 → 输出=带证据和明确拒绝标准的每个分支",
+    "differentiator": "唯一完整实现 Teresa Torres OST 方法论的 skill",
+    "compatibility": "Claude Code, LobeHub",
+    "activity": "5,200+ stars (主仓库)",
+    "category": "概念验证",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "continuous-discovery (mjrtl/pm-agent-skills)",
+    "source": "https://skillsmp.com (GitHub: mjrtl/pm-agent-skills)",
+    "one_line": "完整持续发现流水线：访谈快照→合成→机会→方案生成→假设测试",
+    "mechanism": "输入=目标机会 → 强制人类先独立构思再 AI-人类协作→识别并映射假设(重要性×证据)→选出信仰飞跃假设→设计测试卡 → 输出=优先假设+建议实验/测试",
+    "differentiator": "明确强制人类先构思；使用结构化 LoFA+测试卡方法；包含伦理作为假设类别",
+    "compatibility": "SKILL.md (SkillsMP)",
+    "activity": "0 stars, 2026-02-10 更新",
+    "category": "概念验证",
+    "sources": [
+      "deep-research"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "hypothesis (panaversity/agentfactory-business-plugins)",
+    "source": "https://skillsmp.com (GitHub: panaversity/agentfactory-business-plugins)",
+    "one_line": "假设映射、MVP 范围界定和成功/失败/转向标准，解答'应该先测试什么？'",
+    "mechanism": "输入=想法+'我在做什么假设/测试我的想法/杀死我的想法' → 表面化最高风险假设和验证顺序→定义标准和 MVP 范围 → 输出=假设/假说框架和测试方向",
+    "differentiator": "明确的精益创业风格决策门控(杀死/压测/转向标准)",
+    "compatibility": "SKILL.md (SkillsMP)",
+    "activity": "4 stars, 2026-03-18 更新",
+    "category": "概念验证",
+    "sources": [
+      "deep-research"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Afrexai Product Manager OS (1kalin)",
+    "source": "https://github.com/openclaw/skills/blob/main/skills/1kalin/afrexai-product-manager/SKILL.md",
+    "one_line": "强制执行结果导向与优先排序的产品管理操作系统，自带 Saying No Framework",
+    "mechanism": "输入=利益相关者请求 → RICE+矩阵评分(Reach/Impact/Confidence/Effort/Strategic Fit)，强制3步验证(问题→解决方案→付费意愿) → 输出=战略简报 YAML+拒绝话术",
+    "differentiator": "具备主动防御的 Saying No Framework 保护工程带宽；与 phuryn/pm-skills 的顺从优化逻辑截然不同",
+    "compatibility": "Linux/macOS/Win, Claude Code",
+    "activity": "OpenClaw 仓库 3.4k stars",
+    "category": "概念验证",
+    "sources": [
+      "早期调研"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Scientific Brainstorming (davila7)",
+    "source": "https://github.com/davila7/claude-code-templates/blob/main/cli-tool/components/skills/scientific/scientific-brainstorming/SKILL.md",
+    "one_line": "用学术严谨性验证硬科技与深层技术假设(贝叶斯推理+竞争性假设检验)",
+    "mechanism": "输入=新颖解决方案/方法论 → 跨学科类比(医疗/航空等)+贝叶斯推理+竞争性假设检验 → 输出=验证实验设计",
+    "differentiator": "将学术界假设检验标准引入产品发现；贝叶斯推理按证据强度更新置信度",
+    "compatibility": "Claude Code CLI",
+    "activity": "GitHub 活跃维护",
+    "category": "概念验证",
+    "sources": [
+      "早期调研"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Marketing Strategy PMM (alirezarezvani)",
+    "source": "https://github.com/alirezarezvani/claude-skills/blob/main/marketing-skill/marketing-strategy-pmm/SKILL.md",
+    "one_line": "验证产品概念的市场定位与目标受众匹配度(April Dunford 定位法)",
+    "mechanism": "输入=GTM 策略或受众定义 → April Dunford 定位法+ICP 分析+置信度自我评估 → 输出=带置信度标签(绿/黄/红)的定位文档",
+    "differentiator": "主动触发(检测到缺 ICP 时打断)；红黄绿验证置信度标签；8步 ICP 定义工作流",
+    "compatibility": "Claude Code (与 CMO Agent 协同)",
+    "activity": "2026 年更新",
+    "category": "概念验证",
+    "sources": [
+      "早期调研"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "softaworks/agent-toolkit — game-changing-features",
+    "source": "https://github.com/softaworks/agent-toolkit",
+    "one_line": "从模糊产品想法中挖掘'10x 产品机会'",
+    "mechanism": "输入=产品直觉/市场背景 → 多视角机会扫描+10x 杠杆评估 → 输出=结构化机会清单+优先级+验证路径",
+    "differentiator": "专注'10x 机会发现'，直接把早期构思推向高杠杆方向",
+    "compatibility": "Claude Code, Codex (npx 安装)",
+    "activity": "1.2k stars",
+    "category": "概念验证",
+    "sources": [
+      "grok"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Peer Review (davila7)",
+    "source": "https://github.com/davila7/claude-code-templates/blob/main/cli-tool/components/skills/scientific/peer-review/SKILL.md",
+    "one_line": "学术同行评审风格的方案验证技能",
+    "mechanism": "输入=方案/假设 → 学术同行评审流程 → 输出=评审结果",
+    "differentiator": "学术同行评审标准应用于产品方案",
+    "compatibility": "Claude Code CLI",
+    "activity": "GitHub 活跃维护",
+    "category": "概念验证",
+    "sources": [
+      "早期调研"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Bayesian Reasoning Calibration (lyndonkl)",
+    "source": "https://github.com/lyndonkl/claude/blob/main/skills/bayesian-reasoning-calibration/SKILL.md",
+    "one_line": "贝叶斯推理校准技能",
+    "mechanism": "输入=需要校准的推理 → 贝叶斯概率更新 → 输出=校准后的置信度",
+    "differentiator": "贝叶斯概率方法应用于推理校准",
+    "compatibility": "Claude Code",
+    "activity": "",
+    "category": "概念验证",
+    "sources": [
+      "早期调研"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "MadAppGang/claude-code-brainstorming",
+    "source": "https://github.com/MadAppGang/claude-code-brainstorming",
+    "one_line": "通过多个虚拟角色(悲观主义者/乐观主义者/技术专家等)并行头脑风暴，生成多元深度创意",
+    "mechanism": "输入=开放式主题 → 预设多个角色卡并行生成→收集所有线程结果→主持人/综合者寻找主题、冲突和模式 → 输出=多维度脑暴报告(不同视角核心观点+重叠区域+冲突点)",
+    "differentiator": "最典型的'发散'工具；通过并行化和角色扮演实现更高维度发散；标杆技能之一",
+    "compatibility": "Claude Code",
+    "activity": "标杆技能",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "docx",
+      "compass1",
+      "compass2",
+      "deep-research",
+      "grok",
+      "早期调研"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "obra/superpowers — Brainstorming",
+    "source": "https://github.com/obra/superpowers",
+    "one_line": "社区最广泛采用的构思技能：苏格拉底式逐一提问+浏览器内实时可视化渲染",
+    "mechanism": "输入=粗糙想法 → 逐一苏格拉底式提问(偏好多选题)→自动范围分解→浏览器伴侣渲染视觉 mockup 和图表→链式调用 writing-plans → execute-plan → 输出=完整设计规格+子代理自动 review(最多3轮)+自动 commit",
+    "differentiator": "浏览器伴侣在脑暴期间渲染视觉 mockup/图表/对比；16,300-28K+ stars；Anthropic 官方 marketplace 收录",
+    "compatibility": "Claude Code, Codex CLI, Cursor, Antigravity, Gemini CLI",
+    "activity": "28K+ stars, 1,300+ forks, 2026-03-16 更新",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "compass1",
+      "compass2",
+      "grok"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Orchestra-Research/AI-Research-SKILLs",
+    "source": "https://github.com/Orchestra-Research/AI-Research-SKILLs",
+    "one_line": "认知科学实证框架的脑暴：8种经验验证框架(bisociation/structure-mapping/Janusian thinking 等)",
+    "mechanism": "输入=研究/产品问题 → creative-thinking 应用8个框架; research-brainstorming 用10个互补透镜+发散→收敛→精炼流程+二句话想法过滤 → 输出=精炼后的创意集",
+    "differentiator": "应用实证认知科学框架(Koestler 的 bisociation, Gentner 的 structure-mapping)而非通用 PM 框架",
+    "compatibility": "Claude Code, Codex, Gemini CLI, 8 agents",
+    "activity": "4,800+ stars",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "bladnman/ideation_team_skill",
+    "source": "GitHub (bladnman/ideation_team_skill)",
+    "one_line": "生成5代理团队(自由思考者/接地者/仲裁者/作家/探索者)协作产出愿景文档、PRD、PPT 和 HTML 页面",
+    "mechanism": "输入=用户想法 → 5个代理(Free Thinker/Grounder/Arbiter/Writer/Explorer)进行结构化对话 → 输出=愿景文档/PRD/PPT/设计 HTML 页面",
+    "differentiator": "唯一将认知模式(发散/收敛/判断/综合/研究)分离到不同代理角色的 skill",
+    "compatibility": "Claude Code",
+    "activity": "32 stars, 活跃维护",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "noin-ai-plugins/brainstorm",
+    "source": "https://lobehub.com/skills/noin-ai-plugins-brainstorm",
+    "one_line": "编排3个并行代理(批评者/创意者/实用主义者)交叉辩论，Opus 综合者产出共识",
+    "mechanism": "输入=想法 → 3个并行代理独立分析→交叉辩论对方观点→Opus 级综合者产出共识摘要+分歧表; 可配置轮次(--rounds=N)",
+    "differentiator": "最接近真正对抗性多视角脑暴；三个不同代理角色+交叉辩论+分歧表",
+    "compatibility": "Claude Code, LobeHub",
+    "activity": "LobeHub 平台",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "compass1",
+      "compass2"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "bbgnsurftech/brainstorming-skill",
+    "source": "https://lobehub.com/zh/skills/bbgnsurftech-claude-skills-collection-brainstorming-skill",
+    "one_line": "30+ 研究验证的构思模式，跨 14 个类别，每个模式带评分标准和即用提示模板",
+    "mechanism": "输入=问题 → 从14类别中选择模式(视角乘法/约束变化/反转/类比转移/SCAMPER/形态映射/假设挑战等) → 输出=带评分标准的结构化创意",
+    "differentiator": "最大的模式库(30+ 模式, 14 类别)，每个模式带评分标准",
+    "compatibility": "Claude Code, LobeHub, Smithery",
+    "activity": "",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "compass1",
+      "compass2"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "alexei-led/claude-code-config — brainstorming-ideas",
+    "source": "LobeHub (alexei-led/claude-code-config)",
+    "one_line": "7阶段协作对话(理解→星爆→研究→推荐→验证→文档→下一步)含 YAGNI 检查",
+    "mechanism": "输入=想法 → 7阶段: Understanding→Starbursting→Optional Research→Recommended Approaches→Incremental Validation→Documentation→Next Steps; TodoWrite 集成跟踪进度",
+    "differentiator": "明确 YAGNI 检查防止范围蔓延；200-300字增量设计展示便于审查",
+    "compatibility": "Claude Code, LobeHub",
+    "activity": "",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "doubleslashse/workshop-facilitator",
+    "source": "ClaudePluginHub",
+    "one_line": "运行多轮发散-收敛引导式脑暴会议，含 SCAMPER 和反向脑暴",
+    "mechanism": "输入=目标和约束 → 第1轮自由联想→第2轮提示技巧(SCAMPER/反向脑暴)→第3轮疯狂想法→收敛和优先排序; 支持快速/完整格式",
+    "differentiator": "最像工作坊的 skill；多轮引导式会议+明确收敛阶段",
+    "compatibility": "Claude Code, ClaudePluginHub",
+    "activity": "",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "robertguss/claude-code-toolkit — brainstorm",
+    "source": "LobeHub (robertguss/claude-code-toolkit)",
+    "one_line": "多会话持久化脑暴：版本化 Markdown 文档+跨项目连接+决策检查点",
+    "mechanism": "输入=开始/继续脑暴 → 跨会话维护版本化 Markdown→连接模式表面跨项目连接; 洁净模式防泄漏; 'So What?' 测试; 决策检查点",
+    "differentiator": "唯一支持多会话持续性的 skill，维护数天或数周的版本化文档",
+    "compatibility": "Claude Code, LobeHub",
+    "activity": "",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "compass1",
+      "compass2"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "double-diamond (jordangaston/claude-plugins)",
+    "source": "https://skillsmp.com (GitHub: jordangaston/claude-plugins)",
+    "one_line": "引导双钻设计流程(发现/定义/开发/交付)，从模糊问题到验证的解决方案路径",
+    "mechanism": "输入=设计/产品挑战 → 识别当前阶段→产出阶段适当制品(研究计划/问题陈述/构思工作坊计划/原型简报/测试计划)→发散/收敛循环 → 输出=结构化计划或制品",
+    "differentiator": "提供整个周期的发散/收敛宏结构；用户不确定下一步时特别有用",
+    "compatibility": "SKILL.md (SkillsMP)",
+    "activity": "0 stars, 2026-03-17 更新",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "deep-research"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "creative-intelligence (aj-geddes/claude-code-bmad-skills)",
+    "source": "https://skillsmp.com (GitHub: aj-geddes/claude-code-bmad-skills)",
+    "one_line": "脑暴和研究自动化专家角色，用于结构化构思、市场/竞品研究和解决方案生成",
+    "mechanism": "输入=创新问题或产品空间 → 领导脑暴会议/进行研究/生成创造性解决方案/记录发现→与邻近 BMAD 角色集成 → 输出=研究+想法精炼制品+跨角色交接",
+    "differentiator": "作为更大创新系统(BMAD)中的角色，可与 BA/PM/架构师多角色协作",
+    "compatibility": "SKILL.md (Claude Code)",
+    "activity": "351 stars, 2025-11-01 更新",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "deep-research"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "brainstorm-ideas-existing (officebeats)",
+    "source": "https://skillsmp.com (GitHub: officebeats/beats-pm-antigravity-brain-agent-skills)",
+    "one_line": "针对现有产品的多视角构思+排序(PM/设计师/工程师视角)",
+    "mechanism": "输入=现有产品/机会上下文 → 从多角色生成想法→读取提供的研究/画像/OST→可选 web 搜索产品 URL→优先排序前5 → 输出=带上下文的排名想法集",
+    "differentiator": "跨运行时兼容指令+优雅降级；实用产品三人组结构",
+    "compatibility": "Google Antigravity, Gemini CLI, Claude Code, Kilocode CLI",
+    "activity": "5 stars, 2026-03-07 更新",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "deep-research",
+      "早期调研"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Brainstorming Ideas — gitwalter",
+    "source": "https://lobehub.com/skills/gitwalter-antigravity-agent-factory-brainstorming-ideas",
+    "one_line": "4种发散透镜(常规/类比/极端/AI原生)无约束灵感喷发，绝对禁止评估",
+    "mechanism": "输入=问题框架锚点文件(knowledge/problem-frame.md) → 4种透镜各≥5条，绝对禁止评估 → 输出=一句话一条的原始概念清单到 raw/YYYY-MM-DD-session.md(≥20条)",
+    "differentiator": "极端的'禁止评估'纪律；刻意保留创意噪音供后续归纳；强制类比相邻领域",
+    "compatibility": "LobeHub",
+    "activity": "2026-03-09 更新, v1.0.1",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "早期调研"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "OMGKit Brainstorming (doanchienthangdev)",
+    "source": "https://lobehub.com/skills/doanchienthangdev-omgkit-brainstorming",
+    "one_line": "严格时间盒的工作坊(20m发散→10m探索→15m收敛)含角色风暴和匿名投票",
+    "mechanism": "输入=研讨会主题 → 20m发散→10m探索(反向脑暴/角色风暴含黑客/竞争对手视角)→15m影响/努力矩阵收敛 → 输出=Top3 可落地概念",
+    "differentiator": "严格时间盒管理+黑客/竞争对手角色扮演+匿名投票避免群体思维",
+    "compatibility": "LobeHub",
+    "activity": "2026-03-03 更新",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "早期调研"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Brainstorm Ideas New (officebeats)",
+    "source": "https://skillsmp.com/skills/officebeats-beats-pm-antigravity-brain-agent-skills-brainstorm-ideas-new-skill-md",
+    "one_line": "模拟产品三人组(PM/设计师/工程师)进行初始发现与评估",
+    "mechanism": "输入=目标受众与市场数据 → Web搜索补充→PM/设计师/工程师三方视角各发散5个想法→依验证速度加权排序 → 输出=带核心测试假设的功能清单",
+    "differentiator": "明确区分初始发现与持续发现；极度偏向验证速度优先筛选",
+    "compatibility": "Google Antigravity, Claude",
+    "activity": "2026-03-07 更新",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "早期调研"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "TML 4PM AI Toolkit (tml-4pm-t4h)",
+    "source": "https://lobehub.com/skills/tml-4pm-t4h-ai-toolkit-brainstorming",
+    "one_line": "连接早期构思与 Git 环境初始化的架构向工具",
+    "mechanism": "输入=产品概念 → 2-3种方案架构对比(含权衡+复杂性评估)→200-300字分段增量确认→触发 Git worktrees 建立隔离工作区 → 输出=架构方案+隔离开发分支+交接给 Implementation Plan 技能",
+    "differentiator": "脑暴结束瞬间自动完成物理工作区建立与实施计划交接",
+    "compatibility": "LobeHub",
+    "activity": "",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "早期调研"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "jkitchin/brainstorming",
+    "source": "GitHub (jkitchin/brainstorming)",
+    "one_line": "6种命名创意技巧+场景匹配指南(如六顶思考帽用于战略决策)",
+    "mechanism": "输入=问题 → 6种创意技巧+场景匹配(技巧→适合的上下文) → 输出=多技巧创意集",
+    "differentiator": "场景特定的技巧推荐而非一刀切",
+    "compatibility": "Claude Code",
+    "activity": "",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "athola/project-brainstorming",
+    "source": "LobeHub",
+    "one_line": "苏格拉底式约束分析产出项目简报",
+    "mechanism": "输入=项目想法 → 苏格拉底式约束分析 → 输出=项目简报",
+    "differentiator": "约束聚焦的苏格拉底方法",
+    "compatibility": "LobeHub",
+    "activity": "46.3K views",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "lifangda/brainstorming",
+    "source": "LobeHub",
+    "one_line": "6阶段设计优先构思，产出带工作量/风险评级的选项矩阵",
+    "mechanism": "输入=设计问题 → 6阶段设计优先构思 → 输出=选项矩阵(含工作量+风险评级)",
+    "differentiator": "设计优先+选项矩阵含工作量/风险评级",
+    "compatibility": "LobeHub",
+    "activity": "",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "openclaw/reasoning-personas",
+    "source": "LobeHub",
+    "one_line": "可切换思考模式：Gonzo 记者/魔鬼代言人/系统思考者/风险评估师",
+    "mechanism": "输入=问题 → 切换思考模式角色(Gonzo记者/魔鬼代言人/系统思考者/风险评估师) → 输出=多视角分析",
+    "differentiator": "命名角色化思考模式用于视角多样性",
+    "compatibility": "Claude Code",
+    "activity": "",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "withzombies/hyperpowers — brainstorming",
+    "source": "LobeHub (withzombies/hyperpowers)",
+    "one_line": "将构思直接桥接到开发 backlog，输出 Gherkin 验收标准和 Jira-ready 任务分解",
+    "mechanism": "输入=粗糙想法 → 目标澄清→范围定义→利益相关者/画像映射→用户旅程映射→Gherkin 验收标准→Jira-ready 任务分解→风险/假设追踪",
+    "differentiator": "直接将构思输出连接到开发 backlog(Gherkin+Jira-ready)",
+    "compatibility": "Claude Code, LobeHub",
+    "activity": "",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Jamie-BitFlight/brainstorming-skill",
+    "source": "Smithery",
+    "one_line": "用 Mermaid 流程图作为可执行指令集的交互式设计流程",
+    "mechanism": "输入=设计问题 → Mermaid 流程图指导交互式设计流程 → 输出=结构化设计方案",
+    "differentiator": "Mermaid 流程图作为可执行指令集",
+    "compatibility": "Claude Code, Smithery",
+    "activity": "",
+    "category": "结构化Brainstorming",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "phuryn/pm-skills",
+    "source": "https://github.com/phuryn/pm-skills",
+    "one_line": "65个 PM 技能集，核心 /discover 命令提供从创意发散到实验设计的端到端结构化工作流",
+    "mechanism": "输入=宽泛问题领域 → /discover 链式调用: ①构思(/brainstorm)→②假设映射(/map-assumptions, D/F/V)→③优先排序(RICE/ICE)→④实验设计(实验卡片) → 输出=1-3份结构化实验设计文档",
+    "differentiator": "端到端建设性流程；65个 PM 技能覆盖全周期；标杆技能之一",
+    "compatibility": "Claude Code, Cowork",
+    "activity": "标杆技能",
+    "category": "产品定义",
+    "sources": [
+      "docx",
+      "compass1",
+      "compass2",
+      "deep-research",
+      "grok",
+      "早期调研"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "deanpeters/Product-Manager-Skills",
+    "source": "https://github.com/deanpeters/Product-Manager-Skills",
+    "one_line": "包含多种经典 PM/战略框架(精益UX画布/OST等)的模板生成与引导填充工具",
+    "mechanism": "输入=模糊想法+选择框架 → 输出格式化空白框架模板→逐项引导填充→内容关联校验 → 输出=填写完整的结构化框架文档",
+    "differentiator": "静态'表单填充'而非动态工作流；建设性地组织信息；标杆技能之一",
+    "compatibility": "Claude Code, Cowork",
+    "activity": "标杆技能",
+    "category": "产品定义",
+    "sources": [
+      "docx",
+      "compass1",
+      "compass2",
+      "deep-research",
+      "grok"
+    ]
+  },
+  {
+    "id": 55,
+    "name": "anthropics/knowledge-work-plugins — Product Management",
+    "source": "https://github.com/anthropics/knowledge-work-plugins/tree/main/product-management",
+    "one_line": "Anthropic 官方 PM 插件：/brainstorm(4模式)+/write-spec+/synthesize-research+/competitive-brief 等7个命令",
+    "mechanism": "输入=用户触发命令 → MCP 集成从 Slack/Linear/Figma/Amplitude 拉取实时上下文→结构化产出 PM 制品 → 输出=PRD/竞品简报/研究合成等",
+    "differentiator": "Anthropic 官方维护；MCP 集成拉取实时上下文；/brainstorm 支持4模式(HMW/JTBD/First Principles/OST)",
+    "compatibility": "Claude Cowork (主要), Claude Code",
+    "activity": "64 stars, Anthropic 官方维护",
+    "category": "产品定义",
+    "sources": [
+      "compass1",
+      "compass2",
+      "deep-research"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "alirezarezvani/claude-skills (192+ skills)",
+    "source": "https://github.com/alirezarezvani/claude-skills",
+    "one_line": "最大的通用技能集(192+)，含12个 PM 技能+画像系统+code-to-prd 反向工程",
+    "mechanism": "输入=选择技能 → PM 工具包含可执行 Python 脚本(RICE 优先排序/客户访谈分析) → 输出=相应制品",
+    "differentiator": "192+ 技能最大集；独特 code-to-prd 从代码反向工程 PRD；画像系统(如 startup-cto)预配置技能组合",
+    "compatibility": "Claude Code, Codex, Gemini CLI, Cursor, Windsurf, Aider, 11 tools",
+    "activity": "5,200+ stars",
+    "category": "产品定义",
+    "sources": [
+      "compass1",
+      "compass2"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "product-on-purpose/pm-skills (27 skills)",
+    "source": "https://github.com/product-on-purpose/pm-skills",
+    "one_line": "27个生产级 PM 技能，围绕三钻框架组织(Discover→Define→Develop→Deliver→Measure→Iterate)",
+    "mechanism": "输入=早期产品提示 → 调用特定命令(/problem-statement/hypothesis/prd/experiment-design 等)或链式工作流包 → 输出=标准化专业制品",
+    "differentiator": "三钻框架+工作流包(Feature Kickoff/Lean Startup 等)；同时提供库版和 MCP Server 版",
+    "compatibility": "Claude Code, Copilot, Cursor, Windsurf, OpenCode, MCP clients",
+    "activity": "6 stars, 78 commits, 活跃更新",
+    "category": "产品定义",
+    "sources": [
+      "compass1",
+      "compass2",
+      "deep-research"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "pmprompt/claude-plugin-product-management (28 skills)",
+    "source": "https://github.com/pmprompt/claude-plugin-product-management",
+    "one_line": "28个可独立安装的框架特定 PM 技能：Working Backwards(Amazon)/Shape Up(Basecamp)等",
+    "mechanism": "输入=选择框架命令 → 执行特定框架方法论 → 输出=框架制品",
+    "differentiator": "唯一包含 Working Backwards(Amazon 新闻稿优先法)和 Shape Up(Basecamp)方法论的集合",
+    "compatibility": "Claude Code, Cursor, OpenCode",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 59,
+    "name": "wondelai/skills (25 book-based)",
+    "source": "https://github.com/wondelai/skills",
+    "one_line": "25个基于书籍的 PM 框架技能，每个实现一本影响力书籍的完整方法论",
+    "mechanism": "输入=选择方法论 → 执行书中完整方法论(如精益创业 Build-Measure-Learn; 设计冲刺 5天流程) → 输出=方法论制品",
+    "differentiator": "基于书籍方法论而非通用 PM 建议；含稀有方法论如蓝海战略六路径框架和跨越鸿沟滩头选择",
+    "compatibility": "Claude Code",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "wdavidturner/product-skills (20 from Lenny's)",
+    "source": "https://github.com/wdavidturner/product-skills",
+    "one_line": "从 Lenny's Newsletter 播客转录中提取的20个 PM 框架，基于模式教学",
+    "mechanism": "输入=选择框架 → 基于模式教学(非模板填充) → 输出=框架应用",
+    "differentiator": "来自播客转录的框架；模式教学方法",
+    "compatibility": "Claude Code",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Digidai/product-manager-skills",
+    "source": "https://github.com/Digidai/product-manager-skills",
+    "one_line": "快速优先的 PM 技能集，立即给出答案并内联标注假设，覆盖6知识域",
+    "mechanism": "输入=PM 任务 → 立即回答(非先访谈)，内联标注假设; 覆盖6域含 Discovery(JTBD/Mom Test/OST/Lean UX Canvas) → 输出=带假设标签的初稿",
+    "differentiator": "'快速初稿'哲学+内联假设标注；按周节奏结构化(周一路线图→周中PRD→周五SaaS诊断)",
+    "compatibility": "Claude Code, Codex, Cursor, Windsurf",
+    "activity": "19-27 markdown files, ~2,800 lines",
+    "category": "产品定义",
+    "sources": [
+      "compass1",
+      "deep-research"
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Yassinello/claude-plugin-prd-workflow",
+    "source": "https://github.com/Yassinello/claude-plugin-prd-workflow",
+    "one_line": "完整 PRD 生命周期：7维 A-F 评分评审+校准问题+git worktree 编排",
+    "mechanism": "输入=产品需求 → /create-prd→/review-prd(7维 A-F 评分)→/code-prd→/complete-prd; /invoke 并行运行架构/安全/测试/计划(~12min); git worktree 支持并行 PRD",
+    "differentiator": "7维评审+校准问题暴露未知缺口+git worktree 并行 PRD 开发",
+    "compatibility": "Claude Code",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 63,
+    "name": "huchi996/prd-creator-skill",
+    "source": "https://github.com/huchi996/prd-creator-skill",
+    "one_line": "6阶段 SOP PRD 工作流+多角色评审(测试/开发/PM)+Mermaid 图集成",
+    "mechanism": "输入=需求 → 6阶段 SOP: 需求孵化→方案预研→项目构建→模块构建→功能细化→多角色评审 → 输出=带 Mermaid 图的 PRD",
+    "differentiator": "多角色评审(测试/开发/PM 各从不同维度)；双语中英文；Mermaid 图集成",
+    "compatibility": "Claude Code",
+    "activity": "v2.0.0",
+    "category": "产品定义",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 64,
+    "name": "mattpocock/skills — write-a-prd",
+    "source": "https://github.com/mattpocock/skills/blob/main/write-a-prd/SKILL.md",
+    "one_line": "代码仓库感知的 PRD 技能：检查仓库→应用深模块设计→提交为 GitHub Issue",
+    "mechanism": "输入=PRD 请求 → 检查代码仓库→应用 John Ousterhout '深模块'概念→生成 PRD → 输出=自动提交为 GitHub Issue",
+    "differentiator": "代码仓库感知+自动提交到 GitHub Issues；知名 TypeScript 教育者 Matt Pocock 创建",
+    "compatibility": "Claude Code, LobeHub",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "compass1",
+      "compass2"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "mattpocock/skills — grill-me",
+    "source": "https://github.com/mattpocock/skills/tree/main/grill-me",
+    "one_line": "'残酷审讯器'：像 YC Partner 一样 relentlessly 提问(16+个问题)覆盖所有决策分支",
+    "mechanism": "输入=任意计划/想法/设计 → 像 YC partner relentlessly 提问(技术实现/UI-UX/风险/trade-offs/用户画像) → 输出=完整澄清的 problem statement+验证路径+修订 PRD 雏形",
+    "differentiator": "比 office-hours 更激进(纯 grilling)；比 phuryn/pm-skills 更轻量单次可用；X 上病毒式传播",
+    "compatibility": "Claude Code (npx 一键安装)",
+    "activity": "9K+ stars, 2026-03-19 更新, X 病毒传播",
+    "category": "需求发现",
+    "sources": [
+      "grok"
+    ]
+  },
+  {
+    "id": 66,
+    "name": "rjs/shaping-skills — shaping",
+    "source": "https://github.com/rjs/shaping-skills/tree/main/shaping",
+    "one_line": "Shape Up 方法专属'问题-解决方案迭代器'：同时打磨问题定义和解决方案形状",
+    "mechanism": "输入=问题上下文+初步要求 → 协商限制顶级要求≤9个→生成互斥形状方案→二进制 fit check→标记未知做 spike→breadboarding 转 UI/代码 affordances → 输出=完整 shaping 文档(要求/形状/fit check/breadboard/slices doc)",
+    "differentiator": "动态文档层级一致性+二进制 fit check+自动 breadboarding 映射；边迭代问题边迭代解法的闭环",
+    "compatibility": "Claude Code",
+    "activity": "914 stars, 2026-03-04 更新",
+    "category": "产品定义",
+    "sources": [
+      "grok"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "sd0x-dev-flow",
+    "source": "https://github.com/sd0xdev/sd0x-dev-flow",
+    "one_line": "完整'Plan→Gate→Ship'早期构思流水线(脑暴→可行性→技术规格)",
+    "mechanism": "输入=模糊想法 → /codex-brainstorm(多agent对抗辩论)→/feasibility-study(量化成本/风险)→/tech-spec(结构化规格) → 输出=framing doc+验证清单+可施工规格",
+    "differentiator": "brainstorm→feasibility→spec 一条龙闭环；强制 feasibility gate 防止过早进入实施",
+    "compatibility": "Claude Code (git clone 安装)",
+    "activity": "2026-03-25 刚发布",
+    "category": "产品定义",
+    "sources": [
+      "grok"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "github/awesome-copilot — breakdown-epic-pm / breakdown-feature-prd",
+    "source": "https://github.com/github/awesome-copilot",
+    "one_line": "GitHub 官方：将高级想法翻译为 Epic→Feature→PRD 层级分解",
+    "mechanism": "输入=高级想法 → 分解为 Epic 级 PRD→Feature→PRD 层级 → 输出=层级化 PRD",
+    "differentiator": "GitHub 官方集合；Epic→Feature→PRD 层级分解",
+    "compatibility": "GitHub Copilot, 可适配 SKILL.md",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "compass1",
+      "deep-research"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "github/prd (Smithery)",
+    "source": "Smithery",
+    "one_line": "强制反模糊规则：拒绝主观词汇(快速/简单/直观)，要求具体可衡量标准",
+    "mechanism": "输入=需求 → 拒绝'快速/简单/直观'等主观词→强制具体可衡量标准(如'200ms 内返回 10K 记录结果') → 输出=严格量化 PRD",
+    "differentiator": "反模糊强制执行+可衡量标准；拒绝主观语言",
+    "compatibility": "Claude Code, Smithery",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 70,
+    "name": "jamesrochabrun/skills — prd-generator",
+    "source": "https://github.com/jamesrochabrun/skills/blob/main/skills/prd-generator/SKILL.md",
+    "one_line": "生成附自动化检查脚本的生产级多格式 PRD(AARRR/HEART/OKR 指标智能匹配)",
+    "mechanism": "输入=已验证概念 → 7步发现问答→动态分配 AARRR/HEART/OKR→用户故事+验收标准→validate_prd.sh 自动校验 → 输出=标准/精益/技术 PRD(13部分)",
+    "differentiator": "智能匹配评估模型+自动化校验脚本+GDPR/HIPAA 合规支持",
+    "compatibility": "GitHub Web/Mobile",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "compass1",
+      "compass2",
+      "早期调研"
+    ]
+  },
+  {
+    "id": 71,
+    "name": "requirements-engineering (yknothing/prodcraft-skills)",
+    "source": "https://skillsmp.com (GitHub: yknothing/prodcraft-skills)",
+    "one_line": "将发现证据转化为优先需求和范围边界('应该构建什么'阶段)",
+    "mechanism": "输入=发现证据包+入口制品(problem-frame/design-direction/intake-brief) → 基于上游制品路由→保留约束和非目标 → 输出=优先需求+范围边界",
+    "differentiator": "对制品路由和交接契约异常明确('entry-stack'输入)；支持部分上游制品",
+    "compatibility": "SKILL.md (SkillsMP)",
+    "activity": "SkillsMP 列出",
+    "category": "产品定义",
+    "sources": [
+      "deep-research"
+    ]
+  },
+  {
+    "id": 72,
+    "name": "business-analyst (FastMCP)",
+    "source": "https://fastmcp.com",
+    "one_line": "通过结构化访谈(/product-brief)引导产品发现，产出产品简报",
+    "mechanism": "输入=触发 /product-brief → 结构化访谈(问题优先+11节流程)→加载配置/助手 → 输出=Product Brief+写入文件路径+推荐下一步(如 PRD)",
+    "differentiator": "简报生成向导+定义明确的结束状态和输出路径；易于集成到流水线",
+    "compatibility": "FastMCP (多运行时)",
+    "activity": "发布 4 天前",
+    "category": "产品定义",
+    "sources": [
+      "deep-research"
+    ]
+  },
+  {
+    "id": 73,
+    "name": "prd — FastMCP skill #514 (sourced from awesome-copilot)",
+    "source": "https://fastmcp.me/skills/details/514/prd (源: github/awesome-copilot)",
+    "one_line": "3阶段工作流 PRD 生成：强制发现访谈→范围界定→严格反模糊生成(消灭'快速/直观'等词，强制毫秒/百分比级指标)",
+    "mechanism": "输入=想法/功能请求 → 阶段1发现访谈(核心问题/成功指标/约束)→阶段2范围界定(用户流/非目标)→阶段3严格模式PRD生成(拦截模糊形容词转硬指标如>=85% Precision@10/低于200ms) → 输出=极度数据化的生产级 PRD(含用户故事和风险分析)",
+    "differentiator": "严格'先访谈不假设上下文'行为+在生成层面消灭模糊词汇强制量化约束；专为 AI 驱动系统设计。[注: 与 ID 81 为同一工具的不同侧面描述，已合并]",
+    "compatibility": "FastMCP; Antigravity; Copilot 布局",
+    "activity": "FastMCP 浏览/安装计数",
+    "category": "产品定义",
+    "sources": [
+      "deep-research"
+    ]
+  },
+  {
+    "id": 74,
+    "name": "requirements-clarity (FastMCP)",
+    "source": "https://fastmcp.com",
+    "one_line": "使用量化'清晰度评分'门控，持续提问直到足够上下文后才写 PRD",
+    "mechanism": "输入=部分需求 → 迭代提问循环每轮更新清晰度评分→追踪缺失缺口→仅当评分≥阈值时继续 → 输出=PRD 写入指定 docs 路径",
+    "differentiator": "唯一提供量化完整性门控(清晰度评分)的 skill；运营化'现在停止提问写文档'",
+    "compatibility": "FastMCP (多运行时)",
+    "activity": "上周发布",
+    "category": "产品定义",
+    "sources": [
+      "deep-research"
+    ]
+  },
+  {
+    "id": 75,
+    "name": "OttawaCloudConsulting/agentic-ai",
+    "source": "GitHub",
+    "one_line": "5轮访谈产出3份交叉引用文档(PRD+架构文档+进度追踪器)",
+    "mechanism": "输入=想法 → 5轮访谈 → 输出=3份交叉引用文档(PRD+架构文档+进度追踪器)",
+    "differentiator": "单个工作流产出3份交叉引用文档",
+    "compatibility": "Claude Code",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "snarktank/ralph",
+    "source": "GitHub",
+    "one_line": "PRD 为 AI 自主执行优化：每个用户故事大小适合一个上下文窗口",
+    "mechanism": "输入=需求 → 生成 PRD，每个用户故事约束在一个上下文窗口内 → 输出=AI执行优化 PRD",
+    "differentiator": "PRD 结构为 AI 自主执行优化；用户故事约束在上下文窗口",
+    "compatibility": "Claude Code",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 77,
+    "name": "curtbushko/nixos-config — prd",
+    "source": "LobeHub (curtbushko/nixos-config)",
+    "one_line": "企业级 PRD：使用 HashiCorp 生产模板，介绍最后写+术语表+RFC 链接",
+    "mechanism": "输入=产品上下文 → HashiCorp PRD 模板→强制介绍最后写→术语表+相关 RFC 链接 → 输出=企业级 PRD",
+    "differentiator": "HashiCorp 生产 PRD 模板；企业导向",
+    "compatibility": "Claude Code, LobeHub",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 78,
+    "name": "adolfoaranaes12/bmad-enhanced — create-prd",
+    "source": "LobeHub (adolfoaranaes12/bmad-enhanced)",
+    "one_line": "PRD 前置市场竞品分析步骤+画像框架+竞品矩阵模板",
+    "mechanism": "输入=想法 → 先执行市场竞品分析→画像框架→竞品矩阵 → 输出=含市场分析的 PRD",
+    "differentiator": "市场竞品分析作为 PRD 生成的前置步骤；适合创业项目",
+    "compatibility": "Claude Code, LobeHub",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 79,
+    "name": "ff4415/skills — rpg-prd",
+    "source": "https://github.com/ff4415/skills",
+    "one_line": "双语义 PRD：分离 WHAT(功能能力)和 HOW(结构实现)+自动分区",
+    "mechanism": "输入=需求 → WHAT/HOW 双语义分离→超过 2,000 行自动分区 → 输出=双语义 PRD",
+    "differentiator": "WHAT/HOW 双语义分离；自动分区大型 PRD",
+    "compatibility": "Claude Code",
+    "activity": "1 star, 3 commits",
+    "category": "产品定义",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 80,
+    "name": "vasilyu1983/docs-ai-prd",
+    "source": "GitHub",
+    "one_line": "跨工具 PRD：同时格式化输出 Claude/Cursor/Copilot/GPTs",
+    "mechanism": "输入=需求 → 生成多工具格式 PRD → 输出=Claude/Cursor/Copilot/GPTs 格式",
+    "differentiator": "同时为多个工具格式化输出",
+    "compatibility": "Claude, Cursor, Copilot, GPTs",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 81,
+    "name": "FastMCP PRD Server (514) [与 ID 73 为同一工具]",
+    "source": "https://fastmcp.me/skills/details/514/prd",
+    "one_line": "[重复条目，见 ID 73] 极端度量约束的架构级需求生成器：消灭'快速/直观'等模糊词，强制毫秒/百分比级指标",
+    "mechanism": "输入=粗略想法 → 发现采访→用户流/非目标界定→拦截模糊形容词转硬指标(>=85% Precision@10/低于200ms) → 输出=极度数据化技术规范",
+    "differentiator": "[重复条目] 与 ID 73 为同一 FastMCP PRD skill(#514)，本条来自'早期调研'源，ID 73 来自'deep-research'源。已将两者信息合并至 ID 73",
+    "compatibility": "FastMCP",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "早期调研"
+    ]
+  },
+  {
+    "id": 82,
+    "name": "gabelul/stitch-kit",
+    "source": "GitHub",
+    "one_line": "35个设计技能：通过 Google Stitch MCP 桥接构思→视觉设计→代码",
+    "mechanism": "输入=构思概念 → 35个设计技能通过 Google Stitch MCP 生成视觉设计 → 输出=视觉设计+代码",
+    "differentiator": "桥接构思→视觉设计→代码(Google Stitch MCP)",
+    "compatibility": "Claude Code",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 83,
+    "name": "akornmeier/claude-config — prd-to-ux",
+    "source": "GitHub (akornmeier/claude-config)",
+    "one_line": "通过6次设计师思维遍历将 PRD 转化为 UX 规范",
+    "mechanism": "输入=PRD → 6次顺序设计师思维遍历 → 输出=UX 规范",
+    "differentiator": "PRD→UX 规范的桥梁；6次设计师思维遍历",
+    "compatibility": "Claude Code",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 84,
+    "name": "ed3dai/writing-design-plans",
+    "source": "GitHub",
+    "one_line": "将脑暴输出转化为 git 可提交的设计计划(含分阶段交付物)",
+    "mechanism": "输入=脑暴输出 → 转化为分阶段交付物的设计计划 → 输出=git 可提交的设计计划",
+    "differentiator": "桥接脑暴到 git 可提交的结构化设计计划",
+    "compatibility": "Claude Code",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 85,
+    "name": "indrasvat/claude-code-skills — prd-generator",
+    "source": "GitHub",
+    "one_line": "自适应 Q&A PRD 生成器+True Ralph Loop 自主实施",
+    "mechanism": "输入=需求 → 自适应 Q&A 收集需求→生成 PRD→True Ralph Loop 自主实施 → 输出=PRD+自主实施",
+    "differentiator": "True Ralph Loop 自主实施",
+    "compatibility": "Claude Code",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 86,
+    "name": "anombyte93/prd-taskmaster",
+    "source": "GitHub",
+    "one_line": "PRD 生成器+TaskMaster 集成+质量验证评分",
+    "mechanism": "输入=需求 → 生成 PRD→TaskMaster 集成→质量验证评分 → 输出=带评分的 PRD",
+    "differentiator": "TaskMaster 集成+质量验证评分",
+    "compatibility": "Claude Code",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 87,
+    "name": "richtabor/agent-skills — create-prd",
+    "source": "GitHub (richtabor/agent-skills)",
+    "one_line": "快速轻量 PRD 生成：字母多选题引导输入",
+    "mechanism": "输入=用户回答字母多选题 → 快速生成轻量 PRD → 输出=PRD",
+    "differentiator": "快速轻量+多选题引导",
+    "compatibility": "Claude Code",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 88,
+    "name": "meriley/claude-code-skills — prd-writing",
+    "source": "GitHub (meriley/claude-code-skills)",
+    "one_line": "使用 INVEST 用户故事框架的精益 PRD 写作",
+    "mechanism": "输入=产品上下文 → INVEST 用户故事框架 → 输出=精益 PRD",
+    "differentiator": "INVEST 用户故事方法论",
+    "compatibility": "Claude Code",
+    "activity": "",
+    "category": "产品定义",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 89,
+    "name": "spranab/brainstorm-mcp",
+    "source": "https://github.com/spranab/brainstorm-mcp",
+    "one_line": "最强脑暴 MCP Server：并行调度 GPT/Gemini/DeepSeek/Groq/Ollama 进行多轮跨模型辩论",
+    "mechanism": "输入=主题 → 并行调度 GPT+Gemini+DeepSeek+Groq+Ollama→模型间跨轮可见响应→Claude 作为主动辩手参与→综合者产出合并输出",
+    "differentiator": "多模型并行调度+跨模型可见性+多轮辩论；Claude 是主动辩手而非仅编排者",
+    "compatibility": "Claude Code, Claude Desktop, 任何 MCP client",
+    "activity": "npm 包",
+    "category": "MCP服务",
+    "sources": [
+      "compass1",
+      "compass2"
+    ]
+  },
+  {
+    "id": 90,
+    "name": "TheodorStorm/brainstorm-mcp",
+    "source": "https://github.com/TheodorStorm/brainstorm-mcp",
+    "one_line": "'AI 代理的 Slack'：多个 Claude Code 终端共享项目，交换消息+web搜索辩论+达成共识",
+    "mechanism": "输入=项目/主题 → 多 Claude Code 终端加入共享项目→交换消息→使用 web 搜索辩论→达成证据驱动共识; 跨重启的会话持久性",
+    "differentiator": "多终端代理协作+web 搜索驱动的辩论+会话持久性；57个测试套件",
+    "compatibility": "Claude Code",
+    "activity": "57 tests",
+    "category": "MCP服务",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 91,
+    "name": "cyanheads/mentor-mcp-server",
+    "source": "https://github.com/cyanheads/mentor-mcp-server",
+    "one_line": "通过 DeepSeek Reasoning R1 提供第二意见，含 brainstorm_enhancements 和 critique_design 工具",
+    "mechanism": "输入=查询 → 路由到 DeepSeek Reasoning R1→brainstorm_enhancements 工具(功能构思)+critique_design 工具(设计评审) → 输出=不同模型视角",
+    "differentiator": "使用 DeepSeek R1 实现真正的模型多样性；明确的 brainstorm_enhancements 和 critique_design 工具",
+    "compatibility": "任何 MCP client",
+    "activity": "",
+    "category": "MCP服务",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 92,
+    "name": "creating-cat/creative-ideation-mcp",
+    "source": "https://glama.ai/mcp/servers/@creating-cat/creative-ideation-mcp",
+    "one_line": "使用 Gemini API+反偏见随机采样击败 AI 选择模式",
+    "mechanism": "输入=主题 → 生成类别→每类生成多样选项→反偏见随机采样击败 AI '安全'选择倾向 → 输出=多样化构思",
+    "differentiator": "反偏见随机采样专门击败 AI 选择模式；Gemini API 模型多样性",
+    "compatibility": "MCP client",
+    "activity": "",
+    "category": "MCP服务",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 93,
+    "name": "erophames/superpowers-mcp",
+    "source": "https://github.com/erophames/superpowers-mcp",
+    "one_line": "将 obra/superpowers 技能封装为 MCP Server，任何 MCP client 可用",
+    "mechanism": "输入=构思请求 → 封装 obra/superpowers 技能功能 → 输出=脑暴/规划结果",
+    "differentiator": "将 obra/superpowers 扩展到任何 MCP client",
+    "compatibility": "任何 MCP client",
+    "activity": "",
+    "category": "MCP服务",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 94,
+    "name": "hellovarun91/brainstorm-mcp",
+    "source": "https://lobehub.com/mcp/hellovarun91-brainstorm-mcp",
+    "one_line": "脑暴会议输出到 Google Sheets 实现持久化协作",
+    "mechanism": "输入=脑暴会议 → 结构化数据输出到 Google Sheets → 输出=持久协作存储",
+    "differentiator": "Google Sheets 输出实现持久协作",
+    "compatibility": "MCP client",
+    "activity": "",
+    "category": "MCP服务",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 95,
+    "name": "mnemox-ai/idea-reality-mcp",
+    "source": "https://github.com/mnemox-ai/idea-reality-mcp",
+    "one_line": "扫描 GitHub/HN/npm/PyPI/Product Hunt 回答'这个已经存在了吗？'返回 0-100 现实信号",
+    "mechanism": "输入=想法 → 扫描 GitHub/HN/npm/PyPI/Product Hunt→返回 0-100 现实信号+头部竞品+转向建议; 支持 quick/deep 模式",
+    "differentiator": "纯竞品验证工具；uvx/claude mcp add 安装",
+    "compatibility": "Claude Code, MCP client",
+    "activity": "10 stars",
+    "category": "MCP服务",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 96,
+    "name": "uddhav/creative-thinking",
+    "source": "GitHub (uddhav/creative-thinking)",
+    "one_line": "MCP Server：7+种结构化横向思维技巧(TRIZ/Provocation-PO/量子叠加)+会话持久性",
+    "mechanism": "输入=选择横向思维技巧 → TRIZ/Provocation-PO/量子叠加等方法→会话持久性跨交互维护上下文 → 输出=创造性解决方案",
+    "differentiator": "MCP Server+会话持久性；含高级技巧如 TRIZ 和量子叠加",
+    "compatibility": "Claude Code, MCP client",
+    "activity": "3 stars, 188 commits",
+    "category": "MCP服务",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 97,
+    "name": "pm-skills-mcp",
+    "source": "https://github.com/product-on-purpose/pm-skills",
+    "one_line": "product-on-purpose/pm-skills 的 MCP Server 伴侣版，程序化/工具式访问 PM 技能",
+    "mechanism": "输入=MCP 调用 → 27个 PM 技能通过 MCP 协议访问 → 输出=PM 制品",
+    "differentiator": "通过 MCP 协议编程式访问 PM 技能库",
+    "compatibility": "MCP clients",
+    "activity": "",
+    "category": "MCP服务",
+    "sources": [
+      "compass1",
+      "deep-research"
+    ]
+  },
+  {
+    "id": 98,
+    "name": "attune:war-room",
+    "source": "SkillsMP (attune 生态)",
+    "one_line": "多 LLM 联合压力测试与可逆性评估的战情室子智能体",
+    "mechanism": "被 project-brainstorming 自动调用 → 多 LLM 联合压力测试+可逆性评估 → 输出=评估结果供矩阵评分",
+    "differentiator": "作为子智能体被自动调用；中期多模型对抗测试",
+    "compatibility": "Claude Code (SkillsMP/attune 生态)",
+    "activity": "2026-03-20 更新",
+    "category": "MCP服务",
+    "sources": [
+      "早期调研"
+    ]
+  },
+  {
+    "id": 99,
+    "name": "ChatPRD",
+    "source": "https://www.chatprd.ai/ (GPT Store + 独立平台 $5/月)",
+    "one_line": "按需首席产品官：生成 PRD/用户故事/技术规格/GTM 简报+对抗性 CPO 级评审",
+    "mechanism": "输入=粗糙想法 → GPT 扮演 CPO→生成 PRD/一页纸/用户故事/技术规格/GTM 简报→对抗性评审识别战略缺口+质疑假设 → 输出=完整 PRD+评审(导出 Confluence/Notion/Figma)",
+    "differentiator": "100,000+ PM 用户, 4.4/5(1,900+评分), 50K+对话; CPO 级对抗评审",
+    "compatibility": "GPT Store, 独立 Web (chatprd.ai)",
+    "activity": "100K+ users, 50K+ conversations, 4.4/5",
+    "category": "GPT生态",
+    "sources": [
+      "compass1",
+      "compass2"
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Design Thinking Brainstorm Partner",
+    "source": "GPT Store",
+    "one_line": "斯坦福 d.school Jeremy Utley 创建的学术设计思维脑暴 GPT",
+    "mechanism": "输入=设计挑战 → 学术设计思维方法论→瞄准非显而易见的解决方案 → 输出=多样化创意",
+    "differentiator": "Stanford d.school Jeremy Utley(《Ideaflow》合著者)创建；学术严谨的发散构思",
+    "compatibility": "GPT Store",
+    "activity": "",
+    "category": "GPT生态",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Product Idea Validator",
+    "source": "GPT Store",
+    "one_line": "端到端验证流：想法评审→问题陈述→用户反馈→用例→市场/技术需求分析",
+    "mechanism": "输入=想法 → 想法评审→问题陈述起草→用户反馈模拟→用例大纲→市场/技术需求分析→解决方案识别",
+    "differentiator": "单个 GPT 中的端到端验证流",
+    "compatibility": "GPT Store",
+    "activity": "",
+    "category": "GPT生态",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 102,
+    "name": "How Might We (HMW) Maker",
+    "source": "GPT Store",
+    "one_line": "专注于关键的预构思步骤：使用 HMW 格式框定正确的挑战声明",
+    "mechanism": "输入=问题/上下文 → 生成 HMW 挑战声明 → 输出=框定的预构思挑战",
+    "differentiator": "专门只做 HMW 挑战声明框定",
+    "compatibility": "GPT Store",
+    "activity": "",
+    "category": "GPT生态",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Product Hypothesis Builder",
+    "source": "GPT Store",
+    "one_line": "使用 Jeff Gothelf 的 Lean UX Canvas 方法论生成可测试假设声明",
+    "mechanism": "输入=产品概念 → Lean UX Canvas → 输出=可测试假设声明",
+    "differentiator": "专用 Jeff Gothelf Lean UX Canvas 假设生成",
+    "compatibility": "GPT Store",
+    "activity": "",
+    "category": "GPT生态",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Speedster",
+    "source": "GPT Store",
+    "one_line": "精益假设测试：从想法到验证计划数分钟内完成",
+    "mechanism": "输入=想法 → 精益假设测试 → 输出=快速验证计划",
+    "differentiator": "速度优先的精益假设测试",
+    "compatibility": "GPT Store",
+    "activity": "",
+    "category": "GPT生态",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Jobs to be Done Pro",
+    "source": "GPT Store",
+    "one_line": "专用 JTBD 方法论 GPT",
+    "mechanism": "输入=产品/客户上下文 → JTBD 方法论→jobs/outcomes/opportunity scores → 输出=JTBD 分析",
+    "differentiator": "专注 JTBD 方法论",
+    "compatibility": "GPT Store",
+    "activity": "",
+    "category": "GPT生态",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Brainstorm to Structure",
+    "source": "GPT Store",
+    "one_line": "将语音漫谈和非结构化输入转化为结构化输出",
+    "mechanism": "输入=语音漫谈/非结构化想法 → 结构化组织 → 输出=结构化输出",
+    "differentiator": "专精非结构化/语音输入→结构化",
+    "compatibility": "GPT Store",
+    "activity": "",
+    "category": "GPT生态",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Software Product Requirements GPT",
+    "source": "GPT Store",
+    "one_line": "结合竞品分析+无情优先排序的软件产品需求生成",
+    "mechanism": "输入=产品概念 → 竞品分析→需求生成→无情优先排序 → 输出=验证需求",
+    "differentiator": "竞品分析+无情优先排序",
+    "compatibility": "GPT Store",
+    "activity": "",
+    "category": "GPT生态",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 108,
+    "name": "King PRD",
+    "source": "GPT Store",
+    "one_line": "步进式引导 Q&A 工作流的 PRD 创建",
+    "mechanism": "输入=用户逐步回答 Q&A → 步进式引导 → 输出=PRD",
+    "differentiator": "步进引导 Q&A 专用于 PRD",
+    "compatibility": "GPT Store",
+    "activity": "",
+    "category": "GPT生态",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 109,
+    "name": "GPT Lean Canvas",
+    "source": "GPT Store",
+    "one_line": "生成精益画布+通过 Zapier 输出到 Miro 可视画布",
+    "mechanism": "输入=商业想法 → 生成精益画布→Miro 集成(Zapier) → 输出=可视精益画布",
+    "differentiator": "Miro 集成(通过 Zapier)实现可视输出",
+    "compatibility": "GPT Store, Miro (Zapier)",
+    "activity": "",
+    "category": "GPT生态",
+    "sources": [
+      "compass1",
+      "compass2"
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Persona GPT",
+    "source": "GPT Store",
+    "one_line": "生成 ICP/Buyer/User 画像(含人口统计+心理统计)",
+    "mechanism": "输入=产品/市场上下文 → 生成 ICP/Buyer/User 三类画像(含人口统计+心理统计) → 输出=画像",
+    "differentiator": "覆盖 ICP/Buyer/User 三类画像",
+    "compatibility": "GPT Store",
+    "activity": "",
+    "category": "GPT生态",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 111,
+    "name": "ICP Builder GPT",
+    "source": "GPT Store",
+    "one_line": "集成 HubSpot+SEMrush 数据构建理想客户画像",
+    "mechanism": "输入=产品/市场上下文 → HubSpot+SEMrush 数据集成→构建 ICP → 输出=数据增强的 ICP",
+    "differentiator": "HubSpot+SEMrush 集成实现数据驱动 ICP",
+    "compatibility": "GPT Store, HubSpot, SEMrush",
+    "activity": "",
+    "category": "GPT生态",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Business Launch Control Tower v2",
+    "source": "Reddit/GPT Store",
+    "one_line": "严格步进式一次一个问题验证新想法+制定市场准入计划",
+    "mechanism": "输入=创业想法 → 按创始人技能/资本/紧迫性/杠杆效应打分→严格步进式提问(未确认不进入下一阶段) → 输出=市场准入计划",
+    "differentiator": "严格一次只问一个问题模拟专业访谈节奏；绝对禁止跳过阶段",
+    "compatibility": "GPT Store/ChatGPT",
+    "activity": "",
+    "category": "GPT生态",
+    "sources": [
+      "早期调研"
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Saarthi PM Lead Mode (Godspeed Systems)",
+    "source": "https://godspeed.systems/docs/saarthi/modes/pm-lead",
+    "one_line": "执行 Steve Blank 四步创业法的精益创业引导 GPT 工作流",
+    "mechanism": "输入=创业想法 → 内部多专家角色(Idea Validator/Strategy Planner/MVP Designer/Market Analyst)协作→MCP 读写本地 .md 文件→强制锁定问题域和价值主张 → 输出=MVP 边界规划",
+    "differentiator": "明确禁止输出详细技术规范(Out of scope)；MCP 本地文件读写能力",
+    "compatibility": "Godspeed Systems 平台",
+    "activity": "",
+    "category": "GPT生态",
+    "sources": [
+      "早期调研"
+    ]
+  },
+  {
+    "id": 114,
+    "name": "CHAIN Framework",
+    "source": "Medium 博文",
+    "one_line": "PM 专属结构化提示词框架(Context/Hone Goals/Ask Iteratively/Incorporate Examples/Narrow Constraints)",
+    "mechanism": "输入=PM 问题 → 按 C(背景)/H(量化目标)/A(迭代追问)/I(输出模板)/N(格式约束)5步构建提示词 → 输出=将通用 LLM 临时塑造为专业产品架构师",
+    "differentiator": "无需安装插件；标准化提示词框架将任意 LLM 塑造为专业 PM",
+    "compatibility": "通用 LLM (ChatGPT, Claude 等)",
+    "activity": "2025-2026 年 PM 实践广泛采用",
+    "category": "GPT生态",
+    "sources": [
+      "早期调研"
+    ]
+  },
+  {
+    "id": 115,
+    "name": "User Personificator",
+    "source": "GPT Store",
+    "one_line": "用户画像生成 GPT",
+    "mechanism": "输入=产品上下文 → 生成用户画像 → 输出=画像",
+    "differentiator": "专用于用户画像生成的 GPT Store 工具",
+    "compatibility": "GPT Store",
+    "activity": "",
+    "category": "GPT生态",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Miro AI",
+    "source": "https://miro.com/ai/brainstorming/",
+    "one_line": "企业白板+AI Sidekicks 作为参与者加入看板，自动聚类便签+生成产品简报",
+    "mechanism": "AI Sidekicks 加入看板→提供反馈和创建交付物→Flows 在画布上运行多步 AI 工作流→智能聚类自动组织便签; 模板含 OST/Lean Product Canvas/JTBD/Value Prop Canvas",
+    "differentiator": "AI 作为看板成员参与而非助手；画布上的多步 Flows；180,000+ 组织",
+    "compatibility": "Web",
+    "activity": "100M+ users, 180,000+ organizations, 2025-10 推出",
+    "category": "独立工具",
+    "sources": [
+      "compass1",
+      "compass2"
+    ]
+  },
+  {
+    "id": 117,
+    "name": "FigJam AI",
+    "source": "https://figma.com/figjam",
+    "one_line": "AI 增强协作白板(Figma 生态)：自动生成工作坊模板+排序便签+40% 效率提升",
+    "mechanism": "AI 生成结构化工作坊模板→自动排序便签→40% 脑暴效率提升 → 无缝衔接 Figma 设计→原型工作流",
+    "differentiator": "Figma 付费用户免费(2025-03起)；40% 脑暴效率提升；无缝衔接设计→原型",
+    "compatibility": "Figma 生态",
+    "activity": "Figma 付费用户免费(2025-03 起)",
+    "category": "独立工具",
+    "sources": [
+      "compass1",
+      "compass2"
+    ]
+  },
+  {
+    "id": 118,
+    "name": "Whimsical AI",
+    "source": "https://whimsical.com",
+    "one_line": "Claude 驱动的视觉脑暴工具：思维导图+流程图+线框图+文档，慷慨免费层",
+    "mechanism": "输入=想法/主题 → Claude AI 生成思维导图/流程图/线框图 → 集成 Notion/Jira/Slack",
+    "differentiator": "直接由 Claude(Anthropic)驱动；无限私有看板+100 AI actions 免费",
+    "compatibility": "Web, Notion, Jira, Slack",
+    "activity": "慷慨免费层",
+    "category": "独立工具",
+    "sources": [
+      "compass1",
+      "compass2"
+    ]
+  },
+  {
+    "id": 119,
+    "name": "Maze",
+    "source": "https://maze.co/",
+    "one_line": "桥接构思和验证：无监督概念测试+AI 动态追问+自动主题报告",
+    "mechanism": "概念测试在真实用户上运行→AI 根据用户回应生成动态追问→自动生成主题化报告",
+    "differentiator": "唯一连接真实用户的概念验证工具；AI 动态追问；为持续发现循环设计",
+    "compatibility": "Web",
+    "activity": "",
+    "category": "独立工具",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Kraftful",
+    "source": "https://www.kraftful.com/",
+    "one_line": "将真实用户反馈(应用评论/调查/工单)合成为 PRD，每条声明链接到原始用户引用",
+    "mechanism": "摄入应用评论+调查+工单→合成为 PRD→每条声明含原始用户引用链接→AI 访谈员填补反馈缺口",
+    "differentiator": "每条 PRD 声明引用原始用户引用；SOC 2+GDPR 合规",
+    "compatibility": "Web",
+    "activity": "",
+    "category": "独立工具",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Ideamap.ai",
+    "source": "https://ideamap.ai/",
+    "one_line": "支持多模态输入(PDF/音频/图片/网站)的 AI 无限协作画布+主题检测/去重/可视化",
+    "mechanism": "PDF/音频/图片/网站输入 → AI Copilot 实时检测主题/合并重复/可视化概念 → 自动组织+AI 总结+民主投票",
+    "differentiator": "多模态输入(PDF/音频/图片/网站)驱动思维导图；自定义 AI Actions 降低工作坊协调者负担",
+    "compatibility": "Web",
+    "activity": "",
+    "category": "独立工具",
+    "sources": [
+      "compass1",
+      "compass2",
+      "早期调研"
+    ]
+  },
+  {
+    "id": 122,
+    "name": "illumi.one",
+    "source": "https://www.illumi.one",
+    "one_line": "视觉上下文感知 AI 白板：Input-First AI 范式，提示词变成团队共享视觉工件",
+    "mechanism": "拖拽相关卡片进入提示卡→AI 精准识别空间与逻辑关联→生成高度贴合语境的结构化总结",
+    "differentiator": "摒弃对话框，提示词变成视觉工件；保留死胡同想法作为集体知识；支持迭代版本控制",
+    "compatibility": "Web",
+    "activity": "",
+    "category": "独立工具",
+    "sources": [
+      "早期调研"
+    ]
+  },
+  {
+    "id": 123,
+    "name": "IdeaProof.io",
+    "source": "https://ideaproof.io/",
+    "one_line": "30秒商业想法验证：多模型交叉验证+50源 Web 搜索+TAM/SAM/SOM+品牌 UVP",
+    "mechanism": "输入=一句话概念 → 多模型交叉验证+50源 Web 搜索+NLP 情感分析+TAM/SAM/SOM+竞品 SWOT → 输出=量化可行性报告+荣格12原型 UVP 公式+品牌基调",
+    "differentiator": "宣称 89% 验证准确率；真实 TAM/SAM/SOM 数据；荣格原型品牌 UVP；行业特定验证器(SaaS/Fintech/HealthTech)",
+    "compatibility": "Web",
+    "activity": "",
+    "category": "独立工具",
+    "sources": [
+      "compass2",
+      "早期调研"
+    ]
+  },
+  {
+    "id": 124,
+    "name": "LEANSpark",
+    "source": "https://leanspark.ai",
+    "one_line": "Lean Canvas 创造者 Ash Maurya 亲建：填满12格精益画布+7维度压力测试",
+    "mechanism": "输入=纯文本想法→澄清问题→填满12格 Lean Canvas→7维度压力测试(Clarity/Desirability/Viability/Feasibility/Defensibility/Mission/Timing)",
+    "differentiator": "Ash Maurya(Lean Canvas 创造者)亲建；Techstars/MassChallenge/数百大学项目使用",
+    "compatibility": "Web",
+    "activity": "Techstars, MassChallenge, 数百大学项目",
+    "category": "独立工具",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 125,
+    "name": "DimeADozen.ai",
+    "source": "https://dimeadozen.ai",
+    "one_line": "从想法描述生成综合商业验证报告",
+    "mechanism": "输入=想法描述 → 综合商业报告+验证分析 → 输出=验证报告",
+    "differentiator": "85,000+ 创业者, 120,000+ 报告, CNBC 专题报道",
+    "compatibility": "Web",
+    "activity": "85K+ entrepreneurs, 120K+ reports, CNBC featured",
+    "category": "独立工具",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 126,
+    "name": "Mural AI",
+    "source": "https://mural.co",
+    "one_line": "协作优先的视觉工具：情感分析+嵌入式 AI Chat 上下文脑暴",
+    "mechanism": "用户在 Mural 上协作→AI 情感分析→AI Chat 提供上下文脑暴辅助",
+    "differentiator": "协作优先+情感分析；嵌入式 AI Chat",
+    "compatibility": "Web",
+    "activity": "",
+    "category": "独立工具",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 127,
+    "name": "Creately",
+    "source": "Web",
+    "one_line": "AI 自动填充多框架(Lean UX Canvas/JTBD/Empathy Maps/Value Prop Canvas)到无限画布",
+    "mechanism": "输入=产品上下文 → AI 自动填充 Lean UX Canvas+JTBD+Empathy Maps+Value Prop Canvas → 输出=多框架无限画布",
+    "differentiator": "同时自动填充多个框架",
+    "compatibility": "Web",
+    "activity": "",
+    "category": "独立工具",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 128,
+    "name": "Productboard AI",
+    "source": "https://productboard.com",
+    "one_line": "集中反馈→AI 辅助优先排序→路线图(RICE 评分)",
+    "mechanism": "连接反馈源→AI 集中分析→RICE 优先排序→路线图推荐",
+    "differentiator": "成熟 PM 平台+AI 层",
+    "compatibility": "Web",
+    "activity": "",
+    "category": "独立工具",
+    "sources": [
+      "compass1",
+      "compass2"
+    ]
+  },
+  {
+    "id": 129,
+    "name": "ValidatorAI",
+    "source": "Web",
+    "one_line": "免费简单验证评分+诚实反馈",
+    "mechanism": "输入=想法 → 验证评分+诚实反馈 → 输出=评分",
+    "differentiator": "免费+简单+诚实",
+    "compatibility": "Web",
+    "activity": "",
+    "category": "独立工具",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 130,
+    "name": "FounderPal AI",
+    "source": "Web",
+    "one_line": "创始人免费验证评分+诚实反馈",
+    "mechanism": "输入=想法 → 验证评分+反馈 → 输出=评分",
+    "differentiator": "创始人导向，免费",
+    "compatibility": "Web",
+    "activity": "",
+    "category": "独立工具",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 131,
+    "name": "PitchBob.io",
+    "source": "https://pitchbob.io",
+    "one_line": "WhatsApp 风格对话 Copilot：生成 Lean Canvas/BMC/VPC+演示文稿(McKinsey 分析)",
+    "mechanism": "WhatsApp 风格聊天→McKinsey 商业分析→生成 Lean Canvas/BMC/VPC+演示文稿",
+    "differentiator": "WhatsApp 对话界面；多画布+演示文稿",
+    "compatibility": "Web",
+    "activity": "",
+    "category": "独立工具",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 132,
+    "name": "Zeda.io",
+    "source": "https://zeda.io",
+    "one_line": "将 Slack/Intercom/HubSpot/Salesforce/Zendesk 的 VoC 数据转化为产品洞察+收入影响分析",
+    "mechanism": "连接 Slack/Intercom/HubSpot/Salesforce/Zendesk → VoC 数据→产品洞察+收入影响分析",
+    "differentiator": "收入影响分析；多源 VoC 聚合(需 200+ 反馈项)",
+    "compatibility": "Web, Slack, Intercom, HubSpot, Salesforce, Zendesk",
+    "activity": "",
+    "category": "独立工具",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 133,
+    "name": "Product Lab AI",
+    "source": "Product Hunt (4.7 评分)",
+    "one_line": "自动创建客户画像/Persona/旅程图(宣称 50%+ 减少创新时间)",
+    "mechanism": "输入=产品上下文 → 自动生成客户画像/Persona/旅程图 → 输出=画像+旅程图",
+    "differentiator": "Product Hunt 4.7 评分; 50%+ 减少创新时间",
+    "compatibility": "Web",
+    "activity": "Product Hunt 4.7",
+    "category": "独立工具",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 134,
+    "name": "Beam.ai",
+    "source": "https://beam.ai",
+    "one_line": "多代理工作流：将 brief/会议记录/研究转化为 PRD+Jira 映射",
+    "mechanism": "输入=brief/会议记录/研究 → 多代理工作流处理 → 输出=PRD+Jira 映射",
+    "differentiator": "多代理工作流+Jira 映射",
+    "compatibility": "Web, Jira",
+    "activity": "",
+    "category": "独立工具",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 135,
+    "name": "ITONICS Innovation OS",
+    "source": "https://itonics-innovation.com",
+    "one_line": "企业创新操作系统：连接前瞻/构思/组合管理+ITONICS Prism 上下文感知 AI",
+    "mechanism": "连接公司战略和 R&D 组合→ITONICS Prism AI 提供上下文感知洞察→覆盖前瞻/构思/组合管理",
+    "differentiator": "企业级；ITONICS Prism 理解公司战略和 R&D 组合；Toyota/Cisco 使用",
+    "compatibility": "企业 Web",
+    "activity": "Toyota, Cisco 使用",
+    "category": "独立工具",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 136,
+    "name": "Stratup.ai",
+    "source": "https://stratup.ai",
+    "one_line": "从兴趣和行业信号生成创业想法(100,000+可搜索想法库)+SWOT/变现/需求报告",
+    "mechanism": "输入=兴趣+行业信号 → 从 100K+ 想法库匹配→完整报告(SWOT/变现计划/产品需求)",
+    "differentiator": "100,000+ 可搜索创业想法数据库",
+    "compatibility": "Web",
+    "activity": "100K+ ideas database",
+    "category": "独立工具",
+    "sources": [
+      "compass2"
+    ]
+  },
+  {
+    "id": 137,
+    "name": "Juma",
+    "source": "Web",
+    "one_line": "多模型团队脑暴工具",
+    "mechanism": "多个 AI 模型参与团队脑暴会议",
+    "differentiator": "多模型团队脑暴",
+    "compatibility": "Web",
+    "activity": "",
+    "category": "独立工具",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 138,
+    "name": "Taskade Genesis",
+    "source": "Web",
+    "one_line": "AI 代理作为团队成员参与脑暴→执行工作流",
+    "mechanism": "AI 代理作为参与者→脑暴→执行流水线",
+    "differentiator": "AI 代理作为团队成员参与",
+    "compatibility": "Web",
+    "activity": "",
+    "category": "独立工具",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 139,
+    "name": "aakashg/idea-validator",
+    "source": "",
+    "one_line": "概念验证工具，在 Coverage Matrix 中被列为 Claude Code 概念验证技能",
+    "mechanism": "",
+    "differentiator": "在 compass1 的 Coverage Matrix 中与 ailabs startup-validator 和 pratikshadake 并列为概念验证类 Claude Code skill",
+    "compatibility": "Claude Code",
+    "activity": "",
+    "category": "概念验证",
+    "sources": [
+      "compass1"
+    ]
+  },
+  {
+    "id": 140,
+    "name": "ratacat (readiness criteria)",
+    "source": "",
+    "one_line": "提供'准备就绪标准'来判断何时停止构思并开始构建——解决'置信度门控'问题",
+    "mechanism": "输入=产品想法的当前状态 → 评估准备就绪标准 → 输出=是否可以从构思阶段进入构建阶段的判断",
+    "differentiator": "与 nicknisi 的 0-100% 置信度评分齐名，是仅有的两个明确解决'何时停止构思开始构建'问题的工具之一",
+    "compatibility": "Claude Code",
+    "activity": "",
+    "category": "概念验证",
+    "sources": [
+      "compass1"
+    ]
+  }
+]
