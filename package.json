@@ -4,7 +4,9 @@
   "type": "module",
   "description": "Automated skills curation engine for Claude Code Web",
   "scripts": {
-    "test": "node --test src/scoring/*.test.js src/history/*.test.js src/telemetry/*.test.js",
+    "test": "node --test src/scoring/*.test.js src/history/*.test.js src/telemetry/*.test.js src/pipeline/*.test.js",
+    "test:pipeline": "node --test src/pipeline/*.test.js",
+    "dedup": "node src/pipeline/run-dedup.js",
     "test:scoring": "node --test src/scoring/*.test.js",
     "test:history": "node --test src/history/*.test.js",
     "test:telemetry": "node --test src/telemetry/*.test.js",
