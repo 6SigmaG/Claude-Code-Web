@@ -1,0 +1,1914 @@
+[
+  {
+    "repo": "affaan-m/everything-claude-code",
+    "url": "https://github.com/affaan-m/everything-claude-code",
+    "stars": 105946,
+    "created_at": "2026-01-18T00:51:51Z",
+    "updated_at": "2026-03-25T08:28:31Z",
+    "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+  },
+  {
+    "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "stars": 50085,
+    "created_at": "2025-11-30T11:36:31Z",
+    "updated_at": "2026-03-25T08:26:32Z",
+    "description": "An AI SKILL that provide design intelligence for building professional UI/UX multiple platforms"
+  },
+  {
+    "repo": "ComposioHQ/awesome-claude-skills",
+    "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "stars": 47693,
+    "created_at": "2025-10-17T07:15:01Z",
+    "updated_at": "2026-03-25T08:28:57Z",
+    "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
+  },
+  {
+    "repo": "code-yeongyu/oh-my-openagent",
+    "url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "stars": 43290,
+    "created_at": "2025-12-03T01:40:05Z",
+    "updated_at": "2026-03-25T08:27:42Z",
+    "description": "omo; the best agent harness - previously oh-my-opencode"
+  },
+  {
+    "repo": "CherryHQ/cherry-studio",
+    "url": "https://github.com/CherryHQ/cherry-studio",
+    "stars": 42276,
+    "created_at": "2024-05-24T01:56:26Z",
+    "updated_at": "2026-03-25T08:10:38Z",
+    "description": "AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs"
+  },
+  {
+    "repo": "VoltAgent/awesome-openclaw-skills",
+    "url": "https://github.com/VoltAgent/awesome-openclaw-skills",
+    "stars": 41756,
+    "created_at": "2026-01-25T09:22:32Z",
+    "updated_at": "2026-03-25T08:29:34Z",
+    "description": "The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.🦞"
+  },
+  {
+    "repo": "gsd-build/get-shit-done",
+    "url": "https://github.com/gsd-build/get-shit-done",
+    "stars": 41081,
+    "created_at": "2025-12-14T14:17:12Z",
+    "updated_at": "2026-03-25T08:27:26Z",
+    "description": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES."
+  },
+  {
+    "repo": "thedotmack/claude-mem",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "stars": 40364,
+    "created_at": "2025-08-31T20:50:03Z",
+    "updated_at": "2026-03-25T08:22:45Z",
+    "description": "A Claude Code plugin that automatically captures everything Claude does during your coding sessions, compresses it with AI (using Claude's agent-sdk), and injects relevant context back into future sessions."
+  },
+  {
+    "repo": "shareAI-lab/learn-claude-code",
+    "url": "https://github.com/shareAI-lab/learn-claude-code",
+    "stars": 38399,
+    "created_at": "2025-06-29T15:34:15Z",
+    "updated_at": "2026-03-25T08:28:02Z",
+    "description": "Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1"
+  },
+  {
+    "repo": "farion1231/cc-switch",
+    "url": "https://github.com/farion1231/cc-switch",
+    "stars": 33124,
+    "created_at": "2025-08-04T14:16:16Z",
+    "updated_at": "2026-03-25T08:27:42Z",
+    "description": "A cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenCode, openclaw & Gemini CLI."
+  },
+  {
+    "repo": "wshobson/agents",
+    "url": "https://github.com/wshobson/agents",
+    "stars": 32212,
+    "created_at": "2025-07-24T23:28:14Z",
+    "updated_at": "2026-03-25T08:24:37Z",
+    "description": "Intelligent automation and multi-agent orchestration for Claude Code"
+  },
+  {
+    "repo": "hesreallyhim/awesome-claude-code",
+    "url": "https://github.com/hesreallyhim/awesome-claude-code",
+    "stars": 32150,
+    "created_at": "2025-04-19T20:55:59Z",
+    "updated_at": "2026-03-25T08:29:15Z",
+    "description": "A curated list of awesome skills, hooks, slash-commands, agent orchestrators, applications, and plugins for Claude Code by Anthropic"
+  },
+  {
+    "repo": "sickn33/antigravity-awesome-skills",
+    "url": "https://github.com/sickn33/antigravity-awesome-skills",
+    "stars": 27212,
+    "created_at": "2026-01-14T17:48:09Z",
+    "updated_at": "2026-03-25T08:22:03Z",
+    "description": "Installable GitHub library of 1,304+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and more. Includes installer CLI, bundles, workflows, and official/community skill collections."
+  },
+  {
+    "repo": "github/awesome-copilot",
+    "url": "https://github.com/github/awesome-copilot",
+    "stars": 26922,
+    "created_at": "2025-06-11T16:57:39Z",
+    "updated_at": "2026-03-25T08:27:35Z",
+    "description": "Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot."
+  },
+  {
+    "repo": "ruvnet/ruflo",
+    "url": "https://github.com/ruvnet/ruflo",
+    "stars": 25422,
+    "created_at": "2025-06-02T21:24:20Z",
+    "updated_at": "2026-03-25T08:21:35Z",
+    "description": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features    enterprise-grade architecture, distributed swarm intelligence, RAG integration, and native Claude Code / Codex Integration"
+  },
+  {
+    "repo": "qwibitai/nanoclaw",
+    "url": "https://github.com/qwibitai/nanoclaw",
+    "stars": 25359,
+    "created_at": "2026-01-31T15:47:22Z",
+    "updated_at": "2026-03-25T08:28:18Z",
+    "description": "A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK"
+  },
+  {
+    "repo": "vercel-labs/agent-skills",
+    "url": "https://github.com/vercel-labs/agent-skills",
+    "stars": 23787,
+    "created_at": "2025-12-08T19:10:06Z",
+    "updated_at": "2026-03-25T06:12:43Z",
+    "description": "Vercel's official collection of agent skills"
+  },
+  {
+    "repo": "davila7/claude-code-templates",
+    "url": "https://github.com/davila7/claude-code-templates",
+    "stars": 23534,
+    "created_at": "2025-07-04T01:26:26Z",
+    "updated_at": "2026-03-25T08:10:40Z",
+    "description": "CLI tool for configuring and monitoring Claude Code"
+  },
+  {
+    "repo": "googleworkspace/cli",
+    "url": "https://github.com/googleworkspace/cli",
+    "stars": 22451,
+    "created_at": "2026-03-02T19:46:06Z",
+    "updated_at": "2026-03-25T08:20:25Z",
+    "description": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills."
+  },
+  {
+    "repo": "oraios/serena",
+    "url": "https://github.com/oraios/serena",
+    "stars": 22045,
+    "created_at": "2025-03-23T22:35:24Z",
+    "updated_at": "2026-03-25T08:12:07Z",
+    "description": "A powerful coding agent toolkit providing semantic retrieval and editing capabilities (MCP server & other integrations)"
+  },
+  {
+    "repo": "shanraisshan/claude-code-best-practice",
+    "url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "stars": 21761,
+    "created_at": "2025-10-31T14:15:28Z",
+    "updated_at": "2026-03-25T08:24:43Z",
+    "description": "practice made claude perfect"
+  },
+  {
+    "repo": "winfunc/opcode",
+    "url": "https://github.com/winfunc/opcode",
+    "stars": 21091,
+    "created_at": "2025-06-19T13:53:26Z",
+    "updated_at": "2026-03-25T08:14:17Z",
+    "description": "A powerful GUI app and Toolkit for Claude Code - Create custom agents, manage interactive Claude Code sessions, run secure background agents, and more."
+  },
+  {
+    "repo": "iOfficeAI/AionUi",
+    "url": "https://github.com/iOfficeAI/AionUi",
+    "stars": 20041,
+    "created_at": "2025-08-07T10:29:51Z",
+    "updated_at": "2026-03-25T08:21:15Z",
+    "description": "Free, local, open-source 24/7 Cowork app and OpenClaw for Gemini CLI, Claude Code, Codex, OpenCode, Qwen Code, Goose CLI, Auggie, and more | 🌟 Star if you like it!"
+  },
+  {
+    "repo": "router-for-me/CLIProxyAPI",
+    "url": "https://github.com/router-for-me/CLIProxyAPI",
+    "stars": 19948,
+    "created_at": "2025-07-01T19:43:27Z",
+    "updated_at": "2026-03-25T08:28:40Z",
+    "description": "Wrap Gemini CLI, Antigravity, ChatGPT Codex, Claude Code, Qwen Code, iFlow as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 2.5 Pro, GPT 5, Claude, Qwen model through API"
+  },
+  {
+    "repo": "steveyegge/beads",
+    "url": "https://github.com/steveyegge/beads",
+    "stars": 19663,
+    "created_at": "2025-10-12T03:09:46Z",
+    "updated_at": "2026-03-25T08:27:49Z",
+    "description": "Beads - A memory upgrade for your coding agent"
+  },
+  {
+    "repo": "OthmanAdi/planning-with-files",
+    "url": "https://github.com/OthmanAdi/planning-with-files",
+    "stars": 17139,
+    "created_at": "2026-01-03T07:37:28Z",
+    "updated_at": "2026-03-25T08:29:21Z",
+    "description": "Claude Code skill implementing Manus-style persistent markdown planning — the workflow pattern behind the $2B acquisition."
+  },
+  {
+    "repo": "kepano/obsidian-skills",
+    "url": "https://github.com/kepano/obsidian-skills",
+    "stars": 16908,
+    "created_at": "2026-01-02T21:45:11Z",
+    "updated_at": "2026-03-25T06:31:41Z",
+    "description": "Agent skills for Obsidian. Teach your agent to use Markdown, Bases, JSON Canvas, and use the CLI."
+  },
+  {
+    "repo": "K-Dense-AI/claude-scientific-skills",
+    "url": "https://github.com/K-Dense-AI/claude-scientific-skills",
+    "stars": 16148,
+    "created_at": "2025-10-19T20:54:15Z",
+    "updated_at": "2026-03-25T08:19:50Z",
+    "description": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing."
+  },
+  {
+    "repo": "slopus/happy",
+    "url": "https://github.com/slopus/happy",
+    "stars": 16148,
+    "created_at": "2025-07-18T05:53:18Z",
+    "updated_at": "2026-03-25T08:20:19Z",
+    "description": "Mobile and Web client for Codex and Claude Code, with realtime voice, encryption and fully featured"
+  },
+  {
+    "repo": "VoltAgent/awesome-claude-code-subagents",
+    "url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+    "stars": 15088,
+    "created_at": "2025-07-30T12:31:51Z",
+    "updated_at": "2026-03-25T06:29:18Z",
+    "description": "A collection of 100+ specialized Claude Code subagents covering a wide range of development use cases"
+  },
+  {
+    "repo": "anthropics/claude-plugins-official",
+    "url": "https://github.com/anthropics/claude-plugins-official",
+    "stars": 14561,
+    "created_at": "2025-11-20T18:36:20Z",
+    "updated_at": "2026-03-25T08:28:31Z",
+    "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins."
+  },
+  {
+    "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+    "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
+    "stars": 14328,
+    "created_at": "2025-12-21T02:43:42Z",
+    "updated_at": "2026-03-25T06:25:10Z",
+    "description": "A comprehensive collection of Agent Skills for context engineering, multi-agent architectures, and production agent systems. Use when building, optimizing, or debugging agent systems that require effective context management."
+  },
+  {
+    "repo": "agentskills/agentskills",
+    "url": "https://github.com/agentskills/agentskills",
+    "stars": 14131,
+    "created_at": "2025-12-16T15:47:19Z",
+    "updated_at": "2026-03-25T08:27:29Z",
+    "description": "Specification and documentation for Agent Skills"
+  },
+  {
+    "repo": "wasp-lang/open-saas",
+    "url": "https://github.com/wasp-lang/open-saas",
+    "stars": 13643,
+    "created_at": "2023-12-01T13:54:36Z",
+    "updated_at": "2026-03-25T05:58:37Z",
+    "description": "A 100% free modern JS SaaS boilerplate (React, NodeJS, Prisma). Full-featured: Auth (email, google, github, slack, MS), Email sending, Background jobs, Landing page, Payments (Stripe, Polar.sh), Shadcn UI, S3 file upload. AI-ready with tailored AGENTS.md, skills, and Claude Code plugin. One cmd deploy. Powered by Wasp full-stack framework."
+  },
+  {
+    "repo": "eigent-ai/eigent",
+    "url": "https://github.com/eigent-ai/eigent",
+    "stars": 13199,
+    "created_at": "2025-07-29T15:56:02Z",
+    "updated_at": "2026-03-25T08:12:50Z",
+    "description": "Eigent: The Open Source Cowork Desktop to Unlock Your Exceptional Productivity. Local and Free Alternative to Claude Cowork."
+  },
+  {
+    "repo": "rtk-ai/rtk",
+    "url": "https://github.com/rtk-ai/rtk",
+    "stars": 12974,
+    "created_at": "2026-01-22T16:54:16Z",
+    "updated_at": "2026-03-25T08:26:41Z",
+    "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies"
+  },
+  {
+    "repo": "jarrodwatts/claude-hud",
+    "url": "https://github.com/jarrodwatts/claude-hud",
+    "stars": 12915,
+    "created_at": "2026-01-02T01:35:07Z",
+    "updated_at": "2026-03-25T08:28:26Z",
+    "description": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress"
+  },
+  {
+    "repo": "NousResearch/hermes-agent",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "stars": 12829,
+    "created_at": "2025-07-22T22:22:28Z",
+    "updated_at": "2026-03-25T08:28:46Z",
+    "description": "The agent that grows with you"
+  },
+  {
+    "repo": "VoltAgent/awesome-agent-skills",
+    "url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "stars": 12744,
+    "created_at": "2025-10-28T08:55:32Z",
+    "updated_at": "2026-03-25T08:17:06Z",
+    "description": "Claude Code Skills and 1000+ agent skills from official dev teams and the community, compatible with Codex, Antigravity, Gemini CLI, Cursor and others."
+  },
+  {
+    "repo": "vercel-labs/skills",
+    "url": "https://github.com/vercel-labs/skills",
+    "stars": 11658,
+    "created_at": "2026-01-14T21:31:18Z",
+    "updated_at": "2026-03-25T06:28:06Z",
+    "description": "The open agent skills tool - npx skills"
+  },
+  {
+    "repo": "JimLiu/baoyu-skills",
+    "url": "https://github.com/JimLiu/baoyu-skills",
+    "stars": 11462,
+    "created_at": "2026-01-13T03:04:56Z",
+    "updated_at": "2026-03-25T08:25:42Z",
+    "description": ""
+  },
+  {
+    "repo": "Yeachan-Heo/oh-my-claudecode",
+    "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+    "stars": 11303,
+    "created_at": "2026-01-09T03:36:29Z",
+    "updated_at": "2026-03-25T08:21:44Z",
+    "description": "Teams-first Multi-agent orchestration for Claude Code"
+  },
+  {
+    "repo": "Panniantong/Agent-Reach",
+    "url": "https://github.com/Panniantong/Agent-Reach",
+    "stars": 10705,
+    "created_at": "2026-02-24T02:10:24Z",
+    "updated_at": "2026-03-25T08:26:42Z",
+    "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees."
+  },
+  {
+    "repo": "liyupi/ai-guide",
+    "url": "https://github.com/liyupi/ai-guide",
+    "stars": 10250,
+    "created_at": "2025-02-13T05:47:46Z",
+    "updated_at": "2026-03-25T06:31:23Z",
+    "description": "程序员鱼皮的 AI 资源大全 + Vibe Coding 零基础教程，分享 OpenClaw 保姆级教程、大模型玩法（DeepSeek / GPT / Gemini / Claude）、最新 AI 资讯、Prompt 提示词大全、AI 知识百科（Agent Skills / RAG / MCP / A2A）、AI 编程教程、AI 工具用法（Cursor / Claude Code / TRAE / Lovable / Copilot）、AI 开发框架教程（Spring AI / LangChain）、AI 产品变现指南，帮你快速掌握 AI 技术，走在时代前沿。本项目为开源文档，已升级为鱼皮 AI 导航网站"
+  },
+  {
+    "repo": "manaflow-ai/cmux",
+    "url": "https://github.com/manaflow-ai/cmux",
+    "stars": 10231,
+    "created_at": "2026-01-28T10:03:24Z",
+    "updated_at": "2026-03-25T08:27:45Z",
+    "description": "Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents"
+  },
+  {
+    "repo": "Wei-Shaw/claude-relay-service",
+    "url": "https://github.com/Wei-Shaw/claude-relay-service",
+    "stars": 10064,
+    "created_at": "2025-07-14T10:11:32Z",
+    "updated_at": "2026-03-25T08:25:05Z",
+    "description": "CRS-自建Claude Code镜像，一站式开源中转服务，让 Claude、OpenAI、Gemini、Droid 订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。"
+  },
+  {
+    "repo": "humanlayer/humanlayer",
+    "url": "https://github.com/humanlayer/humanlayer",
+    "stars": 10002,
+    "created_at": "2024-08-05T21:26:44Z",
+    "updated_at": "2026-03-25T05:18:19Z",
+    "description": "The best way to get AI coding agents to solve hard problems in complex codebases."
+  },
+  {
+    "repo": "aden-hive/hive",
+    "url": "https://github.com/aden-hive/hive",
+    "stars": 9809,
+    "created_at": "2026-01-12T00:04:22Z",
+    "updated_at": "2026-03-25T07:18:04Z",
+    "description": "Outcome driven agent development framework that evolves"
+  },
+  {
+    "repo": "travisvn/awesome-claude-skills",
+    "url": "https://github.com/travisvn/awesome-claude-skills",
+    "stars": 9706,
+    "created_at": "2025-10-16T20:42:39Z",
+    "updated_at": "2026-03-25T08:23:51Z",
+    "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows — particularly Claude Code"
+  },
+  {
+    "repo": "mcp-use/mcp-use",
+    "url": "https://github.com/mcp-use/mcp-use",
+    "stars": 9484,
+    "created_at": "2025-03-28T10:06:31Z",
+    "updated_at": "2026-03-25T08:21:17Z",
+    "description": "The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents."
+  },
+  {
+    "repo": "rowboatlabs/rowboat",
+    "url": "https://github.com/rowboatlabs/rowboat",
+    "stars": 9326,
+    "created_at": "2025-01-13T09:30:40Z",
+    "updated_at": "2026-03-25T06:01:01Z",
+    "description": "Open-source AI coworker, with memory"
+  },
+  {
+    "repo": "steipete/CodexBar",
+    "url": "https://github.com/steipete/CodexBar",
+    "stars": 9287,
+    "created_at": "2025-11-16T17:00:44Z",
+    "updated_at": "2026-03-25T08:17:01Z",
+    "description": "Show usage stats for OpenAI Codex and Claude Code, without having to login."
+  },
+  {
+    "repo": "xonsh/xonsh",
+    "url": "https://github.com/xonsh/xonsh",
+    "stars": 9260,
+    "created_at": "2015-01-21T22:05:27Z",
+    "updated_at": "2026-03-25T03:00:16Z",
+    "description": "🐚 Python-powered shell. Full-featured, cross-platform and AI-friendly."
+  },
+  {
+    "repo": "siteboon/claudecodeui",
+    "url": "https://github.com/siteboon/claudecodeui",
+    "stars": 8903,
+    "created_at": "2025-06-25T12:51:12Z",
+    "updated_at": "2026-03-25T08:26:24Z",
+    "description": "Use Claude Code, Cursor CLI or Codex on mobile and web with CloudCLI (aka Claude Code UI). CloudCLI is a free open source webui/GUI that helps you manage your Claude Code session and projects remotely"
+  },
+  {
+    "repo": "Wei-Shaw/sub2api",
+    "url": "https://github.com/Wei-Shaw/sub2api",
+    "stars": 8339,
+    "created_at": "2025-12-18T02:26:18Z",
+    "updated_at": "2026-03-25T08:24:23Z",
+    "description": "Sub2API-CRS2 一站式开源中转服务，让 Claude、Openai 、Gemini、Antigravity订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。"
+  },
+  {
+    "repo": "frankbria/ralph-claude-code",
+    "url": "https://github.com/frankbria/ralph-claude-code",
+    "stars": 8165,
+    "created_at": "2025-08-27T16:03:45Z",
+    "updated_at": "2026-03-25T08:12:30Z",
+    "description": "Autonomous AI development loop for Claude Code with intelligent exit detection"
+  },
+  {
+    "repo": "phuryn/pm-skills",
+    "url": "https://github.com/phuryn/pm-skills",
+    "stars": 8123,
+    "created_at": "2026-03-01T23:33:44Z",
+    "updated_at": "2026-03-25T07:58:42Z",
+    "description": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth."
+  },
+  {
+    "repo": "superset-sh/superset",
+    "url": "https://github.com/superset-sh/superset",
+    "stars": 7903,
+    "created_at": "2025-10-21T09:16:51Z",
+    "updated_at": "2026-03-25T08:13:01Z",
+    "description": "IDE for the AI Agents Era - Run an army of Claude Code, Codex, etc. on your machine"
+  },
+  {
+    "repo": "BehiSecc/awesome-claude-skills",
+    "url": "https://github.com/BehiSecc/awesome-claude-skills",
+    "stars": 7856,
+    "created_at": "2025-10-17T15:05:35Z",
+    "updated_at": "2026-03-25T06:34:13Z",
+    "description": "A curated list of Claude Skills."
+  },
+  {
+    "repo": "xixu-me/xget",
+    "url": "https://github.com/xixu-me/xget",
+    "stars": 7821,
+    "created_at": "2024-11-01T09:11:15Z",
+    "updated_at": "2026-03-25T08:10:57Z",
+    "description": "Ultra-high-performance, secure, all-in-one acceleration engine for developer resources"
+  },
+  {
+    "repo": "automazeio/ccpm",
+    "url": "https://github.com/automazeio/ccpm",
+    "stars": 7778,
+    "created_at": "2025-08-18T23:20:08Z",
+    "updated_at": "2026-03-25T08:28:23Z",
+    "description": "Project management skill system for Agents that uses GitHub Issues and Git worktrees for parallel agent execution."
+  },
+  {
+    "repo": "teng-lin/notebooklm-py",
+    "url": "https://github.com/teng-lin/notebooklm-py",
+    "stars": 7445,
+    "created_at": "2026-01-07T15:27:19Z",
+    "updated_at": "2026-03-25T06:25:17Z",
+    "description": "Unofficial Python API and agentic skill for Google NotebookLM. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw."
+  },
+  {
+    "repo": "Jeffallan/claude-skills",
+    "url": "https://github.com/Jeffallan/claude-skills",
+    "stars": 7274,
+    "created_at": "2025-10-20T20:27:22Z",
+    "updated_at": "2026-03-25T08:01:54Z",
+    "description": "66 Specialized Skills for Full-Stack Developers. Transform Claude Code into your expert pair programmer."
+  },
+  {
+    "repo": "Maciek-roboblog/Claude-Code-Usage-Monitor",
+    "url": "https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor",
+    "stars": 7123,
+    "created_at": "2025-06-19T00:00:05Z",
+    "updated_at": "2026-03-25T08:14:04Z",
+    "description": "Real-time Claude Code usage monitor with predictions and warnings"
+  },
+  {
+    "repo": "refly-ai/refly",
+    "url": "https://github.com/refly-ai/refly",
+    "stars": 7069,
+    "created_at": "2024-02-19T11:04:30Z",
+    "updated_at": "2026-03-25T08:17:12Z",
+    "description": "The first open-source agent skills builder. Define skills by vibe workflow, run on Claude Code, Cursor, Codex & more. Build Clawdbot 🦞· APIs for Lovable · Bots for Slack & Lark/Feishu · Skills are infrastructure, not prompts."
+  },
+  {
+    "repo": "nicobailon/visual-explainer",
+    "url": "https://github.com/nicobailon/visual-explainer",
+    "stars": 6890,
+    "created_at": "2026-02-16T19:33:52Z",
+    "updated_at": "2026-03-25T05:46:42Z",
+    "description": "Agent skill that generates rich HTML pages or slide decks for diagrams, diff reviews, plan audits, data tables, and project recaps"
+  },
+  {
+    "repo": "alirezarezvani/claude-skills",
+    "url": "https://github.com/alirezarezvani/claude-skills",
+    "stars": 6812,
+    "created_at": "2025-10-19T04:04:05Z",
+    "updated_at": "2026-03-25T08:31:02Z",
+    "description": "+192 Claude Code skills & agent plugins for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory."
+  },
+  {
+    "repo": "ykdojo/claude-code-tips",
+    "url": "https://github.com/ykdojo/claude-code-tips",
+    "stars": 6694,
+    "created_at": "2025-11-28T00:52:00Z",
+    "updated_at": "2026-03-25T08:26:35Z",
+    "description": "45 tips for getting the most out of Claude Code, from basics to advanced - includes a custom status line script, cutting the system prompt in half, using Gemini CLI as Claude Code's minion, and Claude Code running itself in a container. Also includes the dx plugin."
+  },
+  {
+    "repo": "smtg-ai/claude-squad",
+    "url": "https://github.com/smtg-ai/claude-squad",
+    "stars": 6606,
+    "created_at": "2025-03-09T20:00:41Z",
+    "updated_at": "2026-03-25T08:26:20Z",
+    "description": "Manage multiple AI terminal agents like Claude Code, Codex, OpenCode, and Amp."
+  },
+  {
+    "repo": "Piebald-AI/claude-code-system-prompts",
+    "url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+    "stars": 6603,
+    "created_at": "2025-11-18T21:26:33Z",
+    "updated_at": "2026-03-25T08:24:01Z",
+    "description": "All parts of Claude Code's system prompt, 18 builtin tool descriptions, sub agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact,  statusline, magic docs, WebFetch, Bash cmd, security review, agent creation).  Updated for each Claude Code version."
+  },
+  {
+    "repo": "olimorris/codecompanion.nvim",
+    "url": "https://github.com/olimorris/codecompanion.nvim",
+    "stars": 6343,
+    "created_at": "2023-12-27T17:32:51Z",
+    "updated_at": "2026-03-25T08:09:15Z",
+    "description": "✨ AI Coding, Vim Style"
+  },
+  {
+    "repo": "htmlstreamofficial/preline",
+    "url": "https://github.com/htmlstreamofficial/preline",
+    "stars": 6278,
+    "created_at": "2022-05-15T15:29:39Z",
+    "updated_at": "2026-03-24T19:26:03Z",
+    "description": "Preline UI is an open-source set of prebuilt UI components based on the utility-first Tailwind CSS framework."
+  },
+  {
+    "repo": "Lum1104/Understand-Anything",
+    "url": "https://github.com/Lum1104/Understand-Anything",
+    "stars": 6039,
+    "created_at": "2026-03-15T02:30:51Z",
+    "updated_at": "2026-03-25T08:25:41Z",
+    "description": "Claude Code skills that turn any codebase into an interactive knowledge graph you can explore, search, and ask questions about (Multi-platform e.g., Codex are supported)."
+  },
+  {
+    "repo": "mvanhorn/last30days-skill",
+    "url": "https://github.com/mvanhorn/last30days-skill",
+    "stars": 5996,
+    "created_at": "2026-01-23T20:37:37Z",
+    "updated_at": "2026-03-25T08:28:28Z",
+    "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary"
+  },
+  {
+    "repo": "sirmalloc/ccstatusline",
+    "url": "https://github.com/sirmalloc/ccstatusline",
+    "stars": 5888,
+    "created_at": "2025-08-08T11:19:28Z",
+    "updated_at": "2026-03-25T08:28:11Z",
+    "description": "🚀 Beautiful highly customizable statusline for Claude Code CLI with powerline support, themes, and more."
+  },
+  {
+    "repo": "mksglu/context-mode",
+    "url": "https://github.com/mksglu/context-mode",
+    "stars": 5856,
+    "created_at": "2026-02-23T05:56:28Z",
+    "updated_at": "2026-03-25T08:21:22Z",
+    "description": "Privacy-first. MCP is the protocol for tool access. We're the virtualization layer for context."
+  },
+  {
+    "repo": "UfoMiao/zcf",
+    "url": "https://github.com/UfoMiao/zcf",
+    "stars": 5798,
+    "created_at": "2025-07-30T06:09:00Z",
+    "updated_at": "2026-03-25T07:10:55Z",
+    "description": "Zero-Config Code Flow for Claude code & Codex"
+  },
+  {
+    "repo": "zilliztech/claude-context",
+    "url": "https://github.com/zilliztech/claude-context",
+    "stars": 5760,
+    "created_at": "2025-06-06T02:12:47Z",
+    "updated_at": "2026-03-25T08:18:12Z",
+    "description": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent."
+  },
+  {
+    "repo": "ikaijua/Awesome-AITools",
+    "url": "https://github.com/ikaijua/Awesome-AITools",
+    "stars": 5716,
+    "created_at": "2023-04-02T04:06:56Z",
+    "updated_at": "2026-03-25T01:54:26Z",
+    "description": "Collection of AI-related utilities. Welcome to submit pull requests /收藏AI相关的实用工具，欢迎提交pull requests"
+  },
+  {
+    "repo": "ThinkInAIXYZ/deepchat",
+    "url": "https://github.com/ThinkInAIXYZ/deepchat",
+    "stars": 5621,
+    "created_at": "2025-02-14T01:56:51Z",
+    "updated_at": "2026-03-25T07:58:45Z",
+    "description": "🐬DeepChat - A smart assistant that connects powerful AI to your personal world"
+  },
+  {
+    "repo": "Orchestra-Research/AI-Research-SKILLs",
+    "url": "https://github.com/Orchestra-Research/AI-Research-SKILLs",
+    "stars": 5576,
+    "created_at": "2025-11-03T06:13:06Z",
+    "updated_at": "2026-03-25T08:27:35Z",
+    "description": "Comprehensive open-source library of AI research and engineering skills for any AI model. Package the skills and your claude code/codex/gemini agent will be an AI research agent with full horsepower. Maintained by Orchestra Research."
+  },
+  {
+    "repo": "ComposioHQ/agent-orchestrator",
+    "url": "https://github.com/ComposioHQ/agent-orchestrator",
+    "stars": 5385,
+    "created_at": "2026-02-13T09:52:36Z",
+    "updated_at": "2026-03-25T08:23:05Z",
+    "description": " Agentic orchestrator for parallel coding agents — plans tasks, spawns agents, and autonomously handles CI    fixes, merge conflicts, and code reviews."
+  },
+  {
+    "repo": "YishenTu/claudian",
+    "url": "https://github.com/YishenTu/claudian",
+    "stars": 5059,
+    "created_at": "2025-12-05T17:58:26Z",
+    "updated_at": "2026-03-25T08:28:26Z",
+    "description": "An Obsidian plugin that embeds Claude Code as an AI collaborator in your vault"
+  },
+  {
+    "repo": "ageerle/ruoyi-ai",
+    "url": "https://github.com/ageerle/ruoyi-ai",
+    "stars": 4980,
+    "created_at": "2024-01-16T04:16:41Z",
+    "updated_at": "2026-03-25T03:45:23Z",
+    "description": "面向企业级市场的一站式AI应用开发框架，支持多厂商大模型统一接入与管理，具备安全可控的企业知识库与高精度检索优化能力，提供可视化流程编排、自主决策智能体与多智能体协同调度，兼容主流 Agent Skill 协议，帮助企业与开发者零门槛快速构建安全、高效、可落地的AI智能体应用与行业解决方案。"
+  },
+  {
+    "repo": "langgptai/awesome-claude-prompts",
+    "url": "https://github.com/langgptai/awesome-claude-prompts",
+    "stars": 4631,
+    "created_at": "2023-07-12T02:05:27Z",
+    "updated_at": "2026-03-25T05:06:58Z",
+    "description": "This repo includes Claude prompt curation to use Claude better."
+  },
+  {
+    "repo": "breaking-brake/cc-wf-studio",
+    "url": "https://github.com/breaking-brake/cc-wf-studio",
+    "stars": 4593,
+    "created_at": "2025-11-01T16:04:15Z",
+    "updated_at": "2026-03-25T06:07:37Z",
+    "description": "CC Workflow Studio"
+  },
+  {
+    "repo": "op7418/CodePilot",
+    "url": "https://github.com/op7418/CodePilot",
+    "stars": 4531,
+    "created_at": "2026-02-06T12:38:55Z",
+    "updated_at": "2026-03-25T08:25:48Z",
+    "description": "A desktop GUI for Claude Code — chat, code, and manage projects visually. Built with Electron + Next.js."
+  },
+  {
+    "repo": "fengshao1227/ccg-workflow",
+    "url": "https://github.com/fengshao1227/ccg-workflow",
+    "stars": 4351,
+    "created_at": "2026-01-04T15:56:26Z",
+    "updated_at": "2026-03-25T08:20:07Z",
+    "description": "多模型协作开发系统 - Claude 编排 + Codex 后端 + Gemini 前端，28 个命令覆盖开发全流程，一键安装零配置"
+  },
+  {
+    "repo": "su-kaka/gcli2api",
+    "url": "https://github.com/su-kaka/gcli2api",
+    "stars": 4325,
+    "created_at": "2025-08-14T11:54:36Z",
+    "updated_at": "2026-03-25T08:25:26Z",
+    "description": "将 GeminiCLI 和 Antigravity 转换为 OpenAI 、GEMINI 和 Claude API 接口"
+  },
+  {
+    "repo": "antfu/skills",
+    "url": "https://github.com/antfu/skills",
+    "stars": 4301,
+    "created_at": "2026-01-28T05:59:03Z",
+    "updated_at": "2026-03-25T08:27:14Z",
+    "description": "Anthony Fu's curated collection of agent skills."
+  },
+  {
+    "repo": "Donchitos/Claude-Code-Game-Studios",
+    "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+    "stars": 4244,
+    "created_at": "2026-02-12T05:21:38Z",
+    "updated_at": "2026-03-25T08:28:32Z",
+    "description": "Turn Claude Code into a full game dev studio — 48 AI agents, 36 workflow skills, and a complete coordination system mirroring real studio hierarchy."
+  },
+  {
+    "repo": "github/gh-aw",
+    "url": "https://github.com/github/gh-aw",
+    "stars": 4159,
+    "created_at": "2025-08-12T17:40:41Z",
+    "updated_at": "2026-03-25T08:22:23Z",
+    "description": "GitHub Agentic Workflows"
+  },
+  {
+    "repo": "mindfold-ai/Trellis",
+    "url": "https://github.com/mindfold-ai/Trellis",
+    "stars": 4145,
+    "created_at": "2026-01-26T11:49:10Z",
+    "updated_at": "2026-03-25T07:36:27Z",
+    "description": "The best agent harness."
+  },
+  {
+    "repo": "PeonPing/peon-ping",
+    "url": "https://github.com/PeonPing/peon-ping",
+    "stars": 4127,
+    "created_at": "2026-02-09T23:12:48Z",
+    "updated_at": "2026-03-25T07:22:57Z",
+    "description": "Warcraft III Peon voice notifications (+ more!) for Claude Code, Codex, IDEs, and any AI agent. Stop babysitting your terminal. Employ a Peon today."
+  },
+  {
+    "repo": "vijaythecoder/awesome-claude-agents",
+    "url": "https://github.com/vijaythecoder/awesome-claude-agents",
+    "stars": 4088,
+    "created_at": "2025-07-26T17:18:06Z",
+    "updated_at": "2026-03-25T05:12:21Z",
+    "description": "An orchestrated sub agent dev team powered by claude code"
+  },
+  {
+    "repo": "mnfst/manifest",
+    "url": "https://github.com/mnfst/manifest",
+    "stars": 4083,
+    "created_at": "2022-09-27T16:33:35Z",
+    "updated_at": "2026-03-25T07:57:19Z",
+    "description": "Smart LLM Routing for OpenClaw. Cut Costs up to 70% 🦞🦚"
+  },
+  {
+    "repo": "SawyerHood/dev-browser",
+    "url": "https://github.com/SawyerHood/dev-browser",
+    "stars": 3975,
+    "created_at": "2025-12-02T19:20:20Z",
+    "updated_at": "2026-03-25T04:11:33Z",
+    "description": "A Claude Skill to give your agent the ability to use a web browser"
+  },
+  {
+    "repo": "wanshuiyin/Auto-claude-code-research-in-sleep",
+    "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+    "stars": 3928,
+    "created_at": "2026-03-10T07:31:45Z",
+    "updated_at": "2026-03-25T08:28:24Z",
+    "description": "ARIS ⚔️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation. No framework, no lock-in — works with Claude Code, Codex, OpenClaw, or any LLM agent."
+  },
+  {
+    "repo": "trailofbits/skills",
+    "url": "https://github.com/trailofbits/skills",
+    "stars": 3894,
+    "created_at": "2026-01-14T18:23:21Z",
+    "updated_at": "2026-03-25T08:23:49Z",
+    "description": "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows"
+  },
+  {
+    "repo": "opactorai/Claudable",
+    "url": "https://github.com/opactorai/Claudable",
+    "stars": 3832,
+    "created_at": "2025-08-20T05:15:16Z",
+    "updated_at": "2026-03-25T08:13:35Z",
+    "description": "Claudable is an open-source web builder that leverages local CLI agents, such as Claude Code, Codex, Gemini CLI, Qwen Code, and Cursor Agent, to build and deploy products effortlessly."
+  },
+  {
+    "repo": "zgsm-ai/costrict",
+    "url": "https://github.com/zgsm-ai/costrict",
+    "stars": 3802,
+    "created_at": "2025-04-10T02:06:51Z",
+    "updated_at": "2026-03-25T06:53:47Z",
+    "description": "Costrict - strict AI coder for enterprises, quality first, including AI Agent, AI CodeReview, AI Completion. "
+  },
+  {
+    "repo": "evalstate/fast-agent",
+    "url": "https://github.com/evalstate/fast-agent",
+    "stars": 3724,
+    "created_at": "2025-01-18T20:39:51Z",
+    "updated_at": "2026-03-24T07:44:30Z",
+    "description": "Code, Build and Evaluate agents - excellent Model and Skills/MCP/ACP Support"
+  },
+  {
+    "repo": "zebbern/claude-code-guide",
+    "url": "https://github.com/zebbern/claude-code-guide",
+    "stars": 3718,
+    "created_at": "2025-06-21T20:43:25Z",
+    "updated_at": "2026-03-25T08:14:19Z",
+    "description": "Claude Code Guide - Setup, Commands, workflows, agents, skills & tips-n-tricks go from beginner to power user!"
+  },
+  {
+    "repo": "mukul975/Anthropic-Cybersecurity-Skills",
+    "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+    "stars": 3701,
+    "created_at": "2026-02-25T09:47:50Z",
+    "updated_at": "2026-03-25T08:09:13Z",
+    "description": "734+ structured cybersecurity skills for AI agents · MITRE ATT&CK mapped · agentskills.io open standard · Works with Claude Code, GitHub Copilot, OpenAI Codex CLI, Cursor, Gemini CLI & 20+ platforms · Penetration testing, DFIR, threat intel, cloud security & more · Apache 2.0"
+  },
+  {
+    "repo": "max-sixty/worktrunk",
+    "url": "https://github.com/max-sixty/worktrunk",
+    "stars": 3699,
+    "created_at": "2025-10-17T22:13:14Z",
+    "updated_at": "2026-03-25T07:39:53Z",
+    "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows"
+  },
+  {
+    "repo": "parcadei/Continuous-Claude-v3",
+    "url": "https://github.com/parcadei/Continuous-Claude-v3",
+    "stars": 3623,
+    "created_at": "2025-12-23T00:12:49Z",
+    "updated_at": "2026-03-25T01:28:09Z",
+    "description": "Context management for Claude Code. Hooks maintain state via ledgers and handoffs. MCP execution without context pollution. Agent orchestration with isolated context windows."
+  },
+  {
+    "repo": "backnotprop/plannotator",
+    "url": "https://github.com/backnotprop/plannotator",
+    "stars": 3537,
+    "created_at": "2025-12-28T02:09:40Z",
+    "updated_at": "2026-03-25T07:54:14Z",
+    "description": "Annotate and review coding agent plans and code diffs visually, share with your team, send feedback to agents with one click."
+  },
+  {
+    "repo": "tirth8205/code-review-graph",
+    "url": "https://github.com/tirth8205/code-review-graph",
+    "stars": 3508,
+    "created_at": "2026-02-26T17:25:13Z",
+    "updated_at": "2026-03-25T08:18:46Z",
+    "description": "Local knowledge graph for Claude Code. Builds a persistent map of your codebase so Claude reads only what matters — 6.8× fewer tokens on reviews and up to 49× on daily coding tasks."
+  },
+  {
+    "repo": "gosom/google-maps-scraper",
+    "url": "https://github.com/gosom/google-maps-scraper",
+    "stars": 3481,
+    "created_at": "2023-04-22T14:35:13Z",
+    "updated_at": "2026-03-25T07:57:01Z",
+    "description": "scrape data  from Google Maps. Extracts data such as the name, address, phone number, website URL, rating,  reviews number, latitude and longitude, reviews,email and more for each place"
+  },
+  {
+    "repo": "libukai/awesome-agent-skills",
+    "url": "https://github.com/libukai/awesome-agent-skills",
+    "stars": 3479,
+    "created_at": "2025-12-21T12:45:15Z",
+    "updated_at": "2026-03-25T06:23:37Z",
+    "description": "Agent Skills 终极指南：快速入门、资源推荐、精选技能与实用工具 ｜The Ultimate Guide to Agent Skills: QuickStart, Resources, Features&Toolkit"
+  },
+  {
+    "repo": "heilcheng/awesome-agent-skills",
+    "url": "https://github.com/heilcheng/awesome-agent-skills",
+    "stars": 3384,
+    "created_at": "2025-12-29T21:13:40Z",
+    "updated_at": "2026-03-25T05:48:25Z",
+    "description": "A curated list of skills, tools, tutorials, and capabilities for AI coding agents (Claude, Codex, Antigravity, Copilot, VS Code)"
+  },
+  {
+    "repo": "badrisnarayanan/antigravity-claude-proxy",
+    "url": "https://github.com/badrisnarayanan/antigravity-claude-proxy",
+    "stars": 3263,
+    "created_at": "2025-12-19T13:57:33Z",
+    "updated_at": "2026-03-25T07:53:00Z",
+    "description": "Proxy that exposes Antigravity provided claude / gemini models, so we can use them in Claude Code and OpenClaw (Clawdbot)"
+  },
+  {
+    "repo": "ComposioHQ/open-claude-cowork",
+    "url": "https://github.com/ComposioHQ/open-claude-cowork",
+    "stars": 3211,
+    "created_at": "2026-01-13T03:14:23Z",
+    "updated_at": "2026-03-25T04:39:30Z",
+    "description": "Open Source version of Claude Cowork with 500+ SaaS app integrations"
+  },
+  {
+    "repo": "memodb-io/Acontext",
+    "url": "https://github.com/memodb-io/Acontext",
+    "stars": 3189,
+    "created_at": "2025-07-16T13:15:48Z",
+    "updated_at": "2026-03-25T05:38:41Z",
+    "description": "Agent Skills as a Memory Layer"
+  },
+  {
+    "repo": "AgriciDaniel/claude-seo",
+    "url": "https://github.com/AgriciDaniel/claude-seo",
+    "stars": 3068,
+    "created_at": "2026-02-07T08:17:38Z",
+    "updated_at": "2026-03-25T08:21:54Z",
+    "description": "Universal SEO skill for Claude Code. 13 sub-skills, 7 subagents, extensions system with DataForSEO MCP integration. Technical SEO, E-E-A-T, schema, GEO/AEO, and strategic planning."
+  },
+  {
+    "repo": "tiann/hapi",
+    "url": "https://github.com/tiann/hapi",
+    "stars": 3060,
+    "created_at": "2025-12-24T10:44:41Z",
+    "updated_at": "2026-03-25T05:16:59Z",
+    "description": "App for Claude Code / Codex / Gemini / OpenCode, vibe coding anytime, anywhere"
+  },
+  {
+    "repo": "twostraws/SwiftUI-Agent-Skill",
+    "url": "https://github.com/twostraws/SwiftUI-Agent-Skill",
+    "stars": 3044,
+    "created_at": "2026-03-05T20:13:14Z",
+    "updated_at": "2026-03-25T06:22:41Z",
+    "description": "SwiftUI agent skill for Claude Code, Codex, and other AI tools."
+  },
+  {
+    "repo": "stravu/crystal",
+    "url": "https://github.com/stravu/crystal",
+    "stars": 2991,
+    "created_at": "2025-06-05T23:54:39Z",
+    "updated_at": "2026-03-25T06:15:45Z",
+    "description": "(Crystal is now Nimbalyst) Run multiple Codex and Claude Code AI sessions in parallel git worktrees. Test, compare approaches & manage AI-assisted development workflows in one desktop app."
+  },
+  {
+    "repo": "gotalab/cc-sdd",
+    "url": "https://github.com/gotalab/cc-sdd",
+    "stars": 2961,
+    "created_at": "2025-07-17T04:41:37Z",
+    "updated_at": "2026-03-25T07:10:21Z",
+    "description": "Spec-driven development (SDD) for your team's workflow. Kiro style commands that enforce structured requirements→design→tasks workflow and steering, transforming how you build with AI. Support Claude Code, Codex, Opencode, Cursor, Github Copilot, Gemini CLI and Windsurf. "
+  },
+  {
+    "repo": "SamurAIGPT/Generative-Media-Skills",
+    "url": "https://github.com/SamurAIGPT/Generative-Media-Skills",
+    "stars": 2960,
+    "created_at": "2023-05-25T14:21:12Z",
+    "updated_at": "2026-03-25T05:24:26Z",
+    "description": "Multi-modal Generative Media Skills for AI Agents (Claude Code, Cursor, Gemini CLI). High-quality image, video, and audio generation powered by muapi.ai."
+  },
+  {
+    "repo": "generalaction/emdash",
+    "url": "https://github.com/generalaction/emdash",
+    "stars": 2868,
+    "created_at": "2025-08-28T07:19:57Z",
+    "updated_at": "2026-03-25T04:25:37Z",
+    "description": "Emdash is the Open-Source Agentic Development Environment (🧡 YC W26). Run multiple coding agents in parallel. Use any provider."
+  },
+  {
+    "repo": "agenticnotetaking/arscontexta",
+    "url": "https://github.com/agenticnotetaking/arscontexta",
+    "stars": 2847,
+    "created_at": "2026-02-15T17:26:41Z",
+    "updated_at": "2026-03-25T08:05:53Z",
+    "description": "Claude Code plugin that generates individualized knowledge systems from conversation. You describe how you think and work, have a conversation and get a complete second brain as markdown files you own."
+  },
+  {
+    "repo": "looplj/axonhub",
+    "url": "https://github.com/looplj/axonhub",
+    "stars": 2714,
+    "created_at": "2025-09-09T17:04:33Z",
+    "updated_at": "2026-03-25T08:24:15Z",
+    "description": "⚡️ Open-source AI Gateway — Use any SDK to call 100+ LLMs. Built-in failover, load balancing, cost control & end-to-end tracing."
+  },
+  {
+    "repo": "brennercruvinel/CCPlugins",
+    "url": "https://github.com/brennercruvinel/CCPlugins",
+    "stars": 2698,
+    "created_at": "2025-07-25T03:20:54Z",
+    "updated_at": "2026-03-24T18:27:26Z",
+    "description": "Best Claude Code framework that actually save time. Built by a dev tired of typing \"please act like a senior engineer\" in every conversation."
+  },
+  {
+    "repo": "batrachianai/toad",
+    "url": "https://github.com/batrachianai/toad",
+    "stars": 2681,
+    "created_at": "2025-07-17T17:17:22Z",
+    "updated_at": "2026-03-25T04:53:52Z",
+    "description": "A unified interface for AI in your terminal."
+  },
+  {
+    "repo": "michaelshimeles/ralphy",
+    "url": "https://github.com/michaelshimeles/ralphy",
+    "stars": 2665,
+    "created_at": "2026-01-15T21:23:21Z",
+    "updated_at": "2026-03-25T07:37:09Z",
+    "description": "My Ralph Wiggum setup, an autonomous bash script that runs Claude Code, Codex, OpenCode, Cursor agent, Qwen & Droid in a loop until your PRD is complete."
+  },
+  {
+    "repo": "davepoon/buildwithclaude",
+    "url": "https://github.com/davepoon/buildwithclaude",
+    "stars": 2633,
+    "created_at": "2025-07-25T02:26:45Z",
+    "updated_at": "2026-03-25T02:11:29Z",
+    "description": "A single hub to find Claude Skills, Agents, Commands, Hooks, Plugins, and Marketplace collections to extend Claude Code, Claude Desktop, Agent SDK and OpenClaw"
+  },
+  {
+    "repo": "intellectronica/ruler",
+    "url": "https://github.com/intellectronica/ruler",
+    "stars": 2591,
+    "created_at": "2025-05-20T08:22:59Z",
+    "updated_at": "2026-03-25T02:28:18Z",
+    "description": "Ruler — apply the same rules to all coding agents"
+  },
+  {
+    "repo": "matt1398/claude-devtools",
+    "url": "https://github.com/matt1398/claude-devtools",
+    "stars": 2589,
+    "created_at": "2026-02-07T13:17:25Z",
+    "updated_at": "2026-03-25T07:21:40Z",
+    "description": "The missing DevTools for Claude Code — inspect every tool call, subagent, and token like a browser inspector"
+  },
+  {
+    "repo": "RunMaestro/Maestro",
+    "url": "https://github.com/RunMaestro/Maestro",
+    "stars": 2578,
+    "created_at": "2025-11-23T01:59:55Z",
+    "updated_at": "2026-03-25T06:44:37Z",
+    "description": "Agent Orchestration Command Center"
+  },
+  {
+    "repo": "jnMetaCode/agency-agents-zh",
+    "url": "https://github.com/jnMetaCode/agency-agents-zh",
+    "stars": 2429,
+    "created_at": "2026-03-06T11:11:51Z",
+    "updated_at": "2026-03-25T08:22:02Z",
+    "description": "180 个即插即用的 AI 专家人设（中文版）— 覆盖 17 个部门，支持 Claude Code / OpenClaw / Cursor / Trae 等 11 种工具 | Chinese AI agent personas for dev tools"
+  },
+  {
+    "repo": "folke/sidekick.nvim",
+    "url": "https://github.com/folke/sidekick.nvim",
+    "stars": 2423,
+    "created_at": "2025-09-26T10:26:48Z",
+    "updated_at": "2026-03-25T08:26:21Z",
+    "description": "Your Neovim AI sidekick"
+  },
+  {
+    "repo": "qixing-jk/all-api-hub",
+    "url": "https://github.com/qixing-jk/all-api-hub",
+    "stars": 2415,
+    "created_at": "2025-09-08T15:51:38Z",
+    "updated_at": "2026-03-25T08:23:34Z",
+    "description": "一站式管理 New API 兼容中转站账号：余额/用量看板、自动签到、密钥一键导出到常用应用、网页内 API 可用性测试、渠道与模型同步/重定向 | New‑API relay manager: balance/usage, auto check‑in, one‑click key export to popular clients, in‑page API checks, channel/model sync & redirect"
+  },
+  {
+    "repo": "FullAgent/fulling",
+    "url": "https://github.com/FullAgent/fulling",
+    "stars": 2407,
+    "created_at": "2025-10-11T02:31:07Z",
+    "updated_at": "2026-03-25T03:54:12Z",
+    "description": "Fulling is an AI-powered Full-stack Engineer Agent. Built with Next.js, Claude, shadcn/ui, and PostgreSQL. Use kubernetes as infra."
+  },
+  {
+    "repo": "coder/claudecode.nvim",
+    "url": "https://github.com/coder/claudecode.nvim",
+    "stars": 2377,
+    "created_at": "2025-05-21T12:35:56Z",
+    "updated_at": "2026-03-25T06:39:23Z",
+    "description": "🧩 Claude Code Neovim IDE Extension"
+  },
+  {
+    "repo": "remotion-dev/skills",
+    "url": "https://github.com/remotion-dev/skills",
+    "stars": 2365,
+    "created_at": "2026-01-19T09:58:43Z",
+    "updated_at": "2026-03-25T06:25:54Z",
+    "description": "Agent Skills"
+  },
+  {
+    "repo": "KimYx0207/Claude-Code-x-OpenClaw-Guide-Zh",
+    "url": "https://github.com/KimYx0207/Claude-Code-x-OpenClaw-Guide-Zh",
+    "stars": 2333,
+    "created_at": "2026-02-11T05:34:29Z",
+    "updated_at": "2026-03-25T07:15:37Z",
+    "description": "从零到企业实战：Claude Code 官方编程神器 + OpenClaw 224K Stars 开源AI助手 | 双顶流中文教程 | 21篇教程 130000+字"
+  },
+  {
+    "repo": "AvdLee/SwiftUI-Agent-Skill",
+    "url": "https://github.com/AvdLee/SwiftUI-Agent-Skill",
+    "stars": 2316,
+    "created_at": "2026-01-21T14:42:30Z",
+    "updated_at": "2026-03-25T03:20:14Z",
+    "description": "Add expert SwiftUI Best Practices guidance to your AI coding tool (Agent Skills open format)."
+  },
+  {
+    "repo": "mikeyobrien/ralph-orchestrator",
+    "url": "https://github.com/mikeyobrien/ralph-orchestrator",
+    "stars": 2286,
+    "created_at": "2025-09-07T18:17:13Z",
+    "updated_at": "2026-03-25T08:07:26Z",
+    "description": "An improved implementation of the Ralph Wiggum technique for autonomous AI agent orchestration"
+  },
+  {
+    "repo": "Galaxy-Dawn/claude-scholar",
+    "url": "https://github.com/Galaxy-Dawn/claude-scholar",
+    "stars": 2277,
+    "created_at": "2026-01-27T10:32:17Z",
+    "updated_at": "2026-03-25T08:25:04Z",
+    "description": "Semi-automated research assistant for academic research and software development. Supports Claude Code, OpenCode, and Codex CLI across ideation, coding, experiments, writing, and publication."
+  },
+  {
+    "repo": "nidhinjs/prompt-master",
+    "url": "https://github.com/nidhinjs/prompt-master",
+    "stars": 2250,
+    "created_at": "2026-03-11T16:25:43Z",
+    "updated_at": "2026-03-25T07:56:33Z",
+    "description": "A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or credits wasted. Full context and memory retention"
+  },
+  {
+    "repo": "vitali87/code-graph-rag",
+    "url": "https://github.com/vitali87/code-graph-rag",
+    "stars": 2241,
+    "created_at": "2025-06-16T14:31:57Z",
+    "updated_at": "2026-03-25T07:39:42Z",
+    "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs"
+  },
+  {
+    "repo": "FlorianBruniaux/claude-code-ultimate-guide",
+    "url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide",
+    "stars": 2220,
+    "created_at": "2026-01-09T13:42:10Z",
+    "updated_at": "2026-03-25T08:17:53Z",
+    "description": "A tremendous feat of documentation, this guide covers Claude Code from beginner to power user, with production-ready templates for Claude Code features, guides on agentic workflows, and a lot of great learning materials, including quizzes and a handy \"cheatsheet\". Whether it's the \"ultimate\" guide to Claude Code will be up to the reader :)"
+  },
+  {
+    "repo": "uditgoenka/autoresearch",
+    "url": "https://github.com/uditgoenka/autoresearch",
+    "stars": 2216,
+    "created_at": "2026-03-13T14:51:54Z",
+    "updated_at": "2026-03-25T08:16:05Z",
+    "description": "Claude Autoresearch Skill — Autonomous goal-directed iteration for Claude Code. Inspired by Karpathy's autoresearch. Modify → Verify → Keep/Discard → Repeat forever."
+  },
+  {
+    "repo": "wshobson/commands",
+    "url": "https://github.com/wshobson/commands",
+    "stars": 2202,
+    "created_at": "2025-06-14T16:43:24Z",
+    "updated_at": "2026-03-25T05:58:45Z",
+    "description": "A collection of production-ready slash commands for Claude Code"
+  },
+  {
+    "repo": "lackeyjb/playwright-skill",
+    "url": "https://github.com/lackeyjb/playwright-skill",
+    "stars": 2138,
+    "created_at": "2025-10-19T21:33:51Z",
+    "updated_at": "2026-03-25T07:22:23Z",
+    "description": "Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation."
+  },
+  {
+    "repo": "centminmod/my-claude-code-setup",
+    "url": "https://github.com/centminmod/my-claude-code-setup",
+    "stars": 2102,
+    "created_at": "2025-07-08T01:55:33Z",
+    "updated_at": "2026-03-25T07:27:37Z",
+    "description": "Shared starter template configuration and CLAUDE.md memory bank system for Claude Code"
+  },
+  {
+    "repo": "ding113/claude-code-hub",
+    "url": "https://github.com/ding113/claude-code-hub",
+    "stars": 2091,
+    "created_at": "2025-10-20T16:58:17Z",
+    "updated_at": "2026-03-25T07:43:13Z",
+    "description": "一个现代化的 Claude Code & Codex API 代理服务，提供智能负载均衡、用户管理和使用统计功能。"
+  },
+  {
+    "repo": "KhazP/vibe-coding-prompt-template",
+    "url": "https://github.com/KhazP/vibe-coding-prompt-template",
+    "stars": 2065,
+    "created_at": "2025-04-14T17:27:16Z",
+    "updated_at": "2026-03-25T06:53:23Z",
+    "description": "Templates and workflow for generating PRDs, Tech Designs, and MVP and more using LLMs for AI IDEs"
+  },
+  {
+    "repo": "nyldn/claude-octopus",
+    "url": "https://github.com/nyldn/claude-octopus",
+    "stars": 2057,
+    "created_at": "2026-01-15T08:49:38Z",
+    "updated_at": "2026-03-25T06:05:11Z",
+    "description": "Multi-LLM orchestration plugin for Claude Code — 8 providers (Codex, Gemini, Claude, Perplexity, OpenRouter, Copilot, Qwen, Ollama), 47 commands, 50 skills, Double Diamond workflows"
+  },
+  {
+    "repo": "vuejs-ai/skills",
+    "url": "https://github.com/vuejs-ai/skills",
+    "stars": 2051,
+    "created_at": "2026-01-21T07:10:27Z",
+    "updated_at": "2026-03-25T05:50:48Z",
+    "description": "Agent skills for Vue 3 development"
+  },
+  {
+    "repo": "htdt/godogen",
+    "url": "https://github.com/htdt/godogen",
+    "stars": 2043,
+    "created_at": "2026-02-06T18:46:52Z",
+    "updated_at": "2026-03-25T08:17:15Z",
+    "description": "Claude Code skills that build complete Godot 4 projects from a game description"
+  },
+  {
+    "repo": "snyk/agent-scan",
+    "url": "https://github.com/snyk/agent-scan",
+    "stars": 1971,
+    "created_at": "2025-04-07T14:31:26Z",
+    "updated_at": "2026-03-25T02:23:31Z",
+    "description": "Security scanner for AI agents, MCP servers and agent skills."
+  },
+  {
+    "repo": "heshengtao/super-agent-party",
+    "url": "https://github.com/heshengtao/super-agent-party",
+    "stars": 1963,
+    "created_at": "2025-03-08T15:31:51Z",
+    "updated_at": "2026-03-25T07:58:08Z",
+    "description": "⭐ All-in-one AI companion! Super Agent Party = Self hosted neuro sama + openclaw! ⭐ 全能AI伴侣！超级智能体派对 = 自托管neuro sama + openclaw!"
+  },
+  {
+    "repo": "greggh/claude-code.nvim",
+    "url": "https://github.com/greggh/claude-code.nvim",
+    "stars": 1952,
+    "created_at": "2025-02-24T21:33:05Z",
+    "updated_at": "2026-03-25T07:21:21Z",
+    "description": "Seamless integration between Claude Code AI assistant and Neovim"
+  },
+  {
+    "repo": "automazeio/vibeproxy",
+    "url": "https://github.com/automazeio/vibeproxy",
+    "stars": 1943,
+    "created_at": "2025-10-04T00:36:21Z",
+    "updated_at": "2026-03-25T08:28:45Z",
+    "description": "Native macOS menu bar app to use your Claude Code & ChatGPT subscriptions with AI coding tools - no API keys needed"
+  },
+  {
+    "repo": "GuDaStudio/skills",
+    "url": "https://github.com/GuDaStudio/skills",
+    "stars": 1942,
+    "created_at": "2025-12-16T14:54:52Z",
+    "updated_at": "2026-03-24T19:21:19Z",
+    "description": "This repository contains a collection of Agent Skills developed by GudaStudio, enabling seamless collaboration between Claude and other AI models and tools."
+  },
+  {
+    "repo": "nizos/tdd-guard",
+    "url": "https://github.com/nizos/tdd-guard",
+    "stars": 1924,
+    "created_at": "2025-07-07T09:14:14Z",
+    "updated_at": "2026-03-25T06:39:34Z",
+    "description": "Automated TDD enforcement for Claude Code"
+  },
+  {
+    "repo": "yomorun/yomo",
+    "url": "https://github.com/yomorun/yomo",
+    "stars": 1894,
+    "created_at": "2020-07-01T05:48:28Z",
+    "updated_at": "2026-03-22T07:32:51Z",
+    "description": "🦖 Serverless AI Agent Framework with Geo-distributed Edge AI Infra."
+  },
+  {
+    "repo": "mrgoonie/claudekit-skills",
+    "url": "https://github.com/mrgoonie/claudekit-skills",
+    "stars": 1887,
+    "created_at": "2025-10-23T04:43:54Z",
+    "updated_at": "2026-03-25T07:27:46Z",
+    "description": "All powerful skills of ClaudeKit.cc!"
+  },
+  {
+    "repo": "bestruirui/octopus",
+    "url": "https://github.com/bestruirui/octopus",
+    "stars": 1854,
+    "created_at": "2025-11-18T01:41:03Z",
+    "updated_at": "2026-03-25T07:34:42Z",
+    "description": "One Hub All LLMs For You | 为个人打造的 LLM API 聚合服务"
+  },
+  {
+    "repo": "bfly123/claude_code_bridge",
+    "url": "https://github.com/bfly123/claude_code_bridge",
+    "stars": 1848,
+    "created_at": "2025-10-25T13:23:08Z",
+    "updated_at": "2026-03-25T07:23:00Z",
+    "description": "Real-time multi-AI collaboration: Claude, Codex & Gemini with persistent context, minimal token overhead"
+  },
+  {
+    "repo": "microsoft/skills",
+    "url": "https://github.com/microsoft/skills",
+    "stars": 1843,
+    "created_at": "2026-01-16T18:34:20Z",
+    "updated_at": "2026-03-25T07:44:12Z",
+    "description": "Skills, MCP servers, Custom Agents, Agents.md for SDKs to ground Coding Agents"
+  },
+  {
+    "repo": "Q00/ouroboros",
+    "url": "https://github.com/Q00/ouroboros",
+    "stars": 1824,
+    "created_at": "2026-01-14T01:14:04Z",
+    "updated_at": "2026-03-25T08:22:45Z",
+    "description": "Stop prompting. Start specifying."
+  },
+  {
+    "repo": "tech-leads-club/agent-skills",
+    "url": "https://github.com/tech-leads-club/agent-skills",
+    "stars": 1802,
+    "created_at": "2026-01-19T13:21:32Z",
+    "updated_at": "2026-03-25T02:57:02Z",
+    "description": "The secure, validated skill registry for professional AI coding agents. Extend Antigravity, Claude Code, Cursor, Copilot and more with absolute confidence."
+  },
+  {
+    "repo": "superagent-ai/vibekit",
+    "url": "https://github.com/superagent-ai/vibekit",
+    "stars": 1751,
+    "created_at": "2025-05-14T21:47:04Z",
+    "updated_at": "2026-03-25T01:06:17Z",
+    "description": "Run Claude Code, Gemini, Codex — or any coding agent — in a clean, isolated sandbox with sensitive data redaction and observability baked in."
+  },
+  {
+    "repo": "hamed-elfayome/Claude-Usage-Tracker",
+    "url": "https://github.com/hamed-elfayome/Claude-Usage-Tracker",
+    "stars": 1747,
+    "created_at": "2025-10-25T02:21:17Z",
+    "updated_at": "2026-03-25T08:27:51Z",
+    "description": "Native macOS menu bar app for tracking Claude AI usage limits in real-time. Built with Swift/SwiftUI."
+  },
+  {
+    "repo": "apify/agent-skills",
+    "url": "https://github.com/apify/agent-skills",
+    "stars": 1734,
+    "created_at": "2026-01-07T13:37:31Z",
+    "updated_at": "2026-03-25T05:09:09Z",
+    "description": "Collection of Apify Agent Skills"
+  },
+  {
+    "repo": "asheshgoplani/agent-deck",
+    "url": "https://github.com/asheshgoplani/agent-deck",
+    "stars": 1709,
+    "created_at": "2025-12-03T17:08:12Z",
+    "updated_at": "2026-03-25T07:45:57Z",
+    "description": "Terminal session manager for AI coding agents. One TUI for Claude, Gemini, OpenCode, Codex, and more."
+  },
+  {
+    "repo": "jeremylongshore/claude-code-plugins-plus-skills",
+    "url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+    "stars": 1708,
+    "created_at": "2025-10-10T01:01:00Z",
+    "updated_at": "2026-03-25T01:48:52Z",
+    "description": "340 plugins + 1367 agent skills for Claude Code. Open-source marketplace with CCPI package manager, interactive tutorials, and production orchestration patterns."
+  },
+  {
+    "repo": "supabase/agent-skills",
+    "url": "https://github.com/supabase/agent-skills",
+    "stars": 1701,
+    "created_at": "2026-01-16T07:28:01Z",
+    "updated_at": "2026-03-25T01:36:23Z",
+    "description": "Agent Skills to help developers using AI agents with Supabase"
+  },
+  {
+    "repo": "trailofbits/claude-code-config",
+    "url": "https://github.com/trailofbits/claude-code-config",
+    "stars": 1668,
+    "created_at": "2026-02-04T17:12:06Z",
+    "updated_at": "2026-03-25T08:17:44Z",
+    "description": "Opinionated defaults, documentation, and workflows for Claude Code at Trail of Bits"
+  },
+  {
+    "repo": "IvanMurzak/Unity-MCP",
+    "url": "https://github.com/IvanMurzak/Unity-MCP",
+    "stars": 1653,
+    "created_at": "2025-04-02T09:57:01Z",
+    "updated_at": "2026-03-25T08:26:47Z",
+    "description": "AI Skills, MCP Tools, and CLI for Unity Engine. Full AI develop and test loop. Use cli for quick setup. Efficient token usage, advanced tools. Any C# method may be turned into a tool by a single line. Works with Claude Code, Gemini, Copilot, Cursor and any other absolutely for free."
+  },
+  {
+    "repo": "FreedomIntelligence/OpenClaw-Medical-Skills",
+    "url": "https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills",
+    "stars": 1617,
+    "created_at": "2026-03-08T09:43:52Z",
+    "updated_at": "2026-03-25T07:35:09Z",
+    "description": "The largest open-source medical AI skills library for OpenClaw🦞."
+  },
+  {
+    "repo": "pchalasani/claude-code-tools",
+    "url": "https://github.com/pchalasani/claude-code-tools",
+    "stars": 1615,
+    "created_at": "2025-07-30T20:10:38Z",
+    "updated_at": "2026-03-25T02:36:20Z",
+    "description": "Practical productivity tools for Claude Code, Codex-CLI, and similar CLI coding agents."
+  },
+  {
+    "repo": "ZSeven-W/openpencil",
+    "url": "https://github.com/ZSeven-W/openpencil",
+    "stars": 1602,
+    "created_at": "2026-02-17T10:51:46Z",
+    "updated_at": "2026-03-25T08:23:11Z",
+    "description": "The world's first open-source AI-native vector design tool and the first to feature concurrent Agent Teams. Design-as-Code. Turn prompts into UI directly on the live canvas. A modern alternative to Pencil."
+  },
+  {
+    "repo": "catlog22/Claude-Code-Workflow",
+    "url": "https://github.com/catlog22/Claude-Code-Workflow",
+    "stars": 1580,
+    "created_at": "2025-09-07T09:40:18Z",
+    "updated_at": "2026-03-25T08:28:48Z",
+    "description": " JSON-driven multi-agent  cadence-team development framework with   intelligent CLI orchestration (Gemini/Qwen/Codex),   context-first architecture, and automated workflow   execution"
+  },
+  {
+    "repo": "maxritter/pilot-shell",
+    "url": "https://github.com/maxritter/pilot-shell",
+    "stars": 1579,
+    "created_at": "2025-10-18T08:30:23Z",
+    "updated_at": "2026-03-25T07:53:28Z",
+    "description": "The professional development environment for Claude Code: From requirement to production-grade code. Planned, tested, verified."
+  },
+  {
+    "repo": "kaitranntt/ccs",
+    "url": "https://github.com/kaitranntt/ccs",
+    "stars": 1569,
+    "created_at": "2025-11-01T21:01:53Z",
+    "updated_at": "2026-03-25T08:01:52Z",
+    "description": "Switch between Claude accounts, Gemini, Copilot, OpenRouter (300+ models) via CLIProxyAPI OAuth proxy. Visual dashboard, remote proxy support, WebSearch fallback. Zero-config to production-ready."
+  },
+  {
+    "repo": "op7418/Claude-to-IM-skill",
+    "url": "https://github.com/op7418/Claude-to-IM-skill",
+    "stars": 1564,
+    "created_at": "2026-03-05T11:00:16Z",
+    "updated_at": "2026-03-25T08:05:56Z",
+    "description": "Bridge Claude Code / Codex to IM platforms — chat with AI coding agents from Telegram, Discord, or Feishu/Lark."
+  },
+  {
+    "repo": "expo/skills",
+    "url": "https://github.com/expo/skills",
+    "stars": 1540,
+    "created_at": "2025-11-30T03:57:18Z",
+    "updated_at": "2026-03-25T06:17:17Z",
+    "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services"
+  },
+  {
+    "repo": "cisco-ai-defense/skill-scanner",
+    "url": "https://github.com/cisco-ai-defense/skill-scanner",
+    "stars": 1536,
+    "created_at": "2026-01-29T01:31:32Z",
+    "updated_at": "2026-03-25T03:57:52Z",
+    "description": "Security Scanner for Agent Skills"
+  },
+  {
+    "repo": "yoanbernabeu/grepai",
+    "url": "https://github.com/yoanbernabeu/grepai",
+    "stars": 1516,
+    "created_at": "2026-01-09T13:01:33Z",
+    "updated_at": "2026-03-25T02:49:47Z",
+    "description": "Semantic Search & Call Graphs for AI Agents (100% Local)"
+  },
+  {
+    "repo": "gadievron/raptor",
+    "url": "https://github.com/gadievron/raptor",
+    "stars": 1510,
+    "created_at": "2025-10-17T10:10:40Z",
+    "updated_at": "2026-03-24T23:26:01Z",
+    "description": "Raptor turns Claude Code into a general-purpose AI offensive/defensive security agent. By using Claude.md and creating rules, sub-agents, and skills, and orchestrating security tool usage, we configure the agent for adversarial thinking, and perform research or attack/defense operations."
+  },
+  {
+    "repo": "lst97/claude-code-sub-agents",
+    "url": "https://github.com/lst97/claude-code-sub-agents",
+    "stars": 1489,
+    "created_at": "2025-07-28T13:04:48Z",
+    "updated_at": "2026-03-24T07:56:51Z",
+    "description": "Collection of specialized AI subagents for Claude Code for personal use (full-stack development)."
+  },
+  {
+    "repo": "addyosmani/web-quality-skills",
+    "url": "https://github.com/addyosmani/web-quality-skills",
+    "stars": 1485,
+    "created_at": "2026-01-18T10:53:04Z",
+    "updated_at": "2026-03-25T05:09:52Z",
+    "description": "Agent Skills for optimizing web quality based on Lighthouse and Core Web Vitals."
+  },
+  {
+    "repo": "eugene1g/agent-safehouse",
+    "url": "https://github.com/eugene1g/agent-safehouse",
+    "stars": 1483,
+    "created_at": "2026-02-09T17:33:52Z",
+    "updated_at": "2026-03-25T03:57:55Z",
+    "description": "Sandbox your local AI agents so they can read/write only what they need"
+  },
+  {
+    "repo": "Njengah/claude-code-cheat-sheet",
+    "url": "https://github.com/Njengah/claude-code-cheat-sheet",
+    "stars": 1477,
+    "created_at": "2025-07-07T08:02:33Z",
+    "updated_at": "2026-03-25T08:04:14Z",
+    "description": "Ultimate collection of Claude Code tips, tricks, hacks, and workflows that you can use to master Claude Code in minutes"
+  },
+  {
+    "repo": "rohitg00/pro-workflow",
+    "url": "https://github.com/rohitg00/pro-workflow",
+    "stars": 1455,
+    "created_at": "2026-02-01T19:47:29Z",
+    "updated_at": "2026-03-24T11:43:19Z",
+    "description": "Battle-tested AI workflows from power users. Self-correcting memory, parallel worktrees, wrap-up rituals, and the 80/20 AI coding ratio."
+  },
+  {
+    "repo": "0xCrunchyy/10x",
+    "url": "https://github.com/0xCrunchyy/10x",
+    "stars": 1425,
+    "created_at": "2023-11-24T02:31:09Z",
+    "updated_at": "2026-03-23T12:22:52Z",
+    "description": "⚡️ 10x - Up to 20x faster AI coding with multi-step Superpowers. Open-source agent with smart model routing, BYOK, fully self-hosted."
+  },
+  {
+    "repo": "Piebald-AI/tweakcc",
+    "url": "https://github.com/Piebald-AI/tweakcc",
+    "stars": 1414,
+    "created_at": "2025-07-20T21:32:22Z",
+    "updated_at": "2026-03-25T03:07:05Z",
+    "description": "Customize Claude Code's system prompts, create custom toolsets, input pattern highlighters, themes/thinking verbs/spinners, customize input box & user message styling, support AGENTS.md, unlock private/unreleased features, and much more.  Supports both native/npm installs on all platforms."
+  },
+  {
+    "repo": "antonbabenko/terraform-skill",
+    "url": "https://github.com/antonbabenko/terraform-skill",
+    "stars": 1379,
+    "created_at": "2026-01-15T18:26:37Z",
+    "updated_at": "2026-03-25T06:55:40Z",
+    "description": "The Claude Agent Skill for Terraform and OpenTofu - testing, modules, CI/CD, and production patterns"
+  },
+  {
+    "repo": "feiskyer/claude-code-settings",
+    "url": "https://github.com/feiskyer/claude-code-settings",
+    "stars": 1363,
+    "created_at": "2025-07-18T06:22:12Z",
+    "updated_at": "2026-03-25T05:59:27Z",
+    "description": "Claude Code settings, commands and agents for vibe coding"
+  },
+  {
+    "repo": "RAIT-09/obsidian-agent-client",
+    "url": "https://github.com/RAIT-09/obsidian-agent-client",
+    "stars": 1348,
+    "created_at": "2025-09-18T09:47:13Z",
+    "updated_at": "2026-03-25T07:24:36Z",
+    "description": "Bring AI agents into Obsidian via Agent Client Protocol (ACP), such as Claude Code, Codex and Gemini CLI."
+  },
+  {
+    "repo": "junhoyeo/tokscale",
+    "url": "https://github.com/junhoyeo/tokscale",
+    "stars": 1333,
+    "created_at": "2025-12-01T13:15:27Z",
+    "updated_at": "2026-03-25T08:05:49Z",
+    "description": "🛰️ A CLI tool for tracking token usage from OpenCode, Claude Code, 🦞OpenClaw (Clawdbot/Moltbot), Pi, Codex, Gemini, Cursor, AmpCode, Factory Droid, Kimi, and more! • 🏅Global Leaderboard + 2D/3D Contributions Graph"
+  },
+  {
+    "repo": "Th0rgal/open-ralph-wiggum",
+    "url": "https://github.com/Th0rgal/open-ralph-wiggum",
+    "stars": 1329,
+    "created_at": "2026-01-06T08:06:47Z",
+    "updated_at": "2026-03-25T03:07:27Z",
+    "description": "Type `ralph \"prompt\"` to start open code in a ralph loop. Also supports a prompt file & status check. Open Code, Claude Code, Codex, Copilot"
+  },
+  {
+    "repo": "njbrake/agent-of-empires",
+    "url": "https://github.com/njbrake/agent-of-empires",
+    "stars": 1322,
+    "created_at": "2026-01-09T17:23:31Z",
+    "updated_at": "2026-03-25T07:45:20Z",
+    "description": "Claude Code, OpenCode, Mistral Vibe, Codex CLI, Gemini CLI, Pi.dev, Copilot CLI Coding Agent Terminal Session manager via tmux and git Worktrees"
+  },
+  {
+    "repo": "CloudAI-X/claude-workflow-v2",
+    "url": "https://github.com/CloudAI-X/claude-workflow-v2",
+    "stars": 1302,
+    "created_at": "2026-01-01T02:20:41Z",
+    "updated_at": "2026-03-24T22:02:48Z",
+    "description": "Universal Claude Code workflow plugin with agents, skills, hooks, and commands"
+  },
+  {
+    "repo": "AvdLee/Swift-Concurrency-Agent-Skill",
+    "url": "https://github.com/AvdLee/Swift-Concurrency-Agent-Skill",
+    "stars": 1279,
+    "created_at": "2026-01-07T09:19:00Z",
+    "updated_at": "2026-03-24T21:14:19Z",
+    "description": "Add expert Swift Concurrency guidance to your AI coding tool (Agent Skills open format): safe concurrency, performance optimization, and Swift 6 migration."
+  },
+  {
+    "repo": "AnandChowdhary/continuous-claude",
+    "url": "https://github.com/AnandChowdhary/continuous-claude",
+    "stars": 1270,
+    "created_at": "2025-11-15T08:59:04Z",
+    "updated_at": "2026-03-24T22:58:33Z",
+    "description": "🔂 Ralph loop with PRs: Run Claude Code in a continuous loop, autonomously creating PRs, waiting for checks, and merging"
+  },
+  {
+    "repo": "ballred/obsidian-claude-pkm",
+    "url": "https://github.com/ballred/obsidian-claude-pkm",
+    "stars": 1266,
+    "created_at": "2025-08-07T22:09:42Z",
+    "updated_at": "2026-03-25T08:27:23Z",
+    "description": "A complete starter kit for an Obsidian + Claude Code personal knowledge management system."
+  },
+  {
+    "repo": "jgravelle/jcodemunch-mcp",
+    "url": "https://github.com/jgravelle/jcodemunch-mcp",
+    "stars": 1243,
+    "created_at": "2026-02-09T01:58:27Z",
+    "updated_at": "2026-03-25T08:24:16Z",
+    "description": "The leading, most token-efficient MCP server for GitHub source code exploration via tree-sitter AST parsing"
+  },
+  {
+    "repo": "webfuse-com/awesome-claude",
+    "url": "https://github.com/webfuse-com/awesome-claude",
+    "stars": 1240,
+    "created_at": "2025-08-14T09:12:07Z",
+    "updated_at": "2026-03-25T02:05:57Z",
+    "description": "A curated list of awesome things related to Anthropic Claude"
+  },
+  {
+    "repo": "m0n0x41d/quint-code",
+    "url": "https://github.com/m0n0x41d/quint-code",
+    "stars": 1236,
+    "created_at": "2025-12-10T19:16:51Z",
+    "updated_at": "2026-03-24T07:32:20Z",
+    "description": "Engineering decisions  engine that know when they're stale. Frame, compare, decide — with evidence decay and parity enforcement. For Claude Code, Cursor, Gemini CLI, Codex and more."
+  },
+  {
+    "repo": "decolua/9router",
+    "url": "https://github.com/decolua/9router",
+    "stars": 1231,
+    "created_at": "2026-01-05T02:59:30Z",
+    "updated_at": "2026-03-25T08:22:42Z",
+    "description": "Connect All AI Code Tools (Claude Code, Cursor, Antigravity, Copilot, Codex, Gemini, OpenCode, Cline, OpenClaw...) to 40+ AI Providers & 100+ Models"
+  },
+  {
+    "repo": "open-gitagent/gitagent",
+    "url": "https://github.com/open-gitagent/gitagent",
+    "stars": 1228,
+    "created_at": "2026-02-24T16:08:24Z",
+    "updated_at": "2026-03-25T08:10:10Z",
+    "description": "A framework-agnostic, git-native standard for defining AI agents"
+  },
+  {
+    "repo": "ghostwright/ghost-os",
+    "url": "https://github.com/ghostwright/ghost-os",
+    "stars": 1218,
+    "created_at": "2026-02-19T03:53:36Z",
+    "updated_at": "2026-03-25T04:37:59Z",
+    "description": "Full computer-use for AI agents. Self-learning workflows. Native macOS. No screenshots required."
+  },
+  {
+    "repo": "poco-ai/poco-claw",
+    "url": "https://github.com/poco-ai/poco-claw",
+    "stars": 1215,
+    "created_at": "2026-01-08T10:48:17Z",
+    "updated_at": "2026-03-25T03:14:48Z",
+    "description": "A more beautiful and easier-to-use alternative to OpenClaw. It features a nicer Web UI, built-in IM support, and a sandboxed runtime for improved safety. Under the hood, it is powered by a Claude Code–based agent."
+  },
+  {
+    "repo": "TanStack/cli",
+    "url": "https://github.com/TanStack/cli",
+    "stars": 1214,
+    "created_at": "2025-02-14T20:27:40Z",
+    "updated_at": "2026-03-24T18:42:11Z",
+    "description": "The official TanStack CLI - Project Scaffolding, MCP Server, Agent Skills Installation, etc"
+  },
+  {
+    "repo": "ComposioHQ/awesome-claude-plugins",
+    "url": "https://github.com/ComposioHQ/awesome-claude-plugins",
+    "stars": 1212,
+    "created_at": "2025-10-22T06:42:09Z",
+    "updated_at": "2026-03-25T03:28:53Z",
+    "description": "A curated list of Plugins that let you extend Claude Code with custom commands, agents, hooks, and MCP servers through the plugin system."
+  },
+  {
+    "repo": "softaworks/agent-toolkit",
+    "url": "https://github.com/softaworks/agent-toolkit",
+    "stars": 1197,
+    "created_at": "2026-01-19T12:35:40Z",
+    "updated_at": "2026-03-25T08:20:16Z",
+    "description": "A curated collection of skills for AI coding agents. Skills are packaged instructions and scripts that extend agent capabilities across development, documentation, planning, and professional workflows."
+  },
+  {
+    "repo": "huangserva/skill-prompt-generator",
+    "url": "https://github.com/huangserva/skill-prompt-generator",
+    "stars": 1193,
+    "created_at": "2026-01-05T04:49:44Z",
+    "updated_at": "2026-03-25T07:20:43Z",
+    "description": "这是一个基于Claude Skill的**AI人像Prompt生成系统**，能够从特征库中智能组合生成高质量的人像描述Prompt，并具备自动学习和库扩展能力。 核心能力: Prompt生成、特征提取、自动学习、智能审核、版本控制"
+  },
+  {
+    "repo": "kenryu42/claude-code-safety-net",
+    "url": "https://github.com/kenryu42/claude-code-safety-net",
+    "stars": 1186,
+    "created_at": "2025-12-25T17:52:57Z",
+    "updated_at": "2026-03-25T06:04:39Z",
+    "description": "A coding agent hook that acts as a safety net, catching destructive git and filesystem commands before they execute."
+  },
+  {
+    "repo": "AgriciDaniel/claude-ads",
+    "url": "https://github.com/AgriciDaniel/claude-ads",
+    "stars": 1184,
+    "created_at": "2026-02-11T13:01:49Z",
+    "updated_at": "2026-03-25T08:01:33Z",
+    "description": "Comprehensive paid advertising audit & optimization skill for Claude Code. 186 checks across Google, Meta, YouTube, LinkedIn, TikTok & Microsoft Ads with weighted scoring, parallel agents, and industry templates."
+  },
+  {
+    "repo": "dtsola/xiaoyaosearch",
+    "url": "https://github.com/dtsola/xiaoyaosearch",
+    "stars": 1182,
+    "created_at": "2025-11-11T10:58:03Z",
+    "updated_at": "2026-03-25T05:19:21Z",
+    "description": "小遥搜索，听懂你的话、看懂你的图，用AI找到本地任何文件。让搜索像聊天一样简单。XiaoyaoSearch: Understands your words, reads your images, finds any local file with AI. Making search as easy as chatting."
+  },
+  {
+    "repo": "rivet-dev/sandbox-agent",
+    "url": "https://github.com/rivet-dev/sandbox-agent",
+    "stars": 1179,
+    "created_at": "2026-01-25T10:03:02Z",
+    "updated_at": "2026-03-25T07:13:00Z",
+    "description": "Run Coding Agents in Sandboxes. Control Them Over HTTP. Supports Claude Code, Codex, OpenCode, and Amp."
+  },
+  {
+    "repo": "kimsungwhee/apple-docs-mcp",
+    "url": "https://github.com/kimsungwhee/apple-docs-mcp",
+    "stars": 1170,
+    "created_at": "2025-07-15T06:40:39Z",
+    "updated_at": "2026-03-25T06:23:05Z",
+    "description": "MCP server for Apple Developer Documentation - Search iOS/macOS/SwiftUI/UIKit docs, WWDC videos, Swift/Objective-C APIs & code examples in Claude, Cursor & AI assistants"
+  },
+  {
+    "repo": "shuvonsec/claude-bug-bounty",
+    "url": "https://github.com/shuvonsec/claude-bug-bounty",
+    "stars": 1162,
+    "created_at": "2026-03-08T05:34:18Z",
+    "updated_at": "2026-03-25T07:26:44Z",
+    "description": "Claude Code skill for AI-assisted bug bounty hunting - recon, IDOR, XSS, SSRF, OAuth, GraphQL, LLM injection, and report generation"
+  },
+  {
+    "repo": "browserwing/browserwing",
+    "url": "https://github.com/browserwing/browserwing",
+    "stars": 1157,
+    "created_at": "2025-12-10T23:54:17Z",
+    "updated_at": "2026-03-25T02:50:29Z",
+    "description": "BrowserWing turns your browser actions into MCP commands Or Claude Skill, allowing AI agents to control browsers efficiently and reliably. Say goodbye to slow, token-heavy LLM interactions — let agents call commands directly for faster automation. Perfect for AI-driven tasks, browser automation, and boosting productivity."
+  },
+  {
+    "repo": "wbopan/cui",
+    "url": "https://github.com/wbopan/cui",
+    "stars": 1152,
+    "created_at": "2025-06-12T06:35:25Z",
+    "updated_at": "2026-03-22T23:18:14Z",
+    "description": "A web UI for Claude Code agents"
+  },
+  {
+    "repo": "specstoryai/getspecstory",
+    "url": "https://github.com/specstoryai/getspecstory",
+    "stars": 1142,
+    "created_at": "2024-12-13T18:05:13Z",
+    "updated_at": "2026-03-25T06:27:24Z",
+    "description": "Install our local first extensions for your favorite AI IDE or Terminal Agent. Sync your conversations to the cloud. File issues and requests."
+  },
+  {
+    "repo": "udecode/dotai",
+    "url": "https://github.com/udecode/dotai",
+    "stars": 1141,
+    "created_at": "2024-09-05T23:16:54Z",
+    "updated_at": "2026-03-23T04:59:25Z",
+    "description": "Context manager for all agents"
+  },
+  {
+    "repo": "luongnv89/claude-howto",
+    "url": "https://github.com/luongnv89/claude-howto",
+    "stars": 1135,
+    "created_at": "2025-11-07T22:59:34Z",
+    "updated_at": "2026-03-25T07:40:27Z",
+    "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value."
+  },
+  {
+    "repo": "Ido-Levi/Hephaestus",
+    "url": "https://github.com/Ido-Levi/Hephaestus",
+    "stars": 1122,
+    "created_at": "2025-09-16T00:16:03Z",
+    "updated_at": "2026-03-24T16:38:26Z",
+    "description": "Semi-Structured Agentic Framework. Workflows build themselves as agents discover what needs to be done, not what you predicted upfront."
+  },
+  {
+    "repo": "jayminwest/overstory",
+    "url": "https://github.com/jayminwest/overstory",
+    "stars": 1121,
+    "created_at": "2026-02-12T14:53:58Z",
+    "updated_at": "2026-03-25T04:59:31Z",
+    "description": "Multi-agent orchestration for AI coding agents — pluggable runtime adapters for Claude Code, Pi, and more"
+  },
+  {
+    "repo": "yohey-w/multi-agent-shogun",
+    "url": "https://github.com/yohey-w/multi-agent-shogun",
+    "stars": 1119,
+    "created_at": "2026-01-25T09:29:19Z",
+    "updated_at": "2026-03-25T06:43:28Z",
+    "description": "Samurai-inspired multi-agent system for Claude Code. Orchestrate parallel AI tasks via tmux with shogun → karo → ashigaru hierarchy."
+  },
+  {
+    "repo": "AIPexStudio/AIPex",
+    "url": "https://github.com/AIPexStudio/AIPex",
+    "stars": 1113,
+    "created_at": "2024-08-22T03:02:28Z",
+    "updated_at": "2026-03-24T08:09:39Z",
+    "description": "AIPex: AI browser automation assistant, no migration and privacy first. Alternative to Manus Browser Operator、 Claude Chrome and Agent Browser"
+  },
+  {
+    "repo": "heyhuynhgiabuu/proxypal",
+    "url": "https://github.com/heyhuynhgiabuu/proxypal",
+    "stars": 1083,
+    "created_at": "2025-12-01T19:50:13Z",
+    "updated_at": "2026-03-25T08:25:17Z",
+    "description": "A desktop app that lets you use your AI subscriptions (Claude, ChatGPT, Gemini, GitHub Copilot) with any coding tool. Wraps CLIProxyAPI with a clean UI for managing connections and tracking usage."
+  },
+  {
+    "repo": "qdhenry/Claude-Command-Suite",
+    "url": "https://github.com/qdhenry/Claude-Command-Suite",
+    "stars": 1079,
+    "created_at": "2025-06-13T01:49:01Z",
+    "updated_at": "2026-03-25T08:21:18Z",
+    "description": "Professional slash commands for Claude Code that provide   structured workflows for software development tasks including   code review, feature creation, security auditing, and architectural analysis."
+  },
+  {
+    "repo": "callstackincubator/agent-skills",
+    "url": "https://github.com/callstackincubator/agent-skills",
+    "stars": 1061,
+    "created_at": "2026-01-14T16:45:39Z",
+    "updated_at": "2026-03-24T23:20:58Z",
+    "description": "A collection of agent-optimized React Native skills for AI coding assistants."
+  },
+  {
+    "repo": "vm0-ai/vm0",
+    "url": "https://github.com/vm0-ai/vm0",
+    "stars": 1056,
+    "created_at": "2025-11-14T03:27:22Z",
+    "updated_at": "2026-03-25T08:26:34Z",
+    "description": "the easiest way to run natural language-described workflows automatically"
+  },
+  {
+    "repo": "study8677/antigravity-workspace-template",
+    "url": "https://github.com/study8677/antigravity-workspace-template",
+    "stars": 1054,
+    "created_at": "2025-11-19T08:51:14Z",
+    "updated_at": "2026-03-25T05:46:04Z",
+    "description": "🪐 The ultimate starter kit for AI IDEs, Claude code，codex, and other agentic coding environments."
+  },
+  {
+    "repo": "itsmostafa/aws-agent-skills",
+    "url": "https://github.com/itsmostafa/aws-agent-skills",
+    "stars": 1048,
+    "created_at": "2019-05-18T19:38:59Z",
+    "updated_at": "2026-03-23T09:06:29Z",
+    "description": "AWS Skills for Agents"
+  },
+  {
+    "repo": "wasabeef/claude-code-cookbook",
+    "url": "https://github.com/wasabeef/claude-code-cookbook",
+    "stars": 1048,
+    "created_at": "2025-07-17T16:04:29Z",
+    "updated_at": "2026-03-25T08:16:20Z",
+    "description": "A collection of settings to make Claude Code more useful."
+  },
+  {
+    "repo": "Prat011/awesome-llm-skills",
+    "url": "https://github.com/Prat011/awesome-llm-skills",
+    "stars": 1035,
+    "created_at": "2025-10-22T06:15:37Z",
+    "updated_at": "2026-03-25T01:51:08Z",
+    "description": "A curated list of awesome LLM and AI Agent Skills, resources and tools for customising AI Agent workflows - that works with Claude Code, Codex, Gemini CLI and your custom AI Agents"
+  },
+  {
+    "repo": "DeepMyst/Mysti",
+    "url": "https://github.com/DeepMyst/Mysti",
+    "stars": 1020,
+    "created_at": "2025-11-29T13:29:57Z",
+    "updated_at": "2026-03-25T01:42:45Z",
+    "description": "AI coding dream team of agents for VS Code. Claude Code + openai Codex collaborate in brainstorm mode, debate solutions, and synthesize the best approach for your code."
+  },
+  {
+    "repo": "Imbad0202/academic-research-skills",
+    "url": "https://github.com/Imbad0202/academic-research-skills",
+    "stars": 1017,
+    "created_at": "2026-02-26T06:31:01Z",
+    "updated_at": "2026-03-25T08:26:43Z",
+    "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize"
+  },
+  {
+    "repo": "skills-directory/skill-codex",
+    "url": "https://github.com/skills-directory/skill-codex",
+    "stars": 1007,
+    "created_at": "2025-10-21T19:28:43Z",
+    "updated_at": "2026-03-25T06:53:34Z",
+    "description": "A claude code skill to delegate prompts to codex"
+  },
+  {
+    "repo": "d-kimuson/claude-code-viewer",
+    "url": "https://github.com/d-kimuson/claude-code-viewer",
+    "stars": 1000,
+    "created_at": "2025-08-31T07:54:51Z",
+    "updated_at": "2026-03-25T01:24:00Z",
+    "description": "A full-featured web-based Claude Code client that provides complete interactive functionality for managing Claude Code projects"
+  }
+]
