@@ -228,15 +228,53 @@ export function mergeEntries(entries) {
 // Master Builder (three-way merge)
 // ============================================================
 
+// ============================================================
+// Product Skills JSON Parsing
+// ============================================================
+
 /**
- * Build the unified skills-master.json from three data sources.
+ * Parse product-skills.json entries into the same format as CSV entries.
+ * Returns array of { repoSlug, name, stars, tier, source, notes, installCount, category }.
+ */
+export function parseProductSkills(items) {
+  const entries = [];
+  for (const item of items) {
+    const slug = normalizeRepoUrl(item.source || '');
+    entries.push({
+      repoSlug: slug,
+      name: item.name || '',
+      stars: 0, // product-skills.json doesn't have stars
+      installCount: null,
+      tier: null,
+      source: `product-skills:${item.category || 'unknown'}`,
+      notes: item.one_line || '',
+      category: 'product_skill',
+      rawUrl: item.source || '',
+      // Extra fields from product-skills schema
+      productCategory: item.category || null,
+      mechanism: item.mechanism || null,
+      differentiator: item.differentiator || null,
+      compatibility: item.compatibility || null,
+      productSources: item.sources || [],
+    });
+  }
+  return entries;
+}
+
+// ============================================================
+// Master Builder (four-way merge)
+// ============================================================
+
+/**
+ * Build the unified skills-master.json from four data sources.
  *
  * @param {Array} csvRows - Parsed CSV row objects
  * @param {Array} officialPlugins - Official marketplace plugin objects
  * @param {Object} discoveryAssessments - Map of repoSlug → { assessment, round }
+ * @param {Array} [productSkills] - Optional product-skills.json entries
  * @returns {{ repos: Array, summary: Object }}
  */
-export function buildSkillsMaster(csvRows, officialPlugins, discoveryAssessments) {
+export function buildSkillsMaster(csvRows, officialPlugins, discoveryAssessments, productSkills) {
   // Phase 1: Parse and group CSV entries by normalized slug
   const groups = new Map(); // slug → [entries]
   let skippedCount = 0;
@@ -251,6 +289,47 @@ export function buildSkillsMaster(csvRows, officialPlugins, discoveryAssessments
       groups.set(entry.repoSlug, []);
     }
     groups.get(entry.repoSlug).push(entry);
+  }
+
+  // Phase 1b: Merge product skills into groups
+  let productSkillCount = 0;
+  let productSkillNewRepos = 0;
+  const nonGithubProducts = [];
+
+  if (productSkills && productSkills.length > 0) {
+    const psEntries = parseProductSkills(productSkills);
+    for (const entry of psEntries) {
+      productSkillCount++;
+      if (!entry.repoSlug) {
+        // Non-GitHub product (LobeHub, SkillsMP, FastMCP, GPT Store, SaaS)
+        nonGithubProducts.push({
+          repoSlug: null,
+          stars: 0,
+          installCountWeekly: null,
+          tiersFromSources: {},
+          aliases: [entry.name],
+          notes: entry.notes,
+          sources: [entry.source],
+          category: 'product_skill',
+          officialMarketplace: false,
+          marketplaceSlug: null,
+          ourAssessment: null,
+          ourRound: null,
+          productCategory: entry.productCategory,
+          mechanism: entry.mechanism,
+          differentiator: entry.differentiator,
+          compatibility: entry.compatibility,
+          productSources: entry.productSources,
+        });
+        skippedCount++;
+        continue;
+      }
+      if (!groups.has(entry.repoSlug)) {
+        groups.set(entry.repoSlug, []);
+        productSkillNewRepos++;
+      }
+      groups.get(entry.repoSlug).push(entry);
+    }
   }
 
   // Phase 2: Merge grouped entries
@@ -354,6 +433,9 @@ export function buildSkillsMaster(csvRows, officialPlugins, discoveryAssessments
     }
   }
 
+  // Phase 3b: Add non-GitHub product skills
+  repos.push(...nonGithubProducts);
+
   // Phase 4: Build summary
   const reposWithSlug = repos.filter(r => r.repoSlug);
   const officialOnlyPlugins = repos.filter(r => !r.repoSlug && r.officialMarketplace);
@@ -362,6 +444,9 @@ export function buildSkillsMaster(csvRows, officialPlugins, discoveryAssessments
     totalUniqueRepos: reposWithSlug.length,
     officialPluginCount: repos.filter(r => r.officialMarketplace).length,
     officialOnlyPluginCount: officialOnlyPlugins.length,
+    productSkillCount,
+    productSkillNewRepos,
+    nonGithubProductCount: nonGithubProducts.length,
     skippedCount,
     withAssessment: reposWithSlug.filter(r => r.ourAssessment).length,
     withoutAssessment: reposWithSlug.filter(r => !r.ourAssessment).length,

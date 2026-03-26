@@ -7,6 +7,7 @@ import {
   parseCsvRow,
   mergeEntries,
   buildSkillsMaster,
+  parseProductSkills,
 } from './dedup.js';
 
 // ============================================================
@@ -313,5 +314,85 @@ describe('buildSkillsMaster', () => {
     const result = buildSkillsMaster([], [], {});
     assert.equal(result.repos.length, 0);
     assert.equal(result.summary.totalUniqueRepos, 0);
+  });
+
+  it('merges product skills (4th data source)', () => {
+    const csvRows = [
+      { '序号': '1', '名称': 'superpowers', '仓库/链接': 'https://github.com/obra/superpowers', 'Stars': '108000', '安装量(skills.sh)': '无', '层级/Tier': 'Tier 1', '来源文件': 'csv-source', '备注': 'TDD' },
+    ];
+    const productSkills = [
+      {
+        id: 1,
+        name: 'obra/superpowers brainstorming',
+        source: 'https://github.com/obra/superpowers',
+        one_line: 'Socratic brainstorming',
+        mechanism: 'Input→Questions→Output',
+        differentiator: 'Highest adoption',
+        compatibility: 'Claude Code',
+        category: '结构化Brainstorming',
+        sources: ['deep-research', 'grok'],
+      },
+      {
+        id: 2,
+        name: 'ChatPRD',
+        source: 'https://chatprd.ai',
+        one_line: 'CPO-level PRD generation',
+        mechanism: 'Chat→PRD',
+        category: 'GPT生态',
+        sources: ['compass1'],
+      },
+    ];
+
+    const result = buildSkillsMaster(csvRows, [], {}, productSkills);
+
+    // obra/superpowers should merge with CSV entry
+    const obra = result.repos.find(r => r.repoSlug === 'obra/superpowers');
+    assert.ok(obra);
+    assert.equal(obra.stars, 108000); // from CSV
+    assert.ok(obra.sources.some(s => s.startsWith('product-skills:')));
+
+    // ChatPRD (non-GitHub) should appear as product_skill
+    const chatprd = result.repos.find(r => r.aliases?.includes('ChatPRD'));
+    assert.ok(chatprd);
+    assert.equal(chatprd.category, 'product_skill');
+    assert.equal(chatprd.repoSlug, null);
+
+    // Summary should track product skill stats
+    assert.equal(result.summary.productSkillCount, 2);
+    assert.equal(result.summary.nonGithubProductCount, 1);
+  });
+});
+
+// ============================================================
+// parseProductSkills
+// ============================================================
+
+describe('parseProductSkills', () => {
+  it('parses GitHub-based product skills', () => {
+    const items = [
+      { name: 'gstack/office-hours', source: 'https://github.com/gstack/office-hours', one_line: 'YC pressure test', category: '需求发现', sources: ['docx'] },
+    ];
+    const entries = parseProductSkills(items);
+    assert.equal(entries.length, 1);
+    assert.equal(entries[0].repoSlug, 'gstack/office-hours');
+    assert.equal(entries[0].productCategory, '需求发现');
+  });
+
+  it('returns null repoSlug for non-GitHub sources', () => {
+    const items = [
+      { name: 'ChatPRD', source: 'https://chatprd.ai', one_line: 'PRD tool', category: 'GPT生态' },
+    ];
+    const entries = parseProductSkills(items);
+    assert.equal(entries[0].repoSlug, null);
+  });
+
+  it('handles LobeHub and SkillsMP sources', () => {
+    const items = [
+      { name: 'Agentic Discovery', source: 'https://lobehub.com/skills/test', category: '需求发现' },
+      { name: 'requirements-analysis', source: 'https://skillsmp.com (GitHub: jwynia/teach)', category: '需求发现' },
+    ];
+    const entries = parseProductSkills(items);
+    assert.equal(entries[0].repoSlug, null); // lobehub → null
+    assert.equal(entries[1].repoSlug, null); // skillsmp compound URL → null
   });
 });

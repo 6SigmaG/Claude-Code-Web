@@ -65,11 +65,22 @@ const discoveryAssessments = {
 
 console.log(`📋 Discovery assessments: ${Object.keys(discoveryAssessments).length} repos`);
 
+// 4. Product skills (user's curated product ideation skills)
+let productSkills = [];
+try {
+  productSkills = JSON.parse(
+    readFileSync(join(ROOT, 'data', 'product-skills.json'), 'utf-8')
+  );
+  console.log(`🎯 Product skills: ${productSkills.length} loaded`);
+} catch {
+  console.log(`🎯 Product skills: not found (skipping)`);
+}
+
 // ============================================================
 // Run pipeline
 // ============================================================
 
-const result = buildSkillsMaster(csvRows, officialPlugins, discoveryAssessments);
+const result = buildSkillsMaster(csvRows, officialPlugins, discoveryAssessments, productSkills);
 
 // Write output
 mkdirSync(join(ROOT, 'data'), { recursive: true });
@@ -90,6 +101,7 @@ console.log('='.repeat(60));
 const s = result.summary;
 console.log(`\n总 unique repos:     ${s.totalUniqueRepos}`);
 console.log(`官方 marketplace:    ${s.officialPluginCount} (含 ${s.officialOnlyPluginCount} 仅 marketplace)`);
+console.log(`产品 skills:         ${s.productSkillCount} 输入 → ${s.productSkillNewRepos} 新 repos + ${s.nonGithubProductCount} 非 GitHub`);
 console.log(`已评估:              ${s.withAssessment}`);
 console.log(`待评估:              ${s.withoutAssessment}`);
 console.log(`跳过(无效/自建):     ${s.skippedCount}`);
