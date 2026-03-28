@@ -337,10 +337,122 @@ function printMisclassifications(groundTruth, predictions, scores) {
 }
 
 // ============================================================
+// Leave-One-Out Cross-Validation
+// ============================================================
+
+function runLOOCV(verbose = true) {
+  const groundTruthData = JSON.parse(
+    readFileSync(join(ROOT, 'data', 'ground-truth.json'), 'utf-8')
+  );
+  const allLabels = groundTruthData.labels;
+
+  const initialWeights = JSON.parse(
+    readFileSync(join(ROOT, 'data', 'weights.json'), 'utf-8')
+  );
+
+  const results = [];
+
+  for (let i = 0; i < allLabels.length; i++) {
+    const heldOut = allLabels[i];
+    const trainSet = allLabels.filter((_, idx) => idx !== i);
+
+    // Reset weights to initial for each fold
+    let weights = deepClone(initialWeights);
+
+    // Mini calibration on train set (max 100 iterations, silent)
+    const DELTAS = [10, 8, 6, 5, 3, 2, 1, -1, -2, -3, -5, -6, -8, -10];
+    let bestF1 = evaluateWeights(weights, trainSet).metrics.combinedF1;
+    let staleStreak = 0;
+
+    for (let iter = 0; iter < 100; iter++) {
+      let improved = false;
+      for (let pIdx = 0; pIdx < MUTABLE_PARAMS.length; pIdx++) {
+        for (const delta of DELTAS) {
+          const candidate = mutateWeights(weights, pIdx, delta);
+          const { metrics } = evaluateWeights(candidate, trainSet);
+          if (metrics.combinedF1 > bestF1 ||
+              (metrics.combinedF1 === bestF1 && metrics.accuracy > evaluateWeights(weights, trainSet).metrics.accuracy)) {
+            weights = candidate;
+            bestF1 = metrics.combinedF1;
+            improved = true;
+            staleStreak = 0;
+            break;
+          }
+        }
+        if (improved) break;
+      }
+      if (!improved) {
+        staleStreak++;
+        if (staleStreak >= 3) break;
+      }
+      if (bestF1 >= 1.0) break;
+    }
+
+    // Predict held-out sample
+    const heldOutResult = scoreRepo(heldOut.scores, weights);
+    const predicted = classify(heldOutResult.total, weights);
+    const correct = predicted === heldOut.label;
+
+    results.push({
+      slug: heldOut.slug,
+      actual: heldOut.label,
+      predicted,
+      score: heldOutResult.total,
+      correct,
+      trainF1: bestF1,
+      admitThreshold: weights.admitThreshold,
+      rejectThreshold: weights.rejectThreshold,
+    });
+  }
+
+  const correctCount = results.filter(r => r.correct).length;
+  const looAccuracy = correctCount / results.length;
+
+  // Compute LOO F1
+  const looPredictions = results.map(r => r.predicted);
+  const looLabels = results.map(r => ({ label: r.actual }));
+  const looMetrics = computeMetrics(looPredictions, looLabels);
+
+  if (verbose) {
+    console.log('='.repeat(70));
+    console.log('🔄 Leave-One-Out Cross-Validation');
+    console.log('='.repeat(70));
+    console.log(`\n  Samples: ${results.length}`);
+    console.log(`  LOO Accuracy: ${(looAccuracy * 100).toFixed(1)}% (${correctCount}/${results.length})`);
+    console.log(`  LOO Combined F1: ${(looMetrics.combinedF1 * 100).toFixed(1)}%`);
+    console.log(`  LOO Admit F1:    ${(looMetrics.f1 * 100).toFixed(1)}%`);
+    console.log(`  LOO Reject F1:   ${(looMetrics.rejectF1 * 100).toFixed(1)}%`);
+
+    console.log('\n  Per-sample results:');
+    for (const r of results) {
+      const icon = r.correct ? '✅' : '❌';
+      console.log(`    ${icon} ${r.slug}: actual=${r.actual}, predicted=${r.predicted}, score=${r.score.toFixed(1)} (train F1=${(r.trainF1 * 100).toFixed(1)}%, thresh=${r.admitThreshold}/${r.rejectThreshold})`);
+    }
+
+    const misses = results.filter(r => !r.correct);
+    if (misses.length > 0) {
+      console.log(`\n  ⚠️  Fragile samples (${misses.length}):`);
+      for (const m of misses) {
+        const gap = m.actual === 'admit'
+          ? `score ${m.score.toFixed(1)} < admitThreshold ${m.admitThreshold}`
+          : m.actual === 'reject'
+            ? `score ${m.score.toFixed(1)} >= rejectThreshold ${m.rejectThreshold}`
+            : `score ${m.score.toFixed(1)} in watching zone`;
+        console.log(`    ${m.slug}: ${gap}`);
+      }
+    } else {
+      console.log('\n  🎯 Perfect LOO — weights generalize well!');
+    }
+  }
+
+  return { results, accuracy: looAccuracy, metrics: looMetrics };
+}
+
+// ============================================================
 // Export for testing + CLI
 // ============================================================
 
-export { scoreRepo, classify, computeMetrics, evaluateWeights, mutateWeights, runCalibrationLoop };
+export { scoreRepo, classify, computeMetrics, evaluateWeights, mutateWeights, runCalibrationLoop, runLOOCV };
 
 // CLI mode
 const isMain = process.argv[1] && (
@@ -349,6 +461,11 @@ const isMain = process.argv[1] && (
 );
 
 if (isMain) {
-  const maxIter = parseInt(process.argv[2] || '200', 10);
-  runCalibrationLoop(maxIter);
+  const cmd = process.argv[2];
+  if (cmd === 'loo') {
+    runLOOCV();
+  } else {
+    const maxIter = parseInt(cmd || '200', 10);
+    runCalibrationLoop(maxIter);
+  }
 }
