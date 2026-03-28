@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "description": "Scoring weights — the ONLY file the AutoResearch loop can modify",
+    "version": 2,
+    "lastCalibratedAt": "2026-03-28T08:02:35.774Z",
+    "calibrationIterations": 1
+  },
+  "content": {
+    "workflowStructure": 12,
+    "behavioralConstraints": 12,
+    "errorResilience": 8,
+    "theoryOfMind": 8,
+    "instructionClarity": 5,
+    "domainDepth": 5
+  },
+  "engineering": {
+    "testCoverage": 8,
+    "infrastructure": 5,
+    "crossSkillComposition": 4,
+    "crossPlatformSupport": 3
+  },
+  "ecosystem": {
+    "creatorCredibility": 15,
+    "communityValidation": 8,
+    "maintenanceActivity": 5,
+    "usageEvidence": 2
+  },
+  "tierThresholds": {
+    "S": 80,
+    "A": 60,
+    "B": 40
+  },
+  "admitThreshold": 55,
+  "rejectThreshold": 29
+}

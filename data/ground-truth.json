@@ -1,0 +1,56 @@
+{
+  "_meta": {
+    "description": "Human-verified labels for calibration. The FIXED evaluator ground truth — never modified by the agent.",
+    "totalPositive": 16,
+    "totalNegative": 5,
+    "totalWatching": 2,
+    "sources": "3 rounds of manual deep research (docs/skill-pool-discovery-report.md)"
+  },
+  "labels": [
+    {"slug": "obra/superpowers", "label": "admit", "confidence": "high", "reason": "93K stars, Perl5 pumpking, TDD/subagent, #1 Claude Code plugin", "round": 1,
+     "scores": {"content": 9, "engineering": 7, "ecosystem": 10}},
+    {"slug": "garrytan/gstack", "label": "admit", "confidence": "high", "reason": "YC CEO, virtual eng team, sprint workflow", "round": 1,
+     "scores": {"content": 8, "engineering": 5, "ecosystem": 9}},
+    {"slug": "antfu/skills", "label": "admit", "confidence": "high", "reason": "Vue/Vite core team, 3.5K stars, TypeScript expertise", "round": 1,
+     "scores": {"content": 6, "engineering": 6, "ecosystem": 9}},
+    {"slug": "hashicorp/agent-skills", "label": "admit", "confidence": "high", "reason": "HashiCorp official, Terraform/Packer skills", "round": 1,
+     "scores": {"content": 7, "engineering": 7, "ecosystem": 10}},
+    {"slug": "everyinc/compound-engineering", "label": "admit", "confidence": "medium", "reason": "Every Inc internal, 100+ framework support", "round": 1,
+     "scores": {"content": 7, "engineering": 6, "ecosystem": 7}},
+    {"slug": "agent-sh/agentsys", "label": "admit", "confidence": "medium", "reason": "42 agents 28 skills, tested on 1000+ repos", "round": 1,
+     "scores": {"content": 6, "engineering": 5, "ecosystem": 6}},
+    {"slug": "affaan-m/everything-claude-code", "label": "admit", "confidence": "medium", "reason": "997 internal tests, Anthropic hackathon winner", "round": 1,
+     "scores": {"content": 6, "engineering": 8, "ecosystem": 6}},
+
+    {"slug": "upstash/context7", "label": "admit", "confidence": "high", "reason": "50K stars, a16z funded, 496K npm/week, official marketplace", "round": 3,
+     "scores": {"content": 7, "engineering": 9, "ecosystem": 10}},
+    {"slug": "vercel-labs/agent-skills", "label": "admit", "confidence": "high", "reason": "23.8K stars, Vercel official, 613K installs", "round": 3,
+     "scores": {"content": 8, "engineering": 7, "ecosystem": 10}},
+    {"slug": "trailofbits/skills", "label": "admit", "confidence": "high", "reason": "3.9K stars, DARPA runner-up, found real vulns", "round": 3,
+     "scores": {"content": 9, "engineering": 8, "ecosystem": 9}},
+    {"slug": "oraios/serena", "label": "admit", "confidence": "medium", "reason": "22K stars, MCP server, 40+ language LSP", "round": 3,
+     "scores": {"content": 7, "engineering": 8, "ecosystem": 8}},
+    {"slug": "kepano/obsidian-skills", "label": "admit", "confidence": "medium", "reason": "16.8K stars, Obsidian CEO, domain-specific", "round": 3,
+     "scores": {"content": 6, "engineering": 4, "ecosystem": 9}},
+    {"slug": "k-dense-ai/claude-scientific-skills", "label": "admit", "confidence": "medium", "reason": "16.1K stars, MIT PhD, 178 skills, CI/CodeQL", "round": 3,
+     "scores": {"content": 7, "engineering": 7, "ecosystem": 7}},
+    {"slug": "mvanhorn/last30days-skill", "label": "admit", "confidence": "medium", "reason": "5.3K stars, Lyft cofounder, 455+ tests", "round": 3,
+     "scores": {"content": 8, "engineering": 9, "ecosystem": 8}},
+    {"slug": "orchestra-research/ai-research-skills", "label": "admit", "confidence": "low", "reason": "5.5K stars but zero tests, zero social discussion", "round": 3,
+     "scores": {"content": 7, "engineering": 3, "ecosystem": 6}},
+    {"slug": "deanpeters/product-manager-skills", "label": "admit", "confidence": "low", "reason": "2.4K stars, PM practitioner, CC BY-NC-SA license", "round": 3,
+     "scores": {"content": 7, "engineering": 4, "ecosystem": 5}},
+
+    {"slug": "nextlevelbuilder/ui-ux-pro-max-skill", "label": "reject", "confidence": "high", "reason": "Star inflation: 4mo 0→50K, org 404 followers, zero tests", "round": 3,
+     "scores": {"content": 4, "engineering": 1, "ecosystem": 2}},
+    {"slug": "ruvnet/ruflo", "label": "reject", "confidence": "high", "reason": "98.8% solo commits, star inflation suspected, scope inflation", "round": 3,
+     "scores": {"content": 3, "engineering": 2, "ecosystem": 2}},
+    {"slug": "contains-studio/agents", "label": "reject", "confidence": "high", "reason": "Abandoned 8 months, no license, single-day 10 commits", "round": 3,
+     "scores": {"content": 3, "engineering": 1, "ecosystem": 1}},
+
+    {"slug": "wshobson/agents", "label": "watching", "confidence": "medium", "reason": "32K stars but zero tests, users say 'too broad/generic'", "round": 3,
+     "scores": {"content": 4, "engineering": 1, "ecosystem": 5}},
+    {"slug": "voltagent/awesome-claude-code-subagents", "label": "watching", "confidence": "medium", "reason": "15K stars, awesome-list factory, growth hacking pattern", "round": 3,
+     "scores": {"content": 3, "engineering": 1, "ecosystem": 4}}
+  ]
+}

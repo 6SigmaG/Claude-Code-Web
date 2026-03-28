@@ -10,7 +10,8 @@
     "test:scoring": "node --test src/scoring/*.test.js",
     "test:history": "node --test src/history/*.test.js",
     "test:telemetry": "node --test src/telemetry/*.test.js",
-    "score": "node src/scoring/cli.js"
+    "score": "node src/scoring/cli.js",
+    "calibrate": "node src/scoring/calibrate.js"
   },
   "keywords": ["claude-code", "skills", "automation"],
   "license": "MIT"
